@@ -1,0 +1,40 @@
+name: Update Module
+
+on:
+  schedule:
+    - cron: "15 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Run tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Convert hub plugins
+        run: python scripts/convert_hub.py --output-dir Module --readme README.md --repo-url https://github.com/Oranjekop/Module.git --branch main
+
+      - name: Commit converted modules
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md Module/
+          if git diff --cached --quiet; then
+            echo "No converted module changes."
+          else
+            git commit -m "Update modules from Kelee hub"
+            git push
+          fi

@@ -1,0 +1,1981 @@
+{
+  "hub_list_url": "https://hub.kelee.one/list.json",
+  "total": 215,
+  "converted": 215,
+  "failed": 0,
+  "failures": [],
+  "items": [
+    {
+      "index": 0,
+      "name": "HTTPDNS拦截器",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Block_HTTPDNS.lpx",
+      "output": "Block_HTTPDNS.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Block_HTTPDNS.sgmodule",
+      "sha256": "00927ca97e2b92ff0047a268384805425c55ff424d1aefa66b378bbc978c39a7",
+      "warnings": []
+    },
+    {
+      "index": 1,
+      "name": "广告平台拦截器",
+      "url": "https://kelee.one/Tool/Loon/Lpx/BlockAdvertisers.lpx",
+      "output": "BlockAdvertisers.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/BlockAdvertisers.sgmodule",
+      "sha256": "38db6a2365e7d11f0cb2c84f94dfe2cea4189891c02dcf9d5c22a198eafbf94e",
+      "warnings": []
+    },
+    {
+      "index": 2,
+      "name": "1.1.1.1配置管理",
+      "url": "https://kelee.one/Tool/Loon/Lpx/1.1.1.1.lpx",
+      "output": "1.1.1.1.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/1.1.1.1.sgmodule",
+      "sha256": "38f8c2d6b6ad53481b313a78691a5821e9c34cce776bf9c3c72112b9e5d76890",
+      "warnings": []
+    },
+    {
+      "index": 3,
+      "name": "123云盘去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/123NetWorkDisk_remove_ads.lpx",
+      "output": "123NetWorkDisk_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/123NetWorkDisk_remove_ads.sgmodule",
+      "sha256": "03ba796ea181cf42645f0fee405b3e47f776ae9b0b7bf6f251b1a0030b2c95d6",
+      "warnings": []
+    },
+    {
+      "index": 4,
+      "name": "360摄像机去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/360SmartCamera_remove_ads.lpx",
+      "output": "360SmartCamera_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/360SmartCamera_remove_ads.sgmodule",
+      "sha256": "bc6805790bb4c33fcc6911e667d449625f0af8fb11ec83a811c459abb5d3d1ec",
+      "warnings": []
+    },
+    {
+      "index": 5,
+      "name": "360智慧生活去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/SafetyHome_remove_ads.lpx",
+      "output": "SafetyHome_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/SafetyHome_remove_ads.sgmodule",
+      "sha256": "e5a1807c3800d0d76dd49a66170af75aad622b41d03497a2bfdad51aa35c83f8",
+      "warnings": []
+    },
+    {
+      "index": 6,
+      "name": "555电影去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/555DY_remove_ads.lpx",
+      "output": "555DY_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/555DY_remove_ads.sgmodule",
+      "sha256": "75f45649a42b9f12352c3d4630da5ef77a5097ec916cf8c33a6f6697137c2df2",
+      "warnings": []
+    },
+    {
+      "index": 7,
+      "name": "12306去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/12306_remove_ads.lpx",
+      "output": "12306_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/12306_remove_ads.sgmodule",
+      "sha256": "8762ebcf6f90fcf152744fe67107b8cf670abda212a25ec356eab34507956c40",
+      "warnings": []
+    },
+    {
+      "index": 8,
+      "name": "Apple天气增强",
+      "url": "https://kelee.one/Tool/Loon/Lpx/AppleWeatherEnhancer.lpx",
+      "output": "AppleWeatherEnhancer.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/AppleWeatherEnhancer.sgmodule",
+      "sha256": "f15e60343586885209d89cd4009e3cf2a95c7eb9fd58db30411c0d4b7ae1a417",
+      "warnings": []
+    },
+    {
+      "index": 9,
+      "name": "B612咔叽去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/SnowCamera_remove_ads.lpx",
+      "output": "SnowCamera_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/SnowCamera_remove_ads.sgmodule",
+      "sha256": "17d626febbb0960cfb76e4ab3b66bc71e12a500d65cbb314dc80a01feb0074f2",
+      "warnings": []
+    },
+    {
+      "index": 10,
+      "name": "BoxJs",
+      "url": "https://kelee.one/Tool/Loon/Lpx/BoxJs.lpx",
+      "output": "BoxJs.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/BoxJs.sgmodule",
+      "sha256": "736607ae0492aca3d963347cde92f740bd7e5d4eb9dd64c2b93466d0d8a2f481",
+      "warnings": [
+        "BoxJs: replaced unsupported module policy PROXY with DIRECT"
+      ]
+    },
+    {
+      "index": 11,
+      "name": "CC直播去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/CCLive_remove_ads.lpx",
+      "output": "CCLive_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/CCLive_remove_ads.sgmodule",
+      "sha256": "5d78e78cba5200ecae7aca0685ec356205273923a6f6ce6c81421ce0bc302ee4",
+      "warnings": []
+    },
+    {
+      "index": 12,
+      "name": "Dlabel云标签去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Dlabel_remove_ads.lpx",
+      "output": "Dlabel_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Dlabel_remove_ads.sgmodule",
+      "sha256": "1201c314732d29cd30622ff6b1fa499e55b7ca8c1f99a3c9761ea2cc780e2f4a",
+      "warnings": []
+    },
+    {
+      "index": 13,
+      "name": "DNS防泄露",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Prevent_DNS_Leaks.lpx",
+      "output": "Prevent_DNS_Leaks.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Prevent_DNS_Leaks.sgmodule",
+      "sha256": "74fb4d2c37240a3954d241486f4ee674138cbf946783500257cd3e8b579c7989",
+      "warnings": [
+        "DNS防泄露: replaced unsupported module policy PROXY with DIRECT",
+        "DNS防泄露: replaced unsupported module policy PROXY with DIRECT",
+        "DNS防泄露: replaced unsupported module policy PROXY with DIRECT",
+        "DNS防泄露: replaced unsupported module policy PROXY with DIRECT",
+        "DNS防泄露: replaced unsupported module policy PROXY with DIRECT",
+        "DNS防泄露: replaced unsupported module policy PROXY with DIRECT",
+        "DNS防泄露: replaced unsupported module policy PROXY with DIRECT",
+        "DNS防泄露: replaced unsupported module policy PROXY with DIRECT",
+        "DNS防泄露: replaced unsupported module policy PROXY with DIRECT",
+        "DNS防泄露: replaced unsupported module policy PROXY with DIRECT",
+        "DNS防泄露: replaced unsupported module policy PROXY with DIRECT",
+        "DNS防泄露: replaced unsupported module policy PROXY with DIRECT",
+        "DNS防泄露: replaced unsupported module policy PROXY with DIRECT",
+        "DNS防泄露: replaced unsupported module policy PROXY with DIRECT",
+        "DNS防泄露: replaced unsupported module policy PROXY with DIRECT",
+        "DNS防泄露: replaced unsupported module policy PROXY with DIRECT",
+        "DNS防泄露: replaced unsupported module policy PROXY with DIRECT",
+        "DNS防泄露: replaced unsupported module policy PROXY with DIRECT",
+        "DNS防泄露: replaced unsupported module policy PROXY with DIRECT",
+        "DNS防泄露: replaced unsupported module policy PROXY with DIRECT",
+        "DNS防泄露: replaced unsupported module policy PROXY with DIRECT",
+        "DNS防泄露: replaced unsupported module policy PROXY with DIRECT"
+      ]
+    },
+    {
+      "index": 14,
+      "name": "DREAME去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/DREAME_remove_ads.lpx",
+      "output": "DREAME_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/DREAME_remove_ads.sgmodule",
+      "sha256": "9c99347424c054517781b55c95c46dd1f6347a5760a9e56231183cd2e4566d7f",
+      "warnings": []
+    },
+    {
+      "index": 15,
+      "name": "ECOVACS HOME去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/EcovacsHome_remove_ads.lpx",
+      "output": "EcovacsHome_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/EcovacsHome_remove_ads.sgmodule",
+      "sha256": "477315b5a27b3b4f1989f76127a8221be1c13530c4756feaf703aac414b27e1f",
+      "warnings": []
+    },
+    {
+      "index": 16,
+      "name": "Fileball网盘挂载",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Fileball_mount.lpx",
+      "output": "Fileball_mount.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Fileball_mount.sgmodule",
+      "sha256": "993ddc269a2429e0ad7f8822c59796a43be23b8d47805070d71f4632d6149442",
+      "warnings": []
+    },
+    {
+      "index": 17,
+      "name": "Follow每日签到",
+      "url": "https://kelee.one/Tool/Loon/Lpx/FollowRSS_checkin.lpx",
+      "output": "FollowRSS_checkin.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/FollowRSS_checkin.sgmodule",
+      "sha256": "870baee5f2c668db6ad4d70defb083bec1fabf83a68adfe7c9be7e3c9edc3efd",
+      "warnings": []
+    },
+    {
+      "index": 18,
+      "name": "Foodie去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Foodie_remove_ads.lpx",
+      "output": "Foodie_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Foodie_remove_ads.sgmodule",
+      "sha256": "921bfb02feadf0041a516fff1ef689294210e0d2d4d963993df948b1d49621fa",
+      "warnings": []
+    },
+    {
+      "index": 19,
+      "name": "GitHub加速",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Switch_github_mirror.lpx",
+      "output": "Switch_github_mirror.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Switch_github_mirror.sgmodule",
+      "sha256": "316e73e288831c962635a6eaaf9dfa17e661102347dee0e46633564fd0329dec",
+      "warnings": []
+    },
+    {
+      "index": 20,
+      "name": "Google搜索重定向",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Google.lpx",
+      "output": "Google.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Google.sgmodule",
+      "sha256": "9267ae0be470c8531c37bd6c03389a4d6ed698d88b939eea136f4c732ecbc7fa",
+      "warnings": []
+    },
+    {
+      "index": 21,
+      "name": "IPA工具箱助手",
+      "url": "https://kelee.one/Tool/Loon/Lpx/IPATool.lpx",
+      "output": "IPATool.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/IPATool.sgmodule",
+      "sha256": "3e0138f8264bd8d499720461d3454358d14913f82b4a0c798aa0197a6b97a597",
+      "warnings": []
+    },
+    {
+      "index": 22,
+      "name": "IT之家去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/IThome_remove_ads.lpx",
+      "output": "IThome_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/IThome_remove_ads.sgmodule",
+      "sha256": "042cdd8c86bd68a830e132156786b3948c23da63f625804188b3bf86659c2ee6",
+      "warnings": []
+    },
+    {
+      "index": 23,
+      "name": "Jump去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Jump_remove_ads.lpx",
+      "output": "Jump_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Jump_remove_ads.sgmodule",
+      "sha256": "95689f7f6e714114cc2bd88a42d4958282d9f7195e70c6e04d6ec151a9bf5c82",
+      "warnings": []
+    },
+    {
+      "index": 24,
+      "name": "Keep去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Keep_remove_ads.lpx",
+      "output": "Keep_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Keep_remove_ads.sgmodule",
+      "sha256": "81e1f1dea9ab8db10712a863f2af51c5d2eb742c304107a080e49801cb0d20e8",
+      "warnings": []
+    },
+    {
+      "index": 25,
+      "name": "KOOK去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/KOOK_remove_ads.lpx",
+      "output": "KOOK_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/KOOK_remove_ads.sgmodule",
+      "sha256": "74779e14ccc69aac858cd9921d7650960f6ede759c9b9f7d9db429e5d004f621",
+      "warnings": []
+    },
+    {
+      "index": 26,
+      "name": "Line去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Line_remove_ads.lpx",
+      "output": "Line_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Line_remove_ads.sgmodule",
+      "sha256": "3cb28ea9a171cdef13b733e1c718e1542cc6abc54bf6f26c900c93e33e813e78",
+      "warnings": []
+    },
+    {
+      "index": 27,
+      "name": "QQ链接解锁",
+      "url": "https://kelee.one/Tool/Loon/Lpx/QQ_Redirect.lpx",
+      "output": "QQ_Redirect.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/QQ_Redirect.sgmodule",
+      "sha256": "567d227d4fa2387e9d5dd922a891a5d3c5733795339170af2abb660119e03043",
+      "warnings": []
+    },
+    {
+      "index": 28,
+      "name": "QQ音乐去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/QQMusic_remove_ads.lpx",
+      "output": "QQMusic_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/QQMusic_remove_ads.sgmodule",
+      "sha256": "612e71dc4b3391b89a543cfaaff2975a94cb984c433295f6a8427afe4bb8cb2e",
+      "warnings": []
+    },
+    {
+      "index": 29,
+      "name": "Reddit去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Reddit_remove_ads.lpx",
+      "output": "Reddit_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Reddit_remove_ads.sgmodule",
+      "sha256": "e3b4ca092e5220c05bf75fda556949347e25b35e6c1f170ae5ccc0155f3de543",
+      "warnings": []
+    },
+    {
+      "index": 30,
+      "name": "ReelShort去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/ReelShort_remove_ads.lpx",
+      "output": "ReelShort_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/ReelShort_remove_ads.sgmodule",
+      "sha256": "99b86ce0dbf8371ecd9e9381f81c883f5a3639dd45b1013793cb57d8329e6aa3",
+      "warnings": []
+    },
+    {
+      "index": 31,
+      "name": "Roborock去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Roborock_remove_ads.lpx",
+      "output": "Roborock_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Roborock_remove_ads.sgmodule",
+      "sha256": "245da1cfc8e26271900cabd8246407ce89be73b0185de4a3686ba8ceb86ae002",
+      "warnings": []
+    },
+    {
+      "index": 32,
+      "name": "RQrun去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/RQrun_remove_ads.lpx",
+      "output": "RQrun_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/RQrun_remove_ads.sgmodule",
+      "sha256": "7c052e53d1337bcd8e50d55a08f70fa6b2953e264b5057b8d7c1bff472831ac7",
+      "warnings": []
+    },
+    {
+      "index": 33,
+      "name": "Script-Hub",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Script-Hub.lpx",
+      "output": "Script-Hub.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Script-Hub.sgmodule",
+      "sha256": "c9d34a4dfce0ee595729a0aedce024d244e428d241893cab6444a98d07ed2776",
+      "warnings": [
+        "Script-Hub: replaced unsupported module policy PROXY with DIRECT"
+      ]
+    },
+    {
+      "index": 34,
+      "name": "Soul去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Soul_remove_ads.lpx",
+      "output": "Soul_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Soul_remove_ads.sgmodule",
+      "sha256": "573293f2e4df81fe9459067d666ee2a8eaf671af4a4c12e8ded93f4e6ceb0ecf",
+      "warnings": []
+    },
+    {
+      "index": 35,
+      "name": "Spotify去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Spotify_remove_ads.lpx",
+      "output": "Spotify_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Spotify_remove_ads.sgmodule",
+      "sha256": "e3e73dd6ca67b581eb2d98269a11110e8c91a60261faeb2551daea92cef407d2",
+      "warnings": []
+    },
+    {
+      "index": 36,
+      "name": "Spotify歌词增强",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Spotify_lyrics_translation.lpx",
+      "output": "Spotify_lyrics_translation.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Spotify_lyrics_translation.sgmodule",
+      "sha256": "8635df2aef4d49e3eacad9dcc5f205c288c0ee28022ec243020688090d581d98",
+      "warnings": []
+    },
+    {
+      "index": 37,
+      "name": "Sub-Store",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Sub-Store.lpx",
+      "output": "Sub-Store.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Sub-Store.sgmodule",
+      "sha256": "f60e97cb90cf79a64144f3efafecba4faade51dad2ac0c97dac2f46d1ce69f0e",
+      "warnings": [
+        "Sub-Store: replaced unsupported module policy PROXY with DIRECT"
+      ]
+    },
+    {
+      "index": 38,
+      "name": "TeraBox去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/TeraBox_remove_ads.lpx",
+      "output": "TeraBox_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/TeraBox_remove_ads.sgmodule",
+      "sha256": "3a6004c754be4b9c2826cbab20254c401925ad69946a47ca7c823a1f14a066ed",
+      "warnings": []
+    },
+    {
+      "index": 39,
+      "name": "TestFlight地区解锁",
+      "url": "https://kelee.one/Tool/Loon/Lpx/TestFlightRegionUnlock.lpx",
+      "output": "TestFlightRegionUnlock.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/TestFlightRegionUnlock.sgmodule",
+      "sha256": "404e8628dee3d5123f3b326b67491c3c064f5f3853ece5a8bad3d140c872ef37",
+      "warnings": [
+        "TestFlight地区解锁: replaced unsupported module policy PROXY with DIRECT"
+      ]
+    },
+    {
+      "index": 40,
+      "name": "TubeMax去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/TubeMax_remove_ads.lpx",
+      "output": "TubeMax_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/TubeMax_remove_ads.sgmodule",
+      "sha256": "d280b7768a81fee8c5f5f34c6cb92697a59a9808e769a5fbf276cf025ca21a3f",
+      "warnings": [
+        "TubeMax去广告: replaced unsupported module policy PROXY with DIRECT"
+      ]
+    },
+    {
+      "index": 41,
+      "name": "Uki去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Uki_remove_ads.lpx",
+      "output": "Uki_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Uki_remove_ads.sgmodule",
+      "sha256": "b88d4dc542d467899b220a8f0b8913a7f01f5030a9a4cbf5a929bba25a3fa691",
+      "warnings": []
+    },
+    {
+      "index": 42,
+      "name": "VVebo时间线修复",
+      "url": "https://kelee.one/Tool/Loon/Lpx/VVebo_repair.lpx",
+      "output": "VVebo_repair.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/VVebo_repair.sgmodule",
+      "sha256": "c9ad96c3f985c1238174b8cee202f9f72631e8fa373fd4d04ffd6345d202cd34",
+      "warnings": []
+    },
+    {
+      "index": 43,
+      "name": "WARP节点查询",
+      "url": "https://kelee.one/Tool/Loon/Lpx/WARP_Node_Query.lpx",
+      "output": "WARP_Node_Query.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/WARP_Node_Query.sgmodule",
+      "sha256": "0ee07ae1d597e64a22af8a3c3bac05c21d79684403be3e96656ee2ca2594c9da",
+      "warnings": []
+    },
+    {
+      "index": 44,
+      "name": "WPS每日签到",
+      "url": "https://kelee.one/Tool/Loon/Lpx/WPS_checkin.lpx",
+      "output": "WPS_checkin.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/WPS_checkin.sgmodule",
+      "sha256": "14c4fb760413668881d4f294931aa01379f6c8b6a84fdfa566393d7a98df7153",
+      "warnings": []
+    },
+    {
+      "index": 45,
+      "name": "YouTube去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/YouTube_remove_ads.lpx",
+      "output": "YouTube_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/YouTube_remove_ads.sgmodule",
+      "sha256": "14cdb845c269e510f4db35ff6e88a8c7ba12ec156b75d9793be46b2eda0b468f",
+      "warnings": []
+    },
+    {
+      "index": 46,
+      "name": "YouTube双语翻译",
+      "url": "https://kelee.one/Tool/Loon/Lpx/YouTubeSubtitlesTranslation.lpx",
+      "output": "YouTubeSubtitlesTranslation.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/YouTubeSubtitlesTranslation.sgmodule",
+      "sha256": "1697ff0789f61c826914c404969e53dcb9ea9f8eb8dbd9f257520844f173b521",
+      "warnings": []
+    },
+    {
+      "index": 47,
+      "name": "YY去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/YY_Voice_remove_ads.lpx",
+      "output": "YY_Voice_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/YY_Voice_remove_ads.sgmodule",
+      "sha256": "969d1778a2836623073327c0e28061c52a82092d0c09895d90362303ff9963a4",
+      "warnings": []
+    },
+    {
+      "index": 48,
+      "name": "YY语音去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/YYVoiceTool_remove_ads.lpx",
+      "output": "YYVoiceTool_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/YYVoiceTool_remove_ads.sgmodule",
+      "sha256": "33a89ba83f23f7c9e8b3a584ce0f4fe2c6abdc87b7da03d5ac097e2f8f0f7bb3",
+      "warnings": []
+    },
+    {
+      "index": 49,
+      "name": "ZAKER去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/ZAKER_remove_ads.lpx",
+      "output": "ZAKER_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/ZAKER_remove_ads.sgmodule",
+      "sha256": "c35b0b01b28291fe767e6662f7d64b649d08140e228206ecb732bf13f6a2e9f6",
+      "warnings": []
+    },
+    {
+      "index": 50,
+      "name": "爱企查去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Aiinquiry_remove_ads.lpx",
+      "output": "Aiinquiry_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Aiinquiry_remove_ads.sgmodule",
+      "sha256": "0754966724b6ece89512b8ea6f8664c034598b98f12b14af9253674bcd2dd5a7",
+      "warnings": []
+    },
+    {
+      "index": 51,
+      "name": "爱奇艺去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/iQiYi_Video_remove_ads.lpx",
+      "output": "iQiYi_Video_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/iQiYi_Video_remove_ads.sgmodule",
+      "sha256": "2e1d325014c183f2c2f2a49c21823ec909be2351d25973d77db854bd886f85a2",
+      "warnings": []
+    },
+    {
+      "index": 52,
+      "name": "阿里云盘去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/AliYunDrive_remove_ads.lpx",
+      "output": "AliYunDrive_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/AliYunDrive_remove_ads.sgmodule",
+      "sha256": "6ed1488028e148bb50569363257a6cbfe936bb8690c7894dac2f82b01d70094f",
+      "warnings": []
+    },
+    {
+      "index": 53,
+      "name": "百度地图去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/BaiduMap_remove_ads.lpx",
+      "output": "BaiduMap_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/BaiduMap_remove_ads.sgmodule",
+      "sha256": "a1cfcbd68ccfcbc8a194f04c9bb85b3863e0a564cf94762d5b824177ea4b39c4",
+      "warnings": []
+    },
+    {
+      "index": 54,
+      "name": "百度输入法去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Baidu_input_method_remove_ads.lpx",
+      "output": "Baidu_input_method_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Baidu_input_method_remove_ads.sgmodule",
+      "sha256": "6d5271d4786cc09f1bba171e72f008b363434215c1a5d87774c8e39777158791",
+      "warnings": []
+    },
+    {
+      "index": 55,
+      "name": "百度贴吧去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Tieba_remove_ads.lpx",
+      "output": "Tieba_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Tieba_remove_ads.sgmodule",
+      "sha256": "ac5c5eb73eb5a0917a278f71e747fca6a606db78c3aa4c043a29828da0639ea0",
+      "warnings": []
+    },
+    {
+      "index": 56,
+      "name": "百度网盘去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/BaiduNetDisk_remove_ads.lpx",
+      "output": "BaiduNetDisk_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/BaiduNetDisk_remove_ads.sgmodule",
+      "sha256": "3d61c52b2c19e505a344d77911c6b69cbfb253c345e301ec2cdb986f7bf47835",
+      "warnings": []
+    },
+    {
+      "index": 57,
+      "name": "百度网页去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/BaiduSearchWebpage_remove_ads.lpx",
+      "output": "BaiduSearchWebpage_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/BaiduSearchWebpage_remove_ads.sgmodule",
+      "sha256": "e34e4669fa24630ac9b86e3eb86c0e5c3208538b160a3ca6729406c0030e890f",
+      "warnings": []
+    },
+    {
+      "index": 58,
+      "name": "百度文库去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/BaiduWenku_remove_ads.lpx",
+      "output": "BaiduWenku_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/BaiduWenku_remove_ads.sgmodule",
+      "sha256": "f674a529d3668a509f8cfc91e1f0ff32bb341c7ad84aa077f36c24ab5033f9e2",
+      "warnings": []
+    },
+    {
+      "index": 59,
+      "name": "宝宝树孕育去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/BabyTree_remove_ads.lpx",
+      "output": "BabyTree_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/BabyTree_remove_ads.sgmodule",
+      "sha256": "eae0375eec5d26cb478f2b7672e2482ab43fb404c4eb29c8bd1a1c891d3f7b1d",
+      "warnings": []
+    },
+    {
+      "index": 60,
+      "name": "贝壳找房去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Beike_remove_ads.lpx",
+      "output": "Beike_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Beike_remove_ads.sgmodule",
+      "sha256": "ffa7dcb310105dc5e3157293b40fe7b98be5da537ac6094b2ebb6b791c315edb",
+      "warnings": []
+    },
+    {
+      "index": 61,
+      "name": "哔哩哔哩漫画去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/BiliComic_remove_ads.lpx",
+      "output": "BiliComic_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/BiliComic_remove_ads.sgmodule",
+      "sha256": "c590ab08044c4a844c0a0ecbc968d6ae68a350e3b91f35fbfc82aad35a262717",
+      "warnings": []
+    },
+    {
+      "index": 62,
+      "name": "哔哩哔哩去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Bilibili_remove_ads.lpx",
+      "output": "Bilibili_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Bilibili_remove_ads.sgmodule",
+      "sha256": "165daf2c65f99d778776afdbaa7ccc042af9e4c6aa6ef750fa94efa3e9941a46",
+      "warnings": [
+        "哔哩哔哩去广告: replaced unsupported module policy PROXY with DIRECT"
+      ]
+    },
+    {
+      "index": 63,
+      "name": "比特球云盘去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/BitqiuPan_remove_ads.lpx",
+      "output": "BitqiuPan_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/BitqiuPan_remove_ads.sgmodule",
+      "sha256": "ff927333faa725b0b4ce220c883024de59458f5d84daeb4af900966655c591f2",
+      "warnings": []
+    },
+    {
+      "index": 64,
+      "name": "波点音乐去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/BodianMusic_remove_ads.lpx",
+      "output": "BodianMusic_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/BodianMusic_remove_ads.sgmodule",
+      "sha256": "e10bf41f9dd8e14e4ae71bbc09e0aebd93df5df2faa4d930b31a465c8f67c1b5",
+      "warnings": []
+    },
+    {
+      "index": 65,
+      "name": "薄荷健康去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/BooHee_remove_ads.lpx",
+      "output": "BooHee_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/BooHee_remove_ads.sgmodule",
+      "sha256": "54c2a6529b3bb7aaccde26b397c0d59479fdd677c93729533ea73a15db486d28",
+      "warnings": []
+    },
+    {
+      "index": 66,
+      "name": "菜鸟去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Cainiao_remove_ads.lpx",
+      "output": "Cainiao_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Cainiao_remove_ads.sgmodule",
+      "sha256": "07e57f0641375d8fac1a560cf0695e3394bcbaf16d5126cc0829f68b1c1b2a5a",
+      "warnings": []
+    },
+    {
+      "index": 67,
+      "name": "财新去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/CaixinMedia_remove_ads.lpx",
+      "output": "CaixinMedia_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/CaixinMedia_remove_ads.sgmodule",
+      "sha256": "42ae9759f49f2ad91f9fd7eddbf869722b1c026f326f13fadbc76eeac4ce3fd2",
+      "warnings": []
+    },
+    {
+      "index": 68,
+      "name": "彩云天气去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/ColorfulClouds_remove_ads.lpx",
+      "output": "ColorfulClouds_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/ColorfulClouds_remove_ads.sgmodule",
+      "sha256": "2393dc31aafd7a1ef10ac9818a64da9f0029760c9f9eeee1eadf646e179a0ad3",
+      "warnings": []
+    },
+    {
+      "index": 69,
+      "name": "成分喵去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/ChengFenMiao_remove_ads.lpx",
+      "output": "ChengFenMiao_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/ChengFenMiao_remove_ads.sgmodule",
+      "sha256": "a018b86373195ef05ca17beba9864344ca6acebed06aaef013aa6c07b67a89c7",
+      "warnings": []
+    },
+    {
+      "index": 70,
+      "name": "触站去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Chuzhan_remove_ads.lpx",
+      "output": "Chuzhan_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Chuzhan_remove_ads.sgmodule",
+      "sha256": "62f2097e7936f2b4f0969d8b571d3f24baf5a2edb19ddac296d53763ec4f0f14",
+      "warnings": []
+    },
+    {
+      "index": 71,
+      "name": "磁力宅播放器去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/XFuse_remove_ads.lpx",
+      "output": "XFuse_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/XFuse_remove_ads.sgmodule",
+      "sha256": "f592e9dcb578ba1603e2eab6f885d5526cd6ef63506d6019cb6a7386a0c7bf36",
+      "warnings": []
+    },
+    {
+      "index": 72,
+      "name": "代理链路检测",
+      "url": "https://kelee.one/Tool/Loon/Lpx/NodeLinkCheck.lpx",
+      "output": "NodeLinkCheck.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/NodeLinkCheck.sgmodule",
+      "sha256": "4d5a49a62301e42bcf5d4983e3b9d3780ac89107936d3330b393d18ed708d818",
+      "warnings": []
+    },
+    {
+      "index": 73,
+      "name": "大麦去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Damai_remove_ads.lpx",
+      "output": "Damai_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Damai_remove_ads.sgmodule",
+      "sha256": "481aace91e976d10c92ea662f34d3afa72cea06d00f35684a879c050006b7155",
+      "warnings": []
+    },
+    {
+      "index": 74,
+      "name": "得间小说去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/iReaderDejian_remove_ads.lpx",
+      "output": "iReaderDejian_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/iReaderDejian_remove_ads.sgmodule",
+      "sha256": "da42f2b9f4f78e631f91b688ec0ba513f4e84df7a1001c410c7dc6d95cbc454d",
+      "warnings": []
+    },
+    {
+      "index": 75,
+      "name": "得物去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Dewu_remove_ads.lpx",
+      "output": "Dewu_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Dewu_remove_ads.sgmodule",
+      "sha256": "49e53da332e45b41341f2a122e420b176d3cebf229624abfb82b77803b61c782",
+      "warnings": []
+    },
+    {
+      "index": 76,
+      "name": "滴答出行去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/DidaPincheTaxi_remove_ads.lpx",
+      "output": "DidaPincheTaxi_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/DidaPincheTaxi_remove_ads.sgmodule",
+      "sha256": "f58f3be067d7c4f72bba26784eab92f933e3004fb783f13d9673e8df287d1eb6",
+      "warnings": []
+    },
+    {
+      "index": 77,
+      "name": "滴滴出行去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/DiDi_remove_ads.lpx",
+      "output": "DiDi_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/DiDi_remove_ads.sgmodule",
+      "sha256": "1e5b33bcf593406b070b4cfb1cfb0191da381f3c6ba26b77404829becb0c2d17",
+      "warnings": []
+    },
+    {
+      "index": 78,
+      "name": "叮咚买菜去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/DingdongMaicai_remove_ads.lpx",
+      "output": "DingdongMaicai_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/DingdongMaicai_remove_ads.sgmodule",
+      "sha256": "bba4105e9ef8a95f9701d4427722cc39df98ec4e7fbfb30a93a74fbe2365e0cd",
+      "warnings": []
+    },
+    {
+      "index": 79,
+      "name": "豆瓣去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/DouBan_remove_ads.lpx",
+      "output": "DouBan_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/DouBan_remove_ads.sgmodule",
+      "sha256": "247c7c37d0362cf3d32add16dbe4a1c46adc85afa4fd7417f67887528cc5e4de",
+      "warnings": []
+    },
+    {
+      "index": 80,
+      "name": "豆瓣阅读去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/DoubanRead_remove_ads.lpx",
+      "output": "DoubanRead_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/DoubanRead_remove_ads.sgmodule",
+      "sha256": "7c2e6c086723fc062e94067a7094463d3be84f66b83931baa79373d3d5f46cc3",
+      "warnings": []
+    },
+    {
+      "index": 81,
+      "name": "斗鱼去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Douyu_remove_ads.lpx",
+      "output": "Douyu_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Douyu_remove_ads.sgmodule",
+      "sha256": "a2904d6f66f1b1dfcfda81b4102409b0e87bbd38ba5427a19da01158d64cfdb3",
+      "warnings": []
+    },
+    {
+      "index": 82,
+      "name": "堆糖去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/DuiTang_remove_ads.lpx",
+      "output": "DuiTang_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/DuiTang_remove_ads.sgmodule",
+      "sha256": "8961879afa61ea201acad21b5d6c94605946b2c0e58a4299cae3e79752d55a1b",
+      "warnings": []
+    },
+    {
+      "index": 83,
+      "name": "番茄小说去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/DragonRead_remove_ads.lpx",
+      "output": "DragonRead_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/DragonRead_remove_ads.sgmodule",
+      "sha256": "aff5e7779a3c680a6d3c972ab2effab59638559cbe621ea3f225dfa7fb5b5e55",
+      "warnings": []
+    },
+    {
+      "index": 84,
+      "name": "帆书去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/KebidaDushu_remove_ads.lpx",
+      "output": "KebidaDushu_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/KebidaDushu_remove_ads.sgmodule",
+      "sha256": "24df93d98a6c19a49a6e85650d1b43c88fa6d7b987bd4012f36a2a36dc64c51a",
+      "warnings": []
+    },
+    {
+      "index": 85,
+      "name": "飞客去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/FlyerTea_remove_ads.lpx",
+      "output": "FlyerTea_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/FlyerTea_remove_ads.sgmodule",
+      "sha256": "e7bb23aa55181982dfbe856c12bad688c7707f5d53a87c87f40b2bb4fd55083c",
+      "warnings": []
+    },
+    {
+      "index": 86,
+      "name": "飞猪旅行去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/TaobaoTravel_remove_ads.lpx",
+      "output": "TaobaoTravel_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/TaobaoTravel_remove_ads.sgmodule",
+      "sha256": "cfb4d1e5dd0b553adc15fa7f6291950b0714eca7f26c80b588d1818313c76938",
+      "warnings": []
+    },
+    {
+      "index": 87,
+      "name": "粉笔去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/FenBi_remove_ads.lpx",
+      "output": "FenBi_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/FenBi_remove_ads.sgmodule",
+      "sha256": "9f3e7eb91171560e0a4b440a535116a771780f663c40d92f1a0eebf6504751ae",
+      "warnings": []
+    },
+    {
+      "index": 88,
+      "name": "丰巢去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/FC_Box_remove_ads.lpx",
+      "output": "FC_Box_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/FC_Box_remove_ads.sgmodule",
+      "sha256": "0c5d4286b0429e6f27010647b2f6f4063ea046b7be504d8841cb33870ef86071",
+      "warnings": []
+    },
+    {
+      "index": 89,
+      "name": "风鸟去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/RiskBird_remove_ads.lpx",
+      "output": "RiskBird_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/RiskBird_remove_ads.sgmodule",
+      "sha256": "a0f751199b6006b4d443c7bbf22043a9040a18704f344a4407b1d0f3006cac27",
+      "warnings": []
+    },
+    {
+      "index": 90,
+      "name": "盖得排行去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/GuideRank_remove_ads.lpx",
+      "output": "GuideRank_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/GuideRank_remove_ads.sgmodule",
+      "sha256": "5ae341e6436ec195e2d9018012624097673270fa3d7532f4a356a630b8f9faaf",
+      "warnings": []
+    },
+    {
+      "index": 91,
+      "name": "高德地图去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Amap_remove_ads.lpx",
+      "output": "Amap_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Amap_remove_ads.sgmodule",
+      "sha256": "00e057ac87c08be45c7c4e1c3697565c6eef3366c0b80d4e275c873c8a13dde6",
+      "warnings": []
+    },
+    {
+      "index": 92,
+      "name": "稿定设计去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/GaoDing_remove_ads.lpx",
+      "output": "GaoDing_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/GaoDing_remove_ads.sgmodule",
+      "sha256": "0c4259f19d10b9014ca0776025d8e096a91ac9543989ddb3480e324aaaaf55f2",
+      "warnings": []
+    },
+    {
+      "index": 93,
+      "name": "航旅纵横去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Umetrip_remove_ads.lpx",
+      "output": "Umetrip_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Umetrip_remove_ads.sgmodule",
+      "sha256": "078b87246ea485d0996918ef13d11b7886cf675dfa52c2d75ed8b08dd9749a29",
+      "warnings": []
+    },
+    {
+      "index": 94,
+      "name": "盒马去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/MrHema_remove_ads.lpx",
+      "output": "MrHema_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/MrHema_remove_ads.sgmodule",
+      "sha256": "7679a17cc2e3369c1a31b5d758cd90a81b0f9023cfecdfd5908f51f5e8a9429a",
+      "warnings": []
+    },
+    {
+      "index": 95,
+      "name": "虎扑去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/HUPU_remove_ads.lpx",
+      "output": "HUPU_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/HUPU_remove_ads.sgmodule",
+      "sha256": "33173f346770af212425935c0131b68ae4c14ed811a2c2343fb9cd52dc3127ed",
+      "warnings": []
+    },
+    {
+      "index": 96,
+      "name": "驾考宝典去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/JiaKaoBaoDian_remove_ads.lpx",
+      "output": "JiaKaoBaoDian_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/JiaKaoBaoDian_remove_ads.sgmodule",
+      "sha256": "62d50ddbade3928cdb77da148b788f0fe7e52488f7757e0653c779fa8e211f0b",
+      "warnings": []
+    },
+    {
+      "index": 97,
+      "name": "健康160去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/91160_remove_ads.lpx",
+      "output": "91160_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/91160_remove_ads.sgmodule",
+      "sha256": "37a276ada52324c5eef4f6dc941db0a409ce283d53f629ff5f581578ce8b9123",
+      "warnings": []
+    },
+    {
+      "index": 98,
+      "name": "剑网三无界去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/SeasunJX3_remove_ads.lpx",
+      "output": "SeasunJX3_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/SeasunJX3_remove_ads.sgmodule",
+      "sha256": "747833f2047f8c5e7b6f70de595c21204b8ddc27d5d385c79e24d74e8d213663",
+      "warnings": []
+    },
+    {
+      "index": 99,
+      "name": "驾校一点通去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/JiaXiaoDrive_remove_ads.lpx",
+      "output": "JiaXiaoDrive_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/JiaXiaoDrive_remove_ads.sgmodule",
+      "sha256": "2bdcbca992896229f0c75307fabfd22dd8e68f9bcab11239aed8c77d46a12bc7",
+      "warnings": []
+    },
+    {
+      "index": 100,
+      "name": "节点检测工具",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Node_detection_tool.lpx",
+      "output": "Node_detection_tool.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Node_detection_tool.sgmodule",
+      "sha256": "7d92d437b58e7ff4f2c1ffbadfcbd6a4aa2ad1c71156339fb8d2dde479fa05fe",
+      "warnings": []
+    },
+    {
+      "index": 101,
+      "name": "京东比价",
+      "url": "https://kelee.one/Tool/Loon/Lpx/JD_Price.lpx",
+      "output": "JD_Price.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/JD_Price.sgmodule",
+      "sha256": "1d1ee3dcf8cce8dce5d3bac3f914b00d4f09a0487c42a339a248625b619b419e",
+      "warnings": []
+    },
+    {
+      "index": 102,
+      "name": "京东去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/JD_remove_ads.lpx",
+      "output": "JD_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/JD_remove_ads.sgmodule",
+      "sha256": "c9cda02fdb4c895222ea0d1ace1cdff51228ababf49d26e7e4b43bc36b6176c7",
+      "warnings": []
+    },
+    {
+      "index": 103,
+      "name": "京东外卖去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/JDWaimai_remove_ads.lpx",
+      "output": "JDWaimai_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/JDWaimai_remove_ads.sgmodule",
+      "sha256": "df52b3770e46c6c69353af4cd88039dcb751c7207d7c38edddb933209b633736",
+      "warnings": []
+    },
+    {
+      "index": 104,
+      "name": "金山文档去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/WPS_Documents_remove_ads.lpx",
+      "output": "WPS_Documents_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/WPS_Documents_remove_ads.sgmodule",
+      "sha256": "6b827884b6628c6e61ae656035b5b386635e08b6f840805665f813c93d1159d0",
+      "warnings": []
+    },
+    {
+      "index": 105,
+      "name": "可莉广告过滤器",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Remove_ads_by_keli.lpx",
+      "output": "Remove_ads_by_keli.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Remove_ads_by_keli.sgmodule",
+      "sha256": "c065569e39207488a1a83b8eacae440fd69d37b29a01015e6386ea37d3d9726e",
+      "warnings": []
+    },
+    {
+      "index": 106,
+      "name": "快递100去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/KuaiDi100_remove_ads.lpx",
+      "output": "KuaiDi100_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/KuaiDi100_remove_ads.sgmodule",
+      "sha256": "d7ac130660aef11a31da5af6940ce6cb7800be3d7cebf58497d8eab97687f2b6",
+      "warnings": []
+    },
+    {
+      "index": 107,
+      "name": "快对去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/KuaiDuiZuoYe_remove_ads.lpx",
+      "output": "KuaiDuiZuoYe_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/KuaiDuiZuoYe_remove_ads.sgmodule",
+      "sha256": "da68d8486b0239c120e1371b9ab83624ef7965c030167709333271cba4a2dd97",
+      "warnings": []
+    },
+    {
+      "index": 108,
+      "name": "快捷搜索",
+      "url": "https://kelee.one/Tool/Loon/Lpx/QuickSearch.lpx",
+      "output": "QuickSearch.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/QuickSearch.sgmodule",
+      "sha256": "10c8fe4dbca2d6df4a567dc81fea58da7a139201ffb4d176d46c58b128c55eaf",
+      "warnings": []
+    },
+    {
+      "index": 109,
+      "name": "快看漫画去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/KuaiKanComic_remove_ads.lpx",
+      "output": "KuaiKanComic_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/KuaiKanComic_remove_ads.sgmodule",
+      "sha256": "abdbfc7c74619f070eb3936bf7cbe0323ee5450b251ca18f0df26e5aece6a55e",
+      "warnings": []
+    },
+    {
+      "index": 110,
+      "name": "快手去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/KuaiShou_remove_ads.lpx",
+      "output": "KuaiShou_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/KuaiShou_remove_ads.sgmodule",
+      "sha256": "3f8f0999156f34b7848d67fc52d10b6d388e193ce374c8ab0a6c2d85d54f64ef",
+      "warnings": []
+    },
+    {
+      "index": 111,
+      "name": "快影去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/KwaiVideoeditor_remove_ads.lpx",
+      "output": "KwaiVideoeditor_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/KwaiVideoeditor_remove_ads.sgmodule",
+      "sha256": "0825c06441496aedc46451189e43763865ec26b50465b7296654d587886e8d70",
+      "warnings": []
+    },
+    {
+      "index": 112,
+      "name": "夸克去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/QuarkBrowser_remove_ads.lpx",
+      "output": "QuarkBrowser_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/QuarkBrowser_remove_ads.sgmodule",
+      "sha256": "f28e67c695d60b7b629830047c8bf7ef73982a33a4dcbb5319748003d06f900c",
+      "warnings": []
+    },
+    {
+      "index": 113,
+      "name": "夸克扫描王去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/QuarkScanking_remove_ads.lpx",
+      "output": "QuarkScanking_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/QuarkScanking_remove_ads.sgmodule",
+      "sha256": "6a55e23d3438a236c7ab9c48bfc260d9e0e8ddab8383fdc5533e013f578e7c65",
+      "warnings": []
+    },
+    {
+      "index": 114,
+      "name": "酷安去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/CoolApk_remove_ads.lpx",
+      "output": "CoolApk_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/CoolApk_remove_ads.sgmodule",
+      "sha256": "80b52cf4ca895538d2b40da1241df859ffc3f7f93f80f114c4882e3435bd11ad",
+      "warnings": []
+    },
+    {
+      "index": 115,
+      "name": "酷狗概念版去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/KuGouYouth_remove_ads.lpx",
+      "output": "KuGouYouth_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/KuGouYouth_remove_ads.sgmodule",
+      "sha256": "8fcc196555f7e1496ae04805dfc89bfe23b40526bf50b5cd70dc01b69c19b028",
+      "warnings": []
+    },
+    {
+      "index": 116,
+      "name": "酷狗铃声去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/KGRing_remove_ads.lpx",
+      "output": "KGRing_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/KGRing_remove_ads.sgmodule",
+      "sha256": "a41b61db06675a83a4867b275574b3dfc922a7f11cceb8cb625c61ca9981b86c",
+      "warnings": []
+    },
+    {
+      "index": 117,
+      "name": "酷狗音乐去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/KuGou_remove_ads.lpx",
+      "output": "KuGou_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/KuGou_remove_ads.sgmodule",
+      "sha256": "0964f0745e064c9290269764dbaef578a829098ee41254378b1c1c4f148ed318",
+      "warnings": []
+    },
+    {
+      "index": 118,
+      "name": "库街区去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/KuroBBS_remove_ads.lpx",
+      "output": "KuroBBS_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/KuroBBS_remove_ads.sgmodule",
+      "sha256": "7e8bf1140c8bf84ff4539767779e6435c9a34ffe6f75f14d3d2517a677a498f4",
+      "warnings": []
+    },
+    {
+      "index": 119,
+      "name": "酷我音乐去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Kuwo_remove_ads.lpx",
+      "output": "Kuwo_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Kuwo_remove_ads.sgmodule",
+      "sha256": "244de1d38c3ece85fd9e0ea2c54cb48dc5388448621502ca957ab604f6ee0edf",
+      "warnings": []
+    },
+    {
+      "index": 120,
+      "name": "乐播投屏去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/TV_Assistant_remove_ads.lpx",
+      "output": "TV_Assistant_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/TV_Assistant_remove_ads.sgmodule",
+      "sha256": "3200f55bbf7ae37fa865d45e8b9c2c1ed937422b0ad9f42bb111b3b207a16733",
+      "warnings": []
+    },
+    {
+      "index": 121,
+      "name": "萝卜快跑去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/RoboTaxi_remove_ads.lpx",
+      "output": "RoboTaxi_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/RoboTaxi_remove_ads.sgmodule",
+      "sha256": "b407ad7ba9b441d601f9f69b8054d1b7cfe16c52b7da63d57e33ff7976ddfc41",
+      "warnings": []
+    },
+    {
+      "index": 122,
+      "name": "马蜂窝去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/MaFengWo_remove_ads.lpx",
+      "output": "MaFengWo_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/MaFengWo_remove_ads.sgmodule",
+      "sha256": "cdd9507d908b520e5adc508e36b921a354b196dab6209304b86e5beb212f296c",
+      "warnings": []
+    },
+    {
+      "index": 123,
+      "name": "芒果TV去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/MangoTV_remove_ads.lpx",
+      "output": "MangoTV_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/MangoTV_remove_ads.sgmodule",
+      "sha256": "9526570b0b633ee772b7cabc94385c55898b43fef91d4244046614eb707a4003",
+      "warnings": []
+    },
+    {
+      "index": 124,
+      "name": "漫客栈去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/MKZ_remove_ads.lpx",
+      "output": "MKZ_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/MKZ_remove_ads.sgmodule",
+      "sha256": "2dec5f6fd3c6e5a35680f7482e1d4085e002d0bd85486166961077a618d32efd",
+      "warnings": []
+    },
+    {
+      "index": 125,
+      "name": "猫耳FM去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/CatEarFM_remove_ads.lpx",
+      "output": "CatEarFM_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/CatEarFM_remove_ads.sgmodule",
+      "sha256": "ab78c816b316a4f22dd8eb8a199888af3319ade0fe3dc19e03127d1077741254",
+      "warnings": []
+    },
+    {
+      "index": 126,
+      "name": "美丽修行去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Meizhixiuxing_remove_ads.lpx",
+      "output": "Meizhixiuxing_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Meizhixiuxing_remove_ads.sgmodule",
+      "sha256": "9945c3f5acb317c4090bc5288f79049cdfb12d027581d9ab76109f0909e0af68",
+      "warnings": []
+    },
+    {
+      "index": 127,
+      "name": "美食杰去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/MeiShiJie_remove_ads.lpx",
+      "output": "MeiShiJie_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/MeiShiJie_remove_ads.sgmodule",
+      "sha256": "4b6db4c12f1662ade38aaa8938751b28e3101492f01f1b78db7913e602421b9d",
+      "warnings": []
+    },
+    {
+      "index": 128,
+      "name": "美图秀秀去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/MeiTu_remove_ads.lpx",
+      "output": "MeiTu_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/MeiTu_remove_ads.sgmodule",
+      "sha256": "a27e90f5b413d6a810f58342b28da67c5d6c8c791ddd34f281bb47db94cfc0b2",
+      "warnings": []
+    },
+    {
+      "index": 129,
+      "name": "美颜相机去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/MeituMYXJ_remove_ads.lpx",
+      "output": "MeituMYXJ_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/MeituMYXJ_remove_ads.sgmodule",
+      "sha256": "41bba0d1becb19ea52fd9e0df0147566f2fd5f0f2bec5a32a071ead80ca95fe7",
+      "warnings": []
+    },
+    {
+      "index": 130,
+      "name": "美柚去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/MeetYou_remove_ads.lpx",
+      "output": "MeetYou_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/MeetYou_remove_ads.sgmodule",
+      "sha256": "dbf767b521f707332632d77a8c5412ffb23ae187219b48b87335570028faa529",
+      "warnings": []
+    },
+    {
+      "index": 131,
+      "name": "萌娘百科去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/MoeGirlWiki_remove_ads.lpx",
+      "output": "MoeGirlWiki_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/MoeGirlWiki_remove_ads.sgmodule",
+      "sha256": "58ccf31afdf3eda80ea3db699d44f5cec36eb1e8cb252c9614123ab6f865d54b",
+      "warnings": []
+    },
+    {
+      "index": 132,
+      "name": "米游社去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/miHoYoBBS_remove_ads.lpx",
+      "output": "miHoYoBBS_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/miHoYoBBS_remove_ads.sgmodule",
+      "sha256": "48416058ec937cbf0d964d2cc78290bcecff67e4924c3850ea395baa76de8146",
+      "warnings": []
+    },
+    {
+      "index": 133,
+      "name": "墨迹天气去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/MojiWeather_remove_ads.lpx",
+      "output": "MojiWeather_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/MojiWeather_remove_ads.sgmodule",
+      "sha256": "a8f063af6a4dc6db63ac3a66b5b1ee6b5954c9f982b7f91b7ae4f9e9b35d8210",
+      "warnings": []
+    },
+    {
+      "index": 134,
+      "name": "脉脉去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/MaiMai_remove_ads.lpx",
+      "output": "MaiMai_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/MaiMai_remove_ads.sgmodule",
+      "sha256": "c937db7bb70c660c63887b4b54e5590c5068da9e7dfefb4c993b590cab516789",
+      "warnings": []
+    },
+    {
+      "index": 135,
+      "name": "胖乖生活去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/PangguaiLife_remove_ads.lpx",
+      "output": "PangguaiLife_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/PangguaiLife_remove_ads.sgmodule",
+      "sha256": "47f93dd0b7afbda7f05a6ce351a90ef4f93cd8a987398554e7c1565cb02a5238",
+      "warnings": []
+    },
+    {
+      "index": 136,
+      "name": "配音秀去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/DubbingShow_remove_ads.lpx",
+      "output": "DubbingShow_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/DubbingShow_remove_ads.sgmodule",
+      "sha256": "49d5d1219d4e5e11b019a6384e043a5e5ab1b856db5777bf30a27361c4785aeb",
+      "warnings": []
+    },
+    {
+      "index": 137,
+      "name": "拼多多去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/PinDuoDuo_remove_ads.lpx",
+      "output": "PinDuoDuo_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/PinDuoDuo_remove_ads.sgmodule",
+      "sha256": "34a91fa26d338fab173bd4bd7f8b790258792ba75504cb1dc19c84707c5ed84d",
+      "warnings": []
+    },
+    {
+      "index": 138,
+      "name": "皮皮虾去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/PiPiXia_remove_ads.lpx",
+      "output": "PiPiXia_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/PiPiXia_remove_ads.sgmodule",
+      "sha256": "fea4d67268920cb40ffef0d3b0109a7f18cc9b269686c42291e33074e4dcea69",
+      "warnings": []
+    },
+    {
+      "index": 139,
+      "name": "朴朴超市去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/PuPuMall_remove_ads.lpx",
+      "output": "PuPuMall_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/PuPuMall_remove_ads.sgmodule",
+      "sha256": "a586a94221139dfad441068b58908e5ee0d8294b1fbe0b60d5834d878a712074",
+      "warnings": []
+    },
+    {
+      "index": 140,
+      "name": "前程无忧去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/51Job_remove_ads.lpx",
+      "output": "51Job_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/51Job_remove_ads.sgmodule",
+      "sha256": "b1eb5bb3133d22938012e5ea85ea8da724aef3245a8294ac62ee190856fe9345",
+      "warnings": []
+    },
+    {
+      "index": 141,
+      "name": "汽车之家去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/AutoHome_remove_ads.lpx",
+      "output": "AutoHome_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/AutoHome_remove_ads.sgmodule",
+      "sha256": "ae27c6b9d0ae9673f7f35e5686dd963843c3dadb98b4717c16b381f96042edd5",
+      "warnings": []
+    },
+    {
+      "index": 142,
+      "name": "起点读书去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/QiDian_remove_ads.lpx",
+      "output": "QiDian_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/QiDian_remove_ads.sgmodule",
+      "sha256": "dd7d9f3eba3e7917c7d1c66f5c797539f07b20d31c7a167acbc9521e0509cb48",
+      "warnings": []
+    },
+    {
+      "index": 143,
+      "name": "七猫小说去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/SevenCat_remove_ads.lpx",
+      "output": "SevenCat_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/SevenCat_remove_ads.sgmodule",
+      "sha256": "810055b7d4b8719b9c7fad9159388a69ce5e1a713163acdd104db43e7c34abbd",
+      "warnings": []
+    },
+    {
+      "index": 144,
+      "name": "蜻蜓FM去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/QtingFM_remove_ads.lpx",
+      "output": "QtingFM_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/QtingFM_remove_ads.sgmodule",
+      "sha256": "04cc6672e13c56cce0310ed8bb2f08fa37371cbe1df976d5e5881d1e5b6ea7ff",
+      "warnings": []
+    },
+    {
+      "index": 145,
+      "name": "汽水音乐去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/SodaMusic_remove_ads.lpx",
+      "output": "SodaMusic_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/SodaMusic_remove_ads.sgmodule",
+      "sha256": "83c84a6cb4b5583ec2c6d9e3bb4979ea0f1d44d53bbae9b7d895ff37191afd0e",
+      "warnings": []
+    },
+    {
+      "index": 146,
+      "name": "启信宝去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/QiXinBao_remove_ads.lpx",
+      "output": "QiXinBao_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/QiXinBao_remove_ads.sgmodule",
+      "sha256": "5bd56caa78904c2588c591555c7b8166acf4a6d947269c612fc4e621b5bd4860",
+      "warnings": []
+    },
+    {
+      "index": 147,
+      "name": "全民K歌去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/QQKSong_remove_ads.lpx",
+      "output": "QQKSong_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/QQKSong_remove_ads.sgmodule",
+      "sha256": "112c3389cb9c1ffd55fc48b55605ae7d2b11f57221e83367727e05ab04a9125c",
+      "warnings": []
+    },
+    {
+      "index": 148,
+      "name": "瑞幸咖啡去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/LuckinCoffee_remove_ads.lpx",
+      "output": "LuckinCoffee_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/LuckinCoffee_remove_ads.sgmodule",
+      "sha256": "9248c8ee2818730623c99e9f0cf321e0649728eea67520e86087e6b59024aadf",
+      "warnings": []
+    },
+    {
+      "index": 149,
+      "name": "省钱快报去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/YueDanBa_remove_ads.lpx",
+      "output": "YueDanBa_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/YueDanBa_remove_ads.sgmodule",
+      "sha256": "b66594b3cc60b6d530d3d7819d87f737cb3eb2230dd4a98788d7fbdf018b347e",
+      "warnings": []
+    },
+    {
+      "index": 150,
+      "name": "什么值得买去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/smzdm_remove_ads.lpx",
+      "output": "smzdm_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/smzdm_remove_ads.sgmodule",
+      "sha256": "0e394f390fe15b092b465c4a818d89cedbcdb5a1c1deeef1af8135f03f5e9676",
+      "warnings": []
+    },
+    {
+      "index": 151,
+      "name": "收银通商户端去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/ShouYinTongMerchant_remove_ads.lpx",
+      "output": "ShouYinTongMerchant_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/ShouYinTongMerchant_remove_ads.sgmodule",
+      "sha256": "ee0acaf0df1cefe1aa62c5ea812412c439bdac598e1555a685226f599cf940fb",
+      "warnings": []
+    },
+    {
+      "index": 152,
+      "name": "顺丰速运去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/SF-Express_remove_ads.lpx",
+      "output": "SF-Express_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/SF-Express_remove_ads.sgmodule",
+      "sha256": "92742c256b7ab157ef454905ed8c47fffb359c57018aa44f2996eab40e298d61",
+      "warnings": []
+    },
+    {
+      "index": 153,
+      "name": "书旗小说去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/ShuQiCenterReader_remove_ads.lpx",
+      "output": "ShuQiCenterReader_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/ShuQiCenterReader_remove_ads.sgmodule",
+      "sha256": "9f4882f98c1c7b78ec071d329253a0649914521a56e1792ea6ccbc78427fec0f",
+      "warnings": []
+    },
+    {
+      "index": 154,
+      "name": "数字心动去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/DigitalHeartbeat_remove_ads.lpx",
+      "output": "DigitalHeartbeat_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/DigitalHeartbeat_remove_ads.sgmodule",
+      "sha256": "f08bc884616ab18d6141c959aab645dc830fc18bc2614a35338a1c8bf150a534",
+      "warnings": []
+    },
+    {
+      "index": 155,
+      "name": "随手记去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/KingdeeMyMoney_remove_ads.lpx",
+      "output": "KingdeeMyMoney_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/KingdeeMyMoney_remove_ads.sgmodule",
+      "sha256": "e66ef81183f5a87f037b34ffa232b96be7e305a2e2f5ce806f6a60cbb6903516",
+      "warnings": []
+    },
+    {
+      "index": 156,
+      "name": "淘宝去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Taobao_remove_ads.lpx",
+      "output": "Taobao_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Taobao_remove_ads.sgmodule",
+      "sha256": "02f52a1fa43915c0fe43e925f4fb9c35b93b47ecb4ec0a19b0b4475ada9fced3",
+      "warnings": []
+    },
+    {
+      "index": 157,
+      "name": "淘票票去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Taopiaopiao_remove_ads.lpx",
+      "output": "Taopiaopiao_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Taopiaopiao_remove_ads.sgmodule",
+      "sha256": "cb8c6736cc87f96e6d9bcb9dd3dd427783287ef724cfbb17e77c9c8477b4c8ef",
+      "warnings": []
+    },
+    {
+      "index": 158,
+      "name": "腾讯视频去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Tencent_Video_remove_ads.lpx",
+      "output": "Tencent_Video_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Tencent_Video_remove_ads.sgmodule",
+      "sha256": "f2d6ab37cfb17d9a6b458f3f5505c89006335f18934ed991d12b77a9e5c3eb18",
+      "warnings": []
+    },
+    {
+      "index": 159,
+      "name": "腾讯文档去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/TXDocs_remove_ads.lpx",
+      "output": "TXDocs_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/TXDocs_remove_ads.sgmodule",
+      "sha256": "84aefac08368aef8bb62103934c85e85a19d1f0b9eeee2bfa50873e481d2cde8",
+      "warnings": []
+    },
+    {
+      "index": 160,
+      "name": "图怪兽去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/TuGuaiShou_remove_ads.lpx",
+      "output": "TuGuaiShou_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/TuGuaiShou_remove_ads.sgmodule",
+      "sha256": "f4238d994b3bff9afbf1cb69ff2ee714ee04926d3ef9e3b2f6e29ccbca3de023",
+      "warnings": []
+    },
+    {
+      "index": 161,
+      "name": "推栏去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Daily_remove_ads.lpx",
+      "output": "Daily_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Daily_remove_ads.sgmodule",
+      "sha256": "f0ca5432963c97e130225e706eea8b4ff9bb9bfeab00f77b3a657a48c6063597",
+      "warnings": []
+    },
+    {
+      "index": 162,
+      "name": "挖财记账去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/WaCaiJiZhang_remove_ads.lpx",
+      "output": "WaCaiJiZhang_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/WaCaiJiZhang_remove_ads.sgmodule",
+      "sha256": "acd6cb88e475a2dd7f5d179bfeada0a73ebafd01fcf1c6ea8025ba0ec6f80d7a",
+      "warnings": []
+    },
+    {
+      "index": 163,
+      "name": "网易大神去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/NetEaseGodlike_remove_ads.lpx",
+      "output": "NetEaseGodlike_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/NetEaseGodlike_remove_ads.sgmodule",
+      "sha256": "f1227d0c9e38721a60a6cd27899303b79ecc8acad23cac167d7fa2710754c1ee",
+      "warnings": []
+    },
+    {
+      "index": 164,
+      "name": "网易新闻去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/NeteaseNews_remove_ads.lpx",
+      "output": "NeteaseNews_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/NeteaseNews_remove_ads.sgmodule",
+      "sha256": "a449feed6b65813af62d74fbae0204db41cdaae1a3a70a0ddfe29835850668e2",
+      "warnings": []
+    },
+    {
+      "index": 165,
+      "name": "网易有道词典去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/YoudaoDict_remove_ads.lpx",
+      "output": "YoudaoDict_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/YoudaoDict_remove_ads.sgmodule",
+      "sha256": "38bfe08f0a5b6bb541c3991f4a761d36bb98609b707d52a39de8dd3b811089f9",
+      "warnings": []
+    },
+    {
+      "index": 166,
+      "name": "网易邮箱大师去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/MailMaster_remove_ads.lpx",
+      "output": "MailMaster_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/MailMaster_remove_ads.sgmodule",
+      "sha256": "7e05cf55c0dab2892c93ebc572c630e3026f57abb7b5fea512e9001f503869dd",
+      "warnings": []
+    },
+    {
+      "index": 167,
+      "name": "网易云音乐去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/NeteaseCloudMusic_remove_ads.lpx",
+      "output": "NeteaseCloudMusic_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/NeteaseCloudMusic_remove_ads.sgmodule",
+      "sha256": "09763ff72ecbcfd2d784eb181bbabdc509b92a7ab7152ccd748f01c1fbd920b6",
+      "warnings": []
+    },
+    {
+      "index": 168,
+      "name": "微博轻享版去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Weibo_intl_remove_ads.lpx",
+      "output": "Weibo_intl_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Weibo_intl_remove_ads.sgmodule",
+      "sha256": "c86fa3b30ad6fa985119ed89f5702fc93ff19a54c0d34ca4f44e798048351c23",
+      "warnings": []
+    },
+    {
+      "index": 169,
+      "name": "微博去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Weibo_remove_ads.lpx",
+      "output": "Weibo_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Weibo_remove_ads.sgmodule",
+      "sha256": "3daff3cfbbe36aefc59469ec17601e4b6f0ed37e4cc46eff0c0501bc06581b52",
+      "warnings": []
+    },
+    {
+      "index": 170,
+      "name": "威锋去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/WPForum_remove_ads.lpx",
+      "output": "WPForum_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/WPForum_remove_ads.sgmodule",
+      "sha256": "e39425b790a1670898a6a8a03c496f19a9ea6b497bc91a0db3f482cfab3c7a70",
+      "warnings": []
+    },
+    {
+      "index": 171,
+      "name": "微脉圈去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Weimai_remove_ads.lpx",
+      "output": "Weimai_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Weimai_remove_ads.sgmodule",
+      "sha256": "c488b7b7aa751a23ca56555052220546032c7211a15901f998fe3bfef223dde3",
+      "warnings": []
+    },
+    {
+      "index": 172,
+      "name": "微信公众号去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Weixin_Official_Accounts_remove_ads.lpx",
+      "output": "Weixin_Official_Accounts_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Weixin_Official_Accounts_remove_ads.sgmodule",
+      "sha256": "ca06c38ebb76649a2339fc039700b1644ed7e946e9d61144037657a2adededb2",
+      "warnings": []
+    },
+    {
+      "index": 173,
+      "name": "微信外部链接解锁",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Weixin_external_links_unlock.lpx",
+      "output": "Weixin_external_links_unlock.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Weixin_external_links_unlock.sgmodule",
+      "sha256": "5d99736ddad2d1504b582cc49f91a243f983d3fad719259f4e2accd95b26e0e6",
+      "warnings": []
+    },
+    {
+      "index": 174,
+      "name": "微信小程序去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/WexinMiniPrograms_Remove_ads.lpx",
+      "output": "WexinMiniPrograms_Remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/WexinMiniPrograms_Remove_ads.sgmodule",
+      "sha256": "c85c72baf08d0f2c08b0b009899d1a515d72be84d19e658093c8c6d937dd4f8a",
+      "warnings": []
+    },
+    {
+      "index": 175,
+      "name": "无他相机去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/WutaCamera_remove_ads.lpx",
+      "output": "WutaCamera_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/WutaCamera_remove_ads.sgmodule",
+      "sha256": "b8f570100d87ca076af3dade0b52bacf373ebedf3da530138d4787cf886463e9",
+      "warnings": []
+    },
+    {
+      "index": 176,
+      "name": "下厨房去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/XiaChuFang_remove_ads.lpx",
+      "output": "XiaChuFang_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/XiaChuFang_remove_ads.sgmodule",
+      "sha256": "09afb7f20483f0fa842bfa50948d020a7475fc1e11187d64206c55ccf37daba6",
+      "warnings": []
+    },
+    {
+      "index": 177,
+      "name": "香港抖音去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/HKDouYin_remove_ads.lpx",
+      "output": "HKDouYin_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/HKDouYin_remove_ads.sgmodule",
+      "sha256": "b6f2586a7db7d5e73a54a1609c5e382a37ec43a5001965887d8e3168a7c7a094",
+      "warnings": []
+    },
+    {
+      "index": 178,
+      "name": "向日葵去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/OraySunlogin_remove_ads.lpx",
+      "output": "OraySunlogin_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/OraySunlogin_remove_ads.sgmodule",
+      "sha256": "ab24dfbc8029b40ad0cece09959b4626a3e73f6b8efdfe9f334715f55e644118",
+      "warnings": []
+    },
+    {
+      "index": 179,
+      "name": "闲鱼去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/FleaMarket_remove_ads.lpx",
+      "output": "FleaMarket_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/FleaMarket_remove_ads.sgmodule",
+      "sha256": "52a5d36734f0d3b054d2f9e5c75356c2cd2ad2fa5b5ba0e6e6b0979c8f1238f1",
+      "warnings": []
+    },
+    {
+      "index": 180,
+      "name": "小蚕霸王餐去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/XiaoCan_remove_ads.lpx",
+      "output": "XiaoCan_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/XiaoCan_remove_ads.sgmodule",
+      "sha256": "fa2888fc9dce84b4b42428f84375a9d69aebe6a2371ea2e4fde45e036984cf3f",
+      "warnings": []
+    },
+    {
+      "index": 181,
+      "name": "小店掌柜去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/ShopKeeperAdmin_remove_ads.lpx",
+      "output": "ShopKeeperAdmin_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/ShopKeeperAdmin_remove_ads.sgmodule",
+      "sha256": "cd51c734a77377620708d9943fa2733d74e279f8faff1eccc43ca78817be18e7",
+      "warnings": []
+    },
+    {
+      "index": 182,
+      "name": "小黑盒去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/XiaoHeiHe_remove_ads.lpx",
+      "output": "XiaoHeiHe_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/XiaoHeiHe_remove_ads.sgmodule",
+      "sha256": "27e54fad3f3294913b542457d95c31d99342b453f15d2b403c977726bfb8d639",
+      "warnings": []
+    },
+    {
+      "index": 183,
+      "name": "小红书去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/RedPaper_remove_ads.lpx",
+      "output": "RedPaper_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/RedPaper_remove_ads.sgmodule",
+      "sha256": "2b38c4e86b0d00a2e97832e4cd7b7b6afc80c073f4dc6517b51f094afca0fb48",
+      "warnings": []
+    },
+    {
+      "index": 184,
+      "name": "小桔充电去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/XiaojukejiCharge_remove_ads.lpx",
+      "output": "XiaojukejiCharge_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/XiaojukejiCharge_remove_ads.sgmodule",
+      "sha256": "7afd862aba4a33290a7409d129317932bd4333259392b9546fe35f368385d25e",
+      "warnings": []
+    },
+    {
+      "index": 185,
+      "name": "小喵看书去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/MiaoRead_remove_ads.lpx",
+      "output": "MiaoRead_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/MiaoRead_remove_ads.sgmodule",
+      "sha256": "88ee76efdad805761c0027d71486882c6bebff17989db5b077093578a1ff9c0f",
+      "warnings": []
+    },
+    {
+      "index": 186,
+      "name": "小米音箱去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/XiaomiSpeaker_remove_ads.lpx",
+      "output": "XiaomiSpeaker_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/XiaomiSpeaker_remove_ads.sgmodule",
+      "sha256": "d3ccd88fa03d6ac36f81d86adfba442483b62462c40b9f008517b6f90f579f6e",
+      "warnings": []
+    },
+    {
+      "index": 187,
+      "name": "小象超市去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/iMaiCai_remove_ads.lpx",
+      "output": "iMaiCai_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/iMaiCai_remove_ads.sgmodule",
+      "sha256": "f428c7630c912b84e357e3caf320182f7bc14cad5a778ea9274f51768edec7ef",
+      "warnings": []
+    },
+    {
+      "index": 188,
+      "name": "小宇宙去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/CosmosPodcast_remove_ads.lpx",
+      "output": "CosmosPodcast_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/CosmosPodcast_remove_ads.sgmodule",
+      "sha256": "f96b8c31992775fa959e395b5d17a0fa9b1d8955e1675f36797cf00d22aa75d3",
+      "warnings": []
+    },
+    {
+      "index": 189,
+      "name": "喜马拉雅去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Himalaya_remove_ads.lpx",
+      "output": "Himalaya_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Himalaya_remove_ads.sgmodule",
+      "sha256": "5589a4673159a2301d181d12639240d1fabbaba9153200b5382d7a397f2ee605",
+      "warnings": []
+    },
+    {
+      "index": 190,
+      "name": "雪球去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Snowball_remove_ads.lpx",
+      "output": "Snowball_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Snowball_remove_ads.sgmodule",
+      "sha256": "076ec637527ab5d3e6eb5f805c21c6e5fc9078c97a22497e4f2fe85d8b52ff3a",
+      "warnings": []
+    },
+    {
+      "index": 191,
+      "name": "迅雷去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/XunLei_remove_ads.lpx",
+      "output": "XunLei_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/XunLei_remove_ads.sgmodule",
+      "sha256": "e25bd95f76fef64d957592efc862b36028c0f9c8e6932529102b97caf906cfed",
+      "warnings": []
+    },
+    {
+      "index": 192,
+      "name": "医考帮去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/YiKaoBang_remove_ads.lpx",
+      "output": "YiKaoBang_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/YiKaoBang_remove_ads.sgmodule",
+      "sha256": "97758dedc401e1c10e08a436aa9845903ca7afc711e6574086e4bec596082d11",
+      "warnings": []
+    },
+    {
+      "index": 193,
+      "name": "一刻相册去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/BaiduPhoto_remove_ads.lpx",
+      "output": "BaiduPhoto_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/BaiduPhoto_remove_ads.sgmodule",
+      "sha256": "1592965361a2f73230eb059c3b8b7697c99ce8f56e50b76b176b57e9092d29c6",
+      "warnings": []
+    },
+    {
+      "index": 194,
+      "name": "萤石云视频去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/VideoGo_remove_ads.lpx",
+      "output": "VideoGo_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/VideoGo_remove_ads.sgmodule",
+      "sha256": "14f6b5471b3ce9673c4dad808d7ce18f9323bd69a30d1aeae82fc9158198f4b6",
+      "warnings": []
+    },
+    {
+      "index": 195,
+      "name": "一甜相机去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Yitian_remove_ads.lpx",
+      "output": "Yitian_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Yitian_remove_ads.sgmodule",
+      "sha256": "4dd49deb0e2126b96055a4c02898f9015aec067158e2590bf1ed12d640d01599",
+      "warnings": []
+    },
+    {
+      "index": 196,
+      "name": "有道翻译官去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/YoudaoTrans_remove_ads.lpx",
+      "output": "YoudaoTrans_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/YoudaoTrans_remove_ads.sgmodule",
+      "sha256": "7e720f95321d2ee966bf2b24af226d47c2d003d689d3cb23801f1f3dfd3bcf14",
+      "warnings": []
+    },
+    {
+      "index": 197,
+      "name": "有道云笔记去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/YoudaoNote_remove_ads.lpx",
+      "output": "YoudaoNote_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/YoudaoNote_remove_ads.sgmodule",
+      "sha256": "7fff8669ecf12f0b16bc2ffdcc831a83bdb3d7db543b9eba26ea458ae0e9a6f3",
+      "warnings": []
+    },
+    {
+      "index": 198,
+      "name": "优酷视频去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/YouKu_Video_remove_ads.lpx",
+      "output": "YouKu_Video_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/YouKu_Video_remove_ads.sgmodule",
+      "sha256": "b00ffb3d28cf9877b4983b3775443979034f34ea4637fab57d17029367e9ab1c",
+      "warnings": []
+    },
+    {
+      "index": 199,
+      "name": "阅友去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Yueyou_remove_ads.lpx",
+      "output": "Yueyou_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Yueyou_remove_ads.sgmodule",
+      "sha256": "d1056c17bef4516849613ce3bd770ac1db32ab8c4f9536a198766e7cad723aea",
+      "warnings": []
+    },
+    {
+      "index": 200,
+      "name": "云鲸智能去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/NarwelRobots_remove_ads.lpx",
+      "output": "NarwelRobots_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/NarwelRobots_remove_ads.sgmodule",
+      "sha256": "1497c89f6f0d8c1578abee9ea31dab79c7386f035a4466d5e78827e35287e87e",
+      "warnings": []
+    },
+    {
+      "index": 201,
+      "name": "掌上无畏契约去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/ValorantBible_remove_ads.lpx",
+      "output": "ValorantBible_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/ValorantBible_remove_ads.sgmodule",
+      "sha256": "e289ec892e6e99d00712660a4ed138f7e2b57466d7822b7465e25281cfb05a07",
+      "warnings": []
+    },
+    {
+      "index": 202,
+      "name": "掌上英雄联盟去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/LOL_Bible_remove_ads.lpx",
+      "output": "LOL_Bible_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/LOL_Bible_remove_ads.sgmodule",
+      "sha256": "8208254493063707df330af5365d879ac5d3d079886dc84fcd3287272d0ea932",
+      "warnings": []
+    },
+    {
+      "index": 203,
+      "name": "掌阅去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/iReader_remove_ads.lpx",
+      "output": "iReader_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/iReader_remove_ads.sgmodule",
+      "sha256": "923e60bece12cbd96c73fb614254aea5a9d4577bb4248e7d842f046b1159b77b",
+      "warnings": []
+    },
+    {
+      "index": 204,
+      "name": "智慧苏州去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/SuZhouCitizenCard_remove_ads.lpx",
+      "output": "SuZhouCitizenCard_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/SuZhouCitizenCard_remove_ads.sgmodule",
+      "sha256": "5fe22e8e2256b537330f0aeb80197a67402ac884f0f461e5d97ecd46822db2e8",
+      "warnings": []
+    },
+    {
+      "index": 205,
+      "name": "知乎去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Zhihu_remove_ads.lpx",
+      "output": "Zhihu_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Zhihu_remove_ads.sgmodule",
+      "sha256": "93a8d4d467c24eac56470438dd527904cec195675b38f048bb1238576794bf4b",
+      "warnings": []
+    },
+    {
+      "index": 206,
+      "name": "智联招聘去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/ZhiLianZhaoPin_remove_ads.lpx",
+      "output": "ZhiLianZhaoPin_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/ZhiLianZhaoPin_remove_ads.sgmodule",
+      "sha256": "a96d3735031bd14f1516370d8c3d9ecb1b18b8fe59b4aaef0677950378ba86dc",
+      "warnings": []
+    },
+    {
+      "index": 207,
+      "name": "知识星球去水印",
+      "url": "https://kelee.one/Tool/Loon/Lpx/UnnooQuan_remove_watermark.lpx",
+      "output": "UnnooQuan_remove_watermark.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/UnnooQuan_remove_watermark.sgmodule",
+      "sha256": "fae24e63520eec809e75ebdced3b8ef81470b2fe0d8c4a812e4f28bb928df821",
+      "warnings": []
+    },
+    {
+      "index": 208,
+      "name": "中国人保去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/PICC_Insurance_remove_ads.lpx",
+      "output": "PICC_Insurance_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/PICC_Insurance_remove_ads.sgmodule",
+      "sha256": "ae0fc4c61f730cf3afa555014b2e6a7e62f8a14e7389b98bd9ceb01b4021e1e8",
+      "warnings": []
+    },
+    {
+      "index": 209,
+      "name": "中国移动云盘去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/mobileClouds_remove_ads.lpx",
+      "output": "mobileClouds_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/mobileClouds_remove_ads.sgmodule",
+      "sha256": "c9f26179dded231cad811cc972cadaa1670bc3d3641aad7a91bd90d9b73b79c2",
+      "warnings": []
+    },
+    {
+      "index": 210,
+      "name": "中华万年历去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/EtouchEcalendar_remove_ads.lpx",
+      "output": "EtouchEcalendar_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/EtouchEcalendar_remove_ads.sgmodule",
+      "sha256": "20e00fd45c5fbbb4f053a464ac204f25945747fd936b2a593b7e20697b9a09c4",
+      "warnings": []
+    },
+    {
+      "index": 211,
+      "name": "转转去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/ZhuanZhuan_remove_ads.lpx",
+      "output": "ZhuanZhuan_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/ZhuanZhuan_remove_ads.sgmodule",
+      "sha256": "ceba04b823488012d39b4bb669b0c035821beaece12e338ed2bd53ec1586f5c2",
+      "warnings": []
+    },
+    {
+      "index": 212,
+      "name": "自动加入TestFlight",
+      "url": "https://kelee.one/Tool/Loon/Lpx/Auto_Join_TF.lpx",
+      "output": "Auto_Join_TF.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Auto_Join_TF.sgmodule",
+      "sha256": "2af2776df991bc1843419a455e3fb60962fee23159e21a179d6be01403da0858",
+      "warnings": [
+        "自动加入TestFlight: replaced unsupported module policy PROXY with DIRECT"
+      ]
+    },
+    {
+      "index": 213,
+      "name": "纵横小说去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/ZongHeng_remove_ads.lpx",
+      "output": "ZongHeng_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/ZongHeng_remove_ads.sgmodule",
+      "sha256": "b7b51e08fd0ae940f407f61f8df099eb78258ad4f60434b3db34277f0f55582b",
+      "warnings": []
+    },
+    {
+      "index": 214,
+      "name": "最右去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/ZuiYou_remove_ads.lpx",
+      "output": "ZuiYou_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/ZuiYou_remove_ads.sgmodule",
+      "sha256": "2586ebd33ef71cb15d997ac4f0adc26b4a261931be29cff8b3dc0ea3311f9c97",
+      "warnings": []
+    }
+  ]
+}
