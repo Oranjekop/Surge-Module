@@ -148,6 +148,7 @@ class ParsedPlugin:
 class ConvertOptions:
     module_name: str = "Converted Loon Plugins"
     module_desc: str = "Converted from Loon plugins for Surge."
+    module_category: str = ""
     rule_policy: str = "DIRECT"
     strict: bool = False
 
@@ -181,12 +182,20 @@ class Converter:
         arg_lines: list[str] = []
         source_names: list[str] = []
         module_names: list[str] = []
+        module_descs: list[str] = []
+        module_categories: list[str] = []
 
         for plugin in parsed:
             metadata_name = plugin.metadata.get("name")
             if metadata_name:
                 module_names.append(metadata_name)
             source_names.append(metadata_name or plugin.name)
+            metadata_desc = plugin.metadata.get("desc") or plugin.metadata.get("description")
+            if metadata_desc:
+                module_descs.append(metadata_desc)
+            metadata_category = plugin.metadata.get("category") or plugin.metadata.get("tag")
+            if metadata_category:
+                module_categories.append(metadata_category)
 
             for line in plugin.metadata_lines:
                 if re.match(r"^#!\s*arguments\s*=", line, re.IGNORECASE):
@@ -241,7 +250,14 @@ class Converter:
             out[section_name] = dedupe(out[section_name])
 
         return ConvertOutput(
-            text=self.render_module(out, arg_lines, source_names, module_names),
+            text=self.render_module(
+                out,
+                arg_lines,
+                source_names,
+                module_names,
+                module_descs,
+                module_categories,
+            ),
             warnings=self.warnings,
             sources=sources,
         )
@@ -252,14 +268,26 @@ class Converter:
         arg_lines: list[str],
         source_names: list[str],
         module_names: list[str],
+        module_descs: list[str],
+        module_categories: list[str],
     ) -> str:
         source_names = dedupe_names(source_names)
         module_names = dedupe_names(module_names)
+        module_descs = dedupe_names(module_descs)
+        module_categories = dedupe_names(module_categories)
         module_name = " + ".join(module_names) if module_names else self.options.module_name
+        module_desc = (
+            " + ".join(module_descs) if module_descs else self.options.module_desc
+        )
+        module_category = (
+            ", ".join(module_categories) if module_categories else self.options.module_category
+        )
         lines: list[str] = [
-            f"#!name={module_name}",
-            f"#!desc={self.options.module_desc}",
+            f"#!name={clean_metadata_value(module_name)}",
+            f"#!desc={clean_metadata_value(module_desc)}",
         ]
+        if module_category:
+            lines.append(f"#!category={clean_metadata_value(module_category)}")
         if sections.get("Body Rewrite") or sections.get("Map Local"):
             lines.append("#!requirement=CORE_VERSION>=20")
 
@@ -692,6 +720,11 @@ def parse_metadata(line: str) -> tuple[str, str] | None:
     if not match:
         return None
     return match.group(1).strip(), match.group(2).strip()
+
+
+def clean_metadata_value(value: str) -> str:
+    value = value.replace("\\r", " ").replace("\\n", " ")
+    return re.sub(r"\s+", " ", value).strip()
 
 
 def clean_line(raw_line: str) -> str:
@@ -1337,6 +1370,7 @@ def convert_job(job: dict[str, object], base_dir: Path) -> ConvertOutput:
     options = ConvertOptions(
         module_name=str(job.get("name", "Converted Loon Plugins")),
         module_desc=str(job.get("description", "Converted from Loon plugins for Surge.")),
+        module_category=str(job.get("category", "")),
         rule_policy=str(job.get("rule_policy", "DIRECT")).upper(),
         strict=bool(job.get("strict", False)),
     )
@@ -1374,6 +1408,7 @@ def cli_jobs(args: argparse.Namespace) -> list[dict[str, object]]:
         {
             "name": args.name,
             "description": args.description,
+            "category": args.category,
             "output": args.output,
             "rule_policy": args.rule_policy,
             "strict": args.strict,
@@ -1394,6 +1429,7 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
         default="Converted from Loon plugins for Surge.",
         help="Module description",
     )
+    parser.add_argument("--category", default="", help="Module category")
     parser.add_argument(
         "--rule-policy",
         default="DIRECT",

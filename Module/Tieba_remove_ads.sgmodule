@@ -1,5 +1,6 @@
 #!name=百度贴吧去广告
-#!desc=Converted from https://kelee.one/Tool/Loon/Lpx/Tieba_remove_ads.lpx
+#!desc=移除开屏广告、信息流广告和帖内广告，精简侧拉抽屉及我的页面。
+#!category=去广告
 #!requirement=CORE_VERSION>=20
 #!arguments=per_filter_video_thread:"true"
 # Converted sources: 百度贴吧去广告

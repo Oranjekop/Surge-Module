@@ -1,5 +1,6 @@
 #!name=Spotify去广告
-#!desc=Converted from https://kelee.one/Tool/Loon/Lpx/Spotify_remove_ads.lpx
+#!desc=移除播放广告，恢复歌手和专辑列表的正常展示。修改插件自定义配置项需要重新登陆方可生效。
+#!category=去广告
 #!requirement=CORE_VERSION>=20
 #!arguments=tab:false,useractivity:true
 # Converted sources: Spotify去广告

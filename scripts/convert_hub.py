@@ -31,7 +31,9 @@ from scripts.loon2surge import (
 DEFAULT_HUB_LIST_URL = "https://hub.kelee.one/list.json"
 DEFAULT_REPO_URL = "https://github.com/Oranjekop/Module.git"
 DEFAULT_BRANCH = "main"
-SURGE_INSTALL_BASE_URL = "surge:///install-module"
+# GitHub Markdown does not reliably open custom URL schemes directly, so use a
+# clickable HTTP endpoint that redirects to surge:///install-module.
+SURGE_INSTALL_BASE_URL = "http://api.boxjs.app/surge/install-module"
 INVALID_FILENAME_RE = re.compile(r'[<>:"/\\|?*\x00-\x1f]+')
 WINDOWS_RESERVED_NAMES = {
     "CON",
@@ -49,6 +51,8 @@ class HubPlugin:
     name: str
     url: str
     source_url: str
+    desc: str = ""
+    categories: tuple[str, ...] = ()
 
 
 def fetch_json(url: str, timeout: int) -> object:
@@ -98,9 +102,36 @@ def iter_hub_plugins(data: object) -> Iterable[HubPlugin]:
         if not plugin_path.endswith(".lpx"):
             continue
         name = str(item.get("name") or "").strip() or derive_name_from_url(plugin_url)
+        desc = str(item.get("desc") or "").strip()
+        categories = parse_categories(item.get("category", item.get("tag")))
         index_value = item.get("index")
         index = int(index_value) if isinstance(index_value, int) else position
-        yield HubPlugin(index=index, name=name, url=plugin_url, source_url=raw_url)
+        yield HubPlugin(
+            index=index,
+            name=name,
+            url=plugin_url,
+            source_url=raw_url,
+            desc=desc,
+            categories=categories,
+        )
+
+
+def parse_categories(value: object) -> tuple[str, ...]:
+    if isinstance(value, list):
+        items = value
+    elif isinstance(value, str):
+        items = [value]
+    else:
+        return ()
+    result: list[str] = []
+    seen: set[str] = set()
+    for item in items:
+        category = str(item).strip()
+        if not category or category in seen:
+            continue
+        seen.add(category)
+        result.append(category)
+    return tuple(result)
 
 
 def derive_name_from_url(url: str) -> str:
@@ -162,7 +193,8 @@ def convert_hub(args: argparse.Namespace) -> tuple[int, int, int]:
                 )
                 options = ConvertOptions(
                     module_name=plugin.name,
-                    module_desc=f"Converted from {plugin.url}",
+                    module_desc=plugin.desc or f"Converted from {plugin.url}",
+                    module_category=format_categories(plugin.categories),
                     rule_policy=args.rule_policy,
                     strict=args.strict,
                 )
@@ -174,6 +206,8 @@ def convert_hub(args: argparse.Namespace) -> tuple[int, int, int]:
                     {
                         "index": plugin.index,
                         "name": plugin.name,
+                        "desc": plugin.desc,
+                        "category": format_categories(plugin.categories),
                         "url": plugin.url,
                         "output": output_name,
                         "download_url": download_url,
@@ -236,6 +270,10 @@ def make_install_url(download_url: str) -> str:
     return f"{SURGE_INSTALL_BASE_URL}?url={encoded_url}"
 
 
+def format_categories(categories: Iterable[str]) -> str:
+    return ", ".join(category.strip() for category in categories if category.strip())
+
+
 def normalize_github_repo_url(repo_url: str) -> str:
     repo_url = repo_url.rstrip("/")
     if repo_url.endswith(".git"):
@@ -269,7 +307,7 @@ def write_readme(path: Path, manifest_doc: dict[str, object], repo_url: str, bra
         f"- 分支：`{branch}`",
         f"- 插件数量：`{manifest_doc.get('converted', 0)}`",
         f"- 失败数量：`{manifest_doc.get('failed', 0)}`",
-        "- 安装链接使用 Surge 官方 HTTPS 入口，会携带对应的 GitHub raw 模块地址跳转安装。",
+        "- 安装链接使用可点击的跳转入口，会携带对应的 GitHub raw 模块地址唤起 Surge 安装。",
         "",
         "| 序号 | 插件 | 文件 | Surge 安装 |",
         "| ---: | --- | --- | --- |",
@@ -281,7 +319,7 @@ def write_readme(path: Path, manifest_doc: dict[str, object], repo_url: str, bra
         name = escape_markdown(str(item.get("name") or ""))
         output = str(item.get("output") or "")
         download_url = str(item.get("download_url") or make_download_url(repo_url, branch, output))
-        install_url = str(item.get("install_url") or make_install_url(download_url))
+        install_url = make_install_url(download_url)
         index = item.get("index", "")
         lines.append(
             f"| {index} | {name} | [{escape_markdown(output)}]({download_url}) | [点击安装]({install_url}) |"

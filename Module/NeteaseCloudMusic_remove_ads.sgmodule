@@ -1,5 +1,6 @@
 #!name=网易云音乐去广告
-#!desc=Converted from https://kelee.one/Tool/Loon/Lpx/NeteaseCloudMusic_remove_ads.lpx
+#!desc=过滤网易云音乐广告，并允许自定义界面。
+#!category=去广告
 #!requirement=CORE_VERSION>=20
 #!arguments=MY:false,DT:false,FX:false,PRGG:false,PRRK:false,PRDRD:false,PRSCVPT:false,PRST:false,PRRR:false,HMPR:false,PRMST:false,PRCN:false
 # Converted sources: 网易云音乐去广告

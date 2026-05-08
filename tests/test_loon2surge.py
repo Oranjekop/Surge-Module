@@ -7,6 +7,7 @@ from scripts.loon2surge import ConvertOptions, Converter, Source, USER_AGENT, lo
 
 SAMPLE = """#!name=Example
 #!desc=Example plugin
+#!tag=去广告
 #!arguments=foo:"bar",flag:true
 
 [Argument]
@@ -52,6 +53,8 @@ class LoonToSurgeTests(unittest.TestCase):
         result = Converter(ConvertOptions(module_name="Merged", rule_policy="DIRECT")).convert([source])
 
         self.assertIn("#!name=Example", result.text)
+        self.assertIn("#!desc=Example plugin", result.text)
+        self.assertIn("#!category=去广告", result.text)
         self.assertIn('#!arguments=foo:"bar",flag:true,host:api.example.com', result.text)
         self.assertIn("[General]\nskip-proxy = %APPEND% example.com", result.text)
         self.assertIn("DOMAIN,ads.example.com,REJECT", result.text)
@@ -114,6 +117,7 @@ class LoonToSurgeTests(unittest.TestCase):
         result = Converter(ConvertOptions(module_name="Fallback")).convert([source])
 
         self.assertIn("#!name=Fallback", result.text)
+        self.assertIn("#!desc=Converted from Loon plugins for Surge.", result.text)
         self.assertIn("# Converted sources: unnamed", result.text)
 
     def test_remote_sources_use_scripthub_user_agent(self):
