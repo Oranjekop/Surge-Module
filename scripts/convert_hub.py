@@ -7,6 +7,7 @@ import argparse
 import json
 import re
 import sys
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -30,6 +31,7 @@ from scripts.loon2surge import (
 DEFAULT_HUB_LIST_URL = "https://hub.kelee.one/list.json"
 DEFAULT_REPO_URL = "https://github.com/Oranjekop/Module.git"
 DEFAULT_BRANCH = "main"
+SURGE_INSTALL_BASE_URL = "https://nssurge.com/install-module"
 INVALID_FILENAME_RE = re.compile(r'[<>:"/\\|?*\x00-\x1f]+')
 WINDOWS_RESERVED_NAMES = {
     "CON",
@@ -151,38 +153,54 @@ def convert_hub(args: argparse.Namespace) -> tuple[int, int, int]:
     for plugin in plugins:
         output_name = safe_output_name(plugin, used_names)
         output_path = output_dir / output_name
-        try:
-            source = load_source(
-                {"name": plugin.name, "url": plugin.url, "timeout": args.timeout},
-                base_dir,
-            )
-            options = ConvertOptions(
-                module_name=plugin.name,
-                module_desc=f"Converted from {plugin.url}",
-                rule_policy=args.rule_policy,
-                strict=args.strict,
-            )
-            result = Converter(options).convert([source])
-            output_path.write_text(result.text, encoding="utf-8", newline="\n")
-            warning_count += len(result.warnings)
-            manifest.append(
-                {
-                    "index": plugin.index,
-                    "name": plugin.name,
-                    "url": plugin.url,
-                    "output": output_name,
-                    "download_url": make_download_url(args.repo_url, args.branch, output_name),
-                    "sha256": source.sha256,
-                    "warnings": result.warnings,
-                }
-            )
-            print(f"converted: {plugin.name} -> {output_path}")
-        except (OSError, ConversionError) as exc:
-            failure = {"name": plugin.name, "url": plugin.url, "error": str(exc)}
-            failures.append(failure)
-            print(f"failed: {plugin.name}: {exc}", file=sys.stderr)
-            if args.fail_fast:
+        converted = False
+        for attempt in range(args.retries + 1):
+            try:
+                source = load_source(
+                    {"name": plugin.name, "url": plugin.url, "timeout": args.timeout},
+                    base_dir,
+                )
+                options = ConvertOptions(
+                    module_name=plugin.name,
+                    module_desc=f"Converted from {plugin.url}",
+                    rule_policy=args.rule_policy,
+                    strict=args.strict,
+                )
+                result = Converter(options).convert([source])
+                output_path.write_text(result.text, encoding="utf-8", newline="\n")
+                warning_count += len(result.warnings)
+                download_url = make_download_url(args.repo_url, args.branch, output_name)
+                manifest.append(
+                    {
+                        "index": plugin.index,
+                        "name": plugin.name,
+                        "url": plugin.url,
+                        "output": output_name,
+                        "download_url": download_url,
+                        "install_url": make_install_url(download_url),
+                        "sha256": source.sha256,
+                        "warnings": result.warnings,
+                    }
+                )
+                print(f"converted: {plugin.name} -> {output_path}")
+                converted = True
                 break
+            except (OSError, ConversionError) as exc:
+                if attempt < args.retries:
+                    retry_no = attempt + 1
+                    print(
+                        f"retrying: {plugin.name} ({retry_no}/{args.retries}): {exc}",
+                        file=sys.stderr,
+                    )
+                    time.sleep(args.retry_delay)
+                    continue
+                failure = {"name": plugin.name, "url": plugin.url, "error": str(exc)}
+                failures.append(failure)
+                print(f"failed: {plugin.name}: {exc}", file=sys.stderr)
+                if args.fail_fast:
+                    break
+        if not converted and args.fail_fast:
+            break
 
     manifest_path = output_dir / "manifest.json"
     manifest_doc = {
@@ -211,6 +229,11 @@ def make_download_url(repo_url: str, branch: str, output_name: str) -> str:
     repo_url = normalize_github_repo_url(repo_url)
     quoted_path = urllib.parse.quote(f"Module/{output_name}", safe="/")
     return f"{repo_url}/raw/refs/heads/{urllib.parse.quote(branch, safe='')}/{quoted_path}"
+
+
+def make_install_url(download_url: str) -> str:
+    encoded_url = urllib.parse.quote(download_url, safe="")
+    return f"{SURGE_INSTALL_BASE_URL}?url={encoded_url}"
 
 
 def normalize_github_repo_url(repo_url: str) -> str:
@@ -246,8 +269,9 @@ def write_readme(path: Path, manifest_doc: dict[str, object], repo_url: str, bra
         f"- 分支：`{branch}`",
         f"- 插件数量：`{manifest_doc.get('converted', 0)}`",
         f"- 失败数量：`{manifest_doc.get('failed', 0)}`",
+        "- 安装链接使用 Surge 官方 HTTPS 入口，会携带对应的 GitHub raw 模块地址跳转安装。",
         "",
-        "| 序号 | 插件 | 文件 | GitHub 下载地址 |",
+        "| 序号 | 插件 | 文件 | Surge 安装 |",
         "| ---: | --- | --- | --- |",
     ]
 
@@ -257,9 +281,10 @@ def write_readme(path: Path, manifest_doc: dict[str, object], repo_url: str, bra
         name = escape_markdown(str(item.get("name") or ""))
         output = str(item.get("output") or "")
         download_url = str(item.get("download_url") or make_download_url(repo_url, branch, output))
+        install_url = str(item.get("install_url") or make_install_url(download_url))
         index = item.get("index", "")
         lines.append(
-            f"| {index} | {name} | `{output}` | [下载]({download_url}) |"
+            f"| {index} | {name} | [{escape_markdown(output)}]({download_url}) | [点击安装]({install_url}) |"
         )
 
     failures = manifest_doc.get("failures", [])
@@ -301,6 +326,8 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     parser.add_argument("--strict", action="store_true")
     parser.add_argument("--fail-fast", action="store_true")
     parser.add_argument("--allow-failures", action="store_true")
+    parser.add_argument("--retries", type=int, default=3)
+    parser.add_argument("--retry-delay", type=float, default=1.0)
     parser.add_argument("--limit", type=int, help="Convert only the first N entries")
     return parser.parse_args(argv)
 

@@ -5,6 +5,7 @@ from scripts.convert_hub import (
     extract_plugin_url,
     iter_hub_plugins,
     make_download_url,
+    make_install_url,
     safe_output_name,
     sanitize_filename,
 )
@@ -50,6 +51,18 @@ class ConvertHubTests(unittest.TestCase):
         self.assertEqual(
             make_download_url("https://github.com/Oranjekop/Module.git", "main", "Demo File.sgmodule"),
             "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Demo%20File.sgmodule",
+        )
+
+    def test_make_install_url_uses_surge_https_entry(self):
+        download_url = make_download_url(
+            "https://github.com/Oranjekop/Module.git",
+            "main",
+            "Demo File.sgmodule",
+        )
+
+        self.assertEqual(
+            make_install_url(download_url),
+            "https://nssurge.com/install-module?url=https%3A%2F%2Fgithub.com%2FOranjekop%2FModule%2Fraw%2Frefs%2Fheads%2Fmain%2FModule%2FDemo%2520File.sgmodule",
         )
 
 
