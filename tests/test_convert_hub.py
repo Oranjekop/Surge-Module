@@ -62,7 +62,7 @@ class ConvertHubTests(unittest.TestCase):
 
         self.assertEqual(
             make_install_url(download_url),
-            "https://nssurge.com/install-module?url=https%3A%2F%2Fgithub.com%2FOranjekop%2FModule%2Fraw%2Frefs%2Fheads%2Fmain%2FModule%2FDemo%2520File.sgmodule",
+            "surge:///install-module?url=https%3A%2F%2Fgithub.com%2FOranjekop%2FModule%2Fraw%2Frefs%2Fheads%2Fmain%2FModule%2FDemo%2520File.sgmodule",
         )
 
 
