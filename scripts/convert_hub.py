@@ -31,7 +31,7 @@ from scripts.loon2surge import (
 DEFAULT_HUB_LIST_URL = "https://hub.kelee.one/list.json"
 DEFAULT_REPO_URL = "https://github.com/Oranjekop/Module.git"
 DEFAULT_BRANCH = "main"
-SURGE_INSTALL_BASE_URL = "https://nssurge.com/install-module"
+SURGE_INSTALL_BASE_URL = "surge:///install-module"
 INVALID_FILENAME_RE = re.compile(r'[<>:"/\\|?*\x00-\x1f]+')
 WINDOWS_RESERVED_NAMES = {
     "CON",
