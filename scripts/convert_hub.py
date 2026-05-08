@@ -31,9 +31,7 @@ from scripts.loon2surge import (
 DEFAULT_HUB_LIST_URL = "https://hub.kelee.one/list.json"
 DEFAULT_REPO_URL = "https://github.com/Oranjekop/Module.git"
 DEFAULT_BRANCH = "main"
-# GitHub Markdown does not reliably open custom URL schemes directly, so use a
-# clickable HTTP endpoint that redirects to surge:///install-module.
-SURGE_INSTALL_BASE_URL = "http://api.boxjs.app/surge/install-module"
+SURGE_INSTALL_BASE_URL = "surge:///install-module"
 INVALID_FILENAME_RE = re.compile(r'[<>:"/\\|?*\x00-\x1f]+')
 WINDOWS_RESERVED_NAMES = {
     "CON",
@@ -270,6 +268,20 @@ def make_install_url(download_url: str) -> str:
     return f"{SURGE_INSTALL_BASE_URL}?url={encoded_url}"
 
 
+def make_page_base_url(repo_url: str) -> str:
+    repo_url = normalize_github_repo_url(repo_url)
+    parsed = urllib.parse.urlparse(repo_url)
+    parts = [part for part in parsed.path.strip("/").split("/") if part]
+    if len(parts) < 2 or parsed.netloc.lower() != "github.com":
+        raise ConversionError(f"unsupported GitHub repo URL for Pages: {repo_url}")
+    owner, repo = parts[0], parts[1]
+    return f"https://{owner.lower()}.github.io/{urllib.parse.quote(repo, safe='')}/"
+
+
+def make_page_copy_url(page_base_url: str, output_name: str) -> str:
+    return page_base_url + "?" + urllib.parse.urlencode({"module": output_name, "copy": "1"})
+
+
 def format_categories(categories: Iterable[str]) -> str:
     return ", ".join(category.strip() for category in categories if category.strip())
 
@@ -283,6 +295,7 @@ def normalize_github_repo_url(repo_url: str) -> str:
 
 def write_readme(path: Path, manifest_doc: dict[str, object], repo_url: str, branch: str) -> None:
     repo_url = normalize_github_repo_url(repo_url)
+    page_base_url = make_page_base_url(repo_url)
     items = manifest_doc.get("items", [])
     if not isinstance(items, list):
         items = []
@@ -307,9 +320,10 @@ def write_readme(path: Path, manifest_doc: dict[str, object], repo_url: str, bra
         f"- 分支：`{branch}`",
         f"- 插件数量：`{manifest_doc.get('converted', 0)}`",
         f"- 失败数量：`{manifest_doc.get('failed', 0)}`",
-        "- 安装链接使用可点击的跳转入口，会携带对应的 GitHub raw 模块地址唤起 Surge 安装。",
+        f"- GitHub Pages：[{page_base_url}]({page_base_url})",
+        "- README 中的复制链接会打开 GitHub Pages 页面，可在页面内点击安装或复制 Surge 安装链接。",
         "",
-        "| 序号 | 插件 | 文件 | Surge 安装 |",
+        "| 序号 | 插件 | 文件 | Surge 链接 |",
         "| ---: | --- | --- | --- |",
     ]
 
@@ -319,10 +333,10 @@ def write_readme(path: Path, manifest_doc: dict[str, object], repo_url: str, bra
         name = escape_markdown(str(item.get("name") or ""))
         output = str(item.get("output") or "")
         download_url = str(item.get("download_url") or make_download_url(repo_url, branch, output))
-        install_url = make_install_url(download_url)
+        copy_url = make_page_copy_url(page_base_url, output)
         index = item.get("index", "")
         lines.append(
-            f"| {index} | {name} | [{escape_markdown(output)}]({download_url}) | [点击安装]({install_url}) |"
+            f"| {index} | {name} | [{escape_markdown(output)}]({download_url}) | [点击复制链接]({copy_url}) |"
         )
 
     failures = manifest_doc.get("failures", [])

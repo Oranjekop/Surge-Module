@@ -6,6 +6,8 @@ from scripts.convert_hub import (
     iter_hub_plugins,
     make_download_url,
     make_install_url,
+    make_page_base_url,
+    make_page_copy_url,
     safe_output_name,
     sanitize_filename,
 )
@@ -61,7 +63,7 @@ class ConvertHubTests(unittest.TestCase):
             "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Demo%20File.sgmodule",
         )
 
-    def test_make_install_url_uses_clickable_redirect_entry(self):
+    def test_make_install_url_uses_surge_scheme(self):
         download_url = make_download_url(
             "https://github.com/Oranjekop/Module.git",
             "main",
@@ -70,7 +72,16 @@ class ConvertHubTests(unittest.TestCase):
 
         self.assertEqual(
             make_install_url(download_url),
-            "http://api.boxjs.app/surge/install-module?url=https%3A%2F%2Fgithub.com%2FOranjekop%2FModule%2Fraw%2Frefs%2Fheads%2Fmain%2FModule%2FDemo%2520File.sgmodule",
+            "surge:///install-module?url=https%3A%2F%2Fgithub.com%2FOranjekop%2FModule%2Fraw%2Frefs%2Fheads%2Fmain%2FModule%2FDemo%2520File.sgmodule",
+        )
+
+    def test_make_page_urls(self):
+        page_base_url = make_page_base_url("https://github.com/Oranjekop/Module.git")
+
+        self.assertEqual(page_base_url, "https://oranjekop.github.io/Module/")
+        self.assertEqual(
+            make_page_copy_url(page_base_url, "Demo File.sgmodule"),
+            "https://oranjekop.github.io/Module/?module=Demo+File.sgmodule&copy=1",
         )
 
 

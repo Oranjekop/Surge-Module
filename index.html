@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Module Surge 安装</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f6f7f9;
+        --panel: #ffffff;
+        --text: #15171a;
+        --muted: #626b78;
+        --border: #d9dee7;
+        --accent: #0b6bcb;
+        --accent-dark: #084f95;
+        --ok: #137333;
+        --warn: #9a5a00;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+          "Microsoft YaHei", sans-serif;
+        line-height: 1.5;
+      }
+
+      .wrap {
+        width: min(1120px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 28px 0 40px;
+      }
+
+      header {
+        display: grid;
+        gap: 12px;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 28px;
+        font-weight: 720;
+      }
+
+      .meta {
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .toolbar,
+      .selected,
+      .list {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+      }
+
+      .toolbar {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 12px;
+        padding: 14px;
+        margin-bottom: 14px;
+      }
+
+      input[type="search"] {
+        width: 100%;
+        min-height: 40px;
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        padding: 0 12px;
+        font: inherit;
+      }
+
+      .count {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .selected {
+        display: none;
+        padding: 16px;
+        margin-bottom: 14px;
+      }
+
+      .selected.active {
+        display: grid;
+        gap: 12px;
+      }
+
+      .selected h2 {
+        margin: 0;
+        font-size: 20px;
+      }
+
+      .desc {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .tagline {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .tag {
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        padding: 2px 8px;
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      button,
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 36px;
+        border: 1px solid var(--accent);
+        border-radius: 6px;
+        background: var(--accent);
+        color: #fff;
+        padding: 0 12px;
+        font: inherit;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      button:hover,
+      .button:hover {
+        background: var(--accent-dark);
+        border-color: var(--accent-dark);
+      }
+
+      .button.secondary,
+      button.secondary {
+        background: #fff;
+        color: var(--accent);
+      }
+
+      .button.secondary:hover,
+      button.secondary:hover {
+        color: var(--accent-dark);
+        border-color: var(--accent-dark);
+      }
+
+      .status {
+        min-height: 22px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .status.ok {
+        color: var(--ok);
+      }
+
+      .status.warn {
+        color: var(--warn);
+      }
+
+      .list {
+        overflow: hidden;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        border-bottom: 1px solid var(--border);
+        padding: 11px 12px;
+        text-align: left;
+        vertical-align: top;
+        font-size: 14px;
+      }
+
+      th {
+        background: #f0f3f7;
+        color: #343a43;
+        font-weight: 650;
+      }
+
+      tr:last-child td {
+        border-bottom: 0;
+      }
+
+      .name {
+        font-weight: 650;
+      }
+
+      .file {
+        color: var(--muted);
+        font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+        font-size: 12px;
+        word-break: break-all;
+      }
+
+      .row-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+
+      .row-actions button,
+      .row-actions .button {
+        min-height: 30px;
+        padding: 0 9px;
+        font-size: 13px;
+      }
+
+      .empty {
+        padding: 28px;
+        text-align: center;
+        color: var(--muted);
+      }
+
+      @media (max-width: 720px) {
+        .wrap {
+          width: min(100% - 20px, 1120px);
+          padding-top: 18px;
+        }
+
+        .toolbar {
+          grid-template-columns: 1fr;
+        }
+
+        table,
+        thead,
+        tbody,
+        tr,
+        th,
+        td {
+          display: block;
+        }
+
+        thead {
+          display: none;
+        }
+
+        tr {
+          border-bottom: 1px solid var(--border);
+          padding: 10px 12px;
+        }
+
+        tr:last-child {
+          border-bottom: 0;
+        }
+
+        td {
+          border: 0;
+          padding: 3px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <header>
+        <h1>Module Surge 安装</h1>
+        <div class="meta" id="pageMeta">正在载入模块列表...</div>
+      </header>
+
+      <section class="toolbar" aria-label="模块筛选">
+        <input id="search" type="search" placeholder="搜索插件、文件名、分类或描述" autocomplete="off">
+        <div class="count" id="count">0 个模块</div>
+      </section>
+
+      <section class="selected" id="selected" aria-live="polite"></section>
+
+      <section class="list" id="list">
+        <div class="empty">正在载入...</div>
+      </section>
+    </main>
+
+    <script>
+      const REPO = "Oranjekop/Module";
+      const BRANCH = "main";
+      const RAW_BASE = `https://raw.githubusercontent.com/${REPO}/refs/heads/${BRANCH}`;
+      const RAW_MANIFEST = `${RAW_BASE}/Module/manifest.json`;
+      const state = {
+        items: [],
+        filtered: [],
+        selected: null,
+      };
+
+      const params = new URLSearchParams(location.search);
+      const requestedModule = params.get("module") || "";
+      const shouldCopy = params.get("copy") === "1";
+      const searchInput = document.getElementById("search");
+      const listEl = document.getElementById("list");
+      const countEl = document.getElementById("count");
+      const metaEl = document.getElementById("pageMeta");
+      const selectedEl = document.getElementById("selected");
+
+      function escapeHtml(value) {
+        return String(value ?? "")
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;")
+          .replaceAll("'", "&#39;");
+      }
+
+      function normalize(value) {
+        return String(value ?? "").toLowerCase();
+      }
+
+      function installUrl(item) {
+        const downloadUrl = item.download_url || `${RAW_BASE}/Module/${encodeURIComponent(item.output)}`;
+        return `surge:///install-module?url=${encodeURIComponent(downloadUrl)}`;
+      }
+
+      async function copyText(text) {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(text);
+          return;
+        }
+        const area = document.createElement("textarea");
+        area.value = text;
+        area.setAttribute("readonly", "");
+        area.style.position = "fixed";
+        area.style.left = "-9999px";
+        document.body.appendChild(area);
+        area.select();
+        const ok = document.execCommand("copy");
+        document.body.removeChild(area);
+        if (!ok) throw new Error("copy command failed");
+      }
+
+      function setStatus(message, kind = "") {
+        const status = document.getElementById("status");
+        if (!status) return;
+        status.textContent = message;
+        status.className = `status ${kind}`.trim();
+      }
+
+      async function copyInstall(item, source = "button") {
+        const text = installUrl(item);
+        try {
+          await copyText(text);
+          setStatus(`已复制 ${item.name} 的 Surge 安装链接。`, "ok");
+        } catch (error) {
+          setStatus("浏览器阻止了自动复制，请点页面上的复制按钮重试。", source === "auto" ? "warn" : "");
+        }
+      }
+
+      function renderSelected(item) {
+        state.selected = item;
+        if (!item) {
+          selectedEl.classList.remove("active");
+          selectedEl.innerHTML = "";
+          return;
+        }
+        const tags = String(item.category || "")
+          .split(",")
+          .map((tag) => tag.trim())
+          .filter(Boolean)
+          .map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`)
+          .join("");
+        selectedEl.classList.add("active");
+        selectedEl.innerHTML = `
+          <h2>${escapeHtml(item.name)}</h2>
+          <p class="desc">${escapeHtml(item.desc || "暂无描述")}</p>
+          <div class="tagline">${tags}</div>
+          <div class="file">${escapeHtml(item.output)}</div>
+          <div class="actions">
+            <a class="button" href="${escapeHtml(installUrl(item))}">安装到 Surge</a>
+            <button id="copySelected" class="secondary" type="button">复制 Surge 链接</button>
+            <a class="button secondary" href="${escapeHtml(item.download_url)}">打开模块文件</a>
+          </div>
+          <div id="status" class="status"></div>
+        `;
+        document.getElementById("copySelected").addEventListener("click", () => copyInstall(item));
+      }
+
+      function renderList() {
+        countEl.textContent = `${state.filtered.length} 个模块`;
+        if (!state.filtered.length) {
+          listEl.innerHTML = '<div class="empty">没有找到匹配的模块</div>';
+          return;
+        }
+        const rows = state.filtered
+          .map((item) => `
+            <tr>
+              <td>${escapeHtml(item.index)}</td>
+              <td>
+                <div class="name">${escapeHtml(item.name)}</div>
+                <div class="file">${escapeHtml(item.output)}</div>
+              </td>
+              <td>${escapeHtml(item.category || "")}</td>
+              <td>${escapeHtml(item.desc || "")}</td>
+              <td>
+                <div class="row-actions">
+                  <a class="button" href="${escapeHtml(installUrl(item))}">安装</a>
+                  <button class="secondary" type="button" data-copy="${escapeHtml(item.output)}">复制</button>
+                  <button class="secondary" type="button" data-select="${escapeHtml(item.output)}">详情</button>
+                </div>
+              </td>
+            </tr>
+          `)
+          .join("");
+        listEl.innerHTML = `
+          <table>
+            <thead>
+              <tr>
+                <th>序号</th>
+                <th>插件</th>
+                <th>分类</th>
+                <th>描述</th>
+                <th>操作</th>
+              </tr>
+            </thead>
+            <tbody>${rows}</tbody>
+          </table>
+        `;
+        listEl.querySelectorAll("[data-copy]").forEach((button) => {
+          button.addEventListener("click", () => {
+            const item = findByOutput(button.dataset.copy);
+            renderSelected(item);
+            copyInstall(item);
+          });
+        });
+        listEl.querySelectorAll("[data-select]").forEach((button) => {
+          button.addEventListener("click", () => {
+            const item = findByOutput(button.dataset.select);
+            renderSelected(item);
+            selectedEl.scrollIntoView({ behavior: "smooth", block: "start" });
+          });
+        });
+      }
+
+      function findByOutput(output) {
+        return state.items.find((item) => item.output === output);
+      }
+
+      function applyFilter() {
+        const query = normalize(searchInput.value.trim());
+        if (!query) {
+          state.filtered = state.items;
+        } else {
+          state.filtered = state.items.filter((item) => {
+            const haystack = normalize([
+              item.name,
+              item.output,
+              item.category,
+              item.desc,
+            ].join(" "));
+            return haystack.includes(query);
+          });
+        }
+        renderList();
+      }
+
+      async function loadManifest() {
+        const response = await fetch(RAW_MANIFEST, { cache: "no-store" });
+        if (!response.ok) throw new Error(`manifest ${response.status}`);
+        return response.json();
+      }
+
+      async function main() {
+        try {
+          const manifest = await loadManifest();
+          state.items = Array.isArray(manifest.items) ? manifest.items : [];
+          state.filtered = state.items;
+          metaEl.textContent = `共 ${state.items.length} 个模块，数据来自 ${REPO} main 分支。`;
+          searchInput.addEventListener("input", applyFilter);
+          applyFilter();
+          const selected = requestedModule ? findByOutput(requestedModule) : null;
+          if (selected) {
+            renderSelected(selected);
+            if (shouldCopy) {
+              await copyInstall(selected, "auto");
+            }
+          }
+        } catch (error) {
+          metaEl.textContent = "模块列表载入失败。";
+          listEl.innerHTML = '<div class="empty">无法载入 manifest.json，请稍后重试。</div>';
+        }
+      }
+
+      main();
+    </script>
+  </body>
+</html>
