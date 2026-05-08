@@ -7,126 +7,55 @@
     <style>
       :root {
         color-scheme: light;
-        --bg: #f6f7f9;
-        --panel: #ffffff;
-        --text: #15171a;
-        --muted: #626b78;
-        --border: #d9dee7;
-        --accent: #0b6bcb;
-        --accent-dark: #084f95;
-        --ok: #137333;
-        --warn: #9a5a00;
+        --bg: #f5f7fb;
+        --surface: #ffffff;
+        --surface-soft: #f8fafc;
+        --surface-strong: #eef4ff;
+        --text: #141821;
+        --muted: #647084;
+        --subtle: #8a94a6;
+        --border: #dbe2ec;
+        --border-strong: #c6d0df;
+        --accent: #2458d3;
+        --accent-dark: #173f9c;
+        --accent-soft: #e7efff;
+        --green: #0f766e;
+        --green-soft: #e6f4f1;
+        --amber: #a75d00;
+        --amber-soft: #fff4db;
+        --rose: #b42343;
+        --shadow: 0 16px 40px rgba(32, 45, 68, 0.1);
       }
 
       * {
         box-sizing: border-box;
       }
 
+      html {
+        min-width: 320px;
+      }
+
       body {
         margin: 0;
-        background: var(--bg);
+        background:
+          linear-gradient(180deg, #fbfcff 0, var(--bg) 240px),
+          var(--bg);
         color: var(--text);
         font-family:
           -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
           "Microsoft YaHei", sans-serif;
         line-height: 1.5;
+        letter-spacing: 0;
       }
 
-      .wrap {
-        width: min(1120px, calc(100% - 32px));
-        margin: 0 auto;
-        padding: 28px 0 40px;
+      a {
+        color: inherit;
       }
 
-      header {
-        display: grid;
-        gap: 12px;
-        margin-bottom: 20px;
-      }
-
-      h1 {
-        margin: 0;
-        font-size: 28px;
-        font-weight: 720;
-      }
-
-      .meta {
-        color: var(--muted);
-        font-size: 14px;
-      }
-
-      .toolbar,
-      .selected,
-      .list {
-        background: var(--panel);
-        border: 1px solid var(--border);
-        border-radius: 8px;
-      }
-
-      .toolbar {
-        display: grid;
-        grid-template-columns: 1fr auto;
-        gap: 12px;
-        padding: 14px;
-        margin-bottom: 14px;
-      }
-
-      input[type="search"] {
-        width: 100%;
-        min-height: 40px;
-        border: 1px solid var(--border);
-        border-radius: 6px;
-        padding: 0 12px;
+      button,
+      input,
+      select {
         font: inherit;
-      }
-
-      .count {
-        display: flex;
-        align-items: center;
-        white-space: nowrap;
-        color: var(--muted);
-        font-size: 14px;
-      }
-
-      .selected {
-        display: none;
-        padding: 16px;
-        margin-bottom: 14px;
-      }
-
-      .selected.active {
-        display: grid;
-        gap: 12px;
-      }
-
-      .selected h2 {
-        margin: 0;
-        font-size: 20px;
-      }
-
-      .desc {
-        margin: 0;
-        color: var(--muted);
-      }
-
-      .tagline {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-      }
-
-      .tag {
-        border: 1px solid var(--border);
-        border-radius: 999px;
-        padding: 2px 8px;
-        color: var(--muted);
-        font-size: 12px;
-      }
-
-      .actions {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
       }
 
       button,
@@ -134,162 +63,521 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        min-height: 36px;
+        gap: 7px;
+        min-height: 38px;
         border: 1px solid var(--accent);
-        border-radius: 6px;
+        border-radius: 7px;
         background: var(--accent);
         color: #fff;
-        padding: 0 12px;
-        font: inherit;
+        padding: 0 13px;
         text-decoration: none;
         cursor: pointer;
+        transition:
+          background 0.16s ease,
+          border-color 0.16s ease,
+          box-shadow 0.16s ease,
+          transform 0.16s ease;
+        white-space: nowrap;
       }
 
       button:hover,
       .button:hover {
         background: var(--accent-dark);
         border-color: var(--accent-dark);
+        box-shadow: 0 8px 18px rgba(36, 88, 211, 0.18);
+        transform: translateY(-1px);
       }
 
       .button.secondary,
       button.secondary {
         background: #fff;
         color: var(--accent);
+        box-shadow: none;
       }
 
       .button.secondary:hover,
       button.secondary:hover {
         color: var(--accent-dark);
         border-color: var(--accent-dark);
+        background: #f8fbff;
+      }
+
+      .button.ghost,
+      button.ghost {
+        border-color: var(--border);
+        background: #fff;
+        color: var(--muted);
+        box-shadow: none;
+      }
+
+      .button.ghost:hover,
+      button.ghost:hover {
+        border-color: var(--border-strong);
+        color: var(--text);
+        background: var(--surface-soft);
+      }
+
+      .wrap {
+        width: min(1220px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 24px 0 44px;
+      }
+
+      .topbar {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 16px;
+        align-items: end;
+        margin-bottom: 18px;
+      }
+
+      .brand {
+        display: grid;
+        gap: 7px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 30px;
+        line-height: 1.15;
+        font-weight: 760;
+      }
+
+      .meta {
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .page-link {
+        display: inline-flex;
+        align-items: center;
+        min-height: 34px;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        background: #fff;
+        color: var(--muted);
+        padding: 0 12px;
+        font-size: 13px;
+        text-decoration: none;
+      }
+
+      .page-link:hover {
+        border-color: var(--border-strong);
+        color: var(--text);
+      }
+
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+        margin-bottom: 14px;
+      }
+
+      .stat {
+        min-height: 74px;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        background: var(--surface);
+        padding: 12px 14px;
+      }
+
+      .stat span {
+        display: block;
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .stat strong {
+        display: block;
+        margin-top: 3px;
+        color: var(--text);
+        font-size: 24px;
+        line-height: 1.1;
+      }
+
+      .toolbar {
+        display: grid;
+        grid-template-columns: minmax(260px, 1fr) minmax(160px, 220px) auto;
+        gap: 10px;
+        align-items: center;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        background: var(--surface);
+        padding: 12px;
+        margin-bottom: 14px;
+        box-shadow: 0 6px 20px rgba(32, 45, 68, 0.05);
+      }
+
+      .field {
+        position: relative;
+      }
+
+      .field input,
+      .field select {
+        width: 100%;
+        min-height: 42px;
+        border: 1px solid var(--border);
+        border-radius: 7px;
+        background: #fff;
+        color: var(--text);
+        padding: 0 12px;
+        outline: none;
+      }
+
+      .field input:focus,
+      .field select:focus {
+        border-color: var(--accent);
+        box-shadow: 0 0 0 3px rgba(36, 88, 211, 0.12);
+      }
+
+      .field input {
+        padding-left: 40px;
+      }
+
+      .search-mark {
+        position: absolute;
+        left: 13px;
+        top: 50%;
+        width: 16px;
+        height: 16px;
+        border: 2px solid var(--subtle);
+        border-radius: 999px;
+        transform: translateY(-58%);
+        pointer-events: none;
+      }
+
+      .search-mark::after {
+        content: "";
+        position: absolute;
+        right: -6px;
+        bottom: -5px;
+        width: 8px;
+        height: 2px;
+        border-radius: 999px;
+        background: var(--subtle);
+        transform: rotate(45deg);
+      }
+
+      .layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 360px;
+        gap: 16px;
+        align-items: start;
+      }
+
+      .module-list {
+        display: grid;
+        gap: 10px;
+      }
+
+      .module-card,
+      .detail-panel,
+      .empty {
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        background: var(--surface);
+      }
+
+      .module-card {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 14px;
+        padding: 14px;
+        transition:
+          border-color 0.16s ease,
+          box-shadow 0.16s ease,
+          transform 0.16s ease;
+      }
+
+      .module-card:hover {
+        border-color: var(--border-strong);
+        box-shadow: 0 10px 26px rgba(32, 45, 68, 0.08);
+        transform: translateY(-1px);
+      }
+
+      .module-card.is-active {
+        border-color: rgba(36, 88, 211, 0.65);
+        background: linear-gradient(180deg, #ffffff 0, #f8fbff 100%);
+        box-shadow: 0 10px 28px rgba(36, 88, 211, 0.12);
+      }
+
+      .module-main {
+        min-width: 0;
+      }
+
+      .module-head {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 6px;
+      }
+
+      .module-name {
+        margin: 0;
+        font-size: 17px;
+        line-height: 1.25;
+        font-weight: 700;
+        overflow-wrap: anywhere;
+      }
+
+      .index-pill,
+      .tag,
+      .status-pill {
+        display: inline-flex;
+        align-items: center;
+        min-height: 24px;
+        border-radius: 999px;
+        padding: 0 8px;
+        font-size: 12px;
+        line-height: 1;
+      }
+
+      .index-pill {
+        background: var(--surface-strong);
+        color: var(--accent);
+      }
+
+      .tag {
+        border: 1px solid var(--border);
+        background: #fff;
+        color: var(--muted);
+      }
+
+      .status-pill {
+        background: var(--green-soft);
+        color: var(--green);
+      }
+
+      .module-desc {
+        margin: 0;
+        color: var(--muted);
+        font-size: 14px;
+        overflow-wrap: anywhere;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+      }
+
+      .file {
+        margin-top: 8px;
+        color: var(--subtle);
+        font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+        font-size: 12px;
+        overflow-wrap: anywhere;
+      }
+
+      .row-actions {
+        align-self: start;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 7px;
+        width: 210px;
+      }
+
+      .row-actions button,
+      .row-actions .button {
+        width: 100%;
+        min-height: 34px;
+        padding: 0 10px;
+        font-size: 13px;
+      }
+
+      .detail-wrap {
+        position: sticky;
+        top: 16px;
+      }
+
+      .detail-panel {
+        padding: 16px;
+        box-shadow: var(--shadow);
+      }
+
+      .detail-kicker {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 12px;
+      }
+
+      .detail-title {
+        margin: 0;
+        font-size: 22px;
+        line-height: 1.2;
+        font-weight: 760;
+        overflow-wrap: anywhere;
+      }
+
+      .detail-desc {
+        margin: 10px 0 0;
+        color: var(--muted);
+        overflow-wrap: anywhere;
+      }
+
+      .tagline {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+        margin-top: 12px;
+      }
+
+      .detail-actions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        margin-top: 15px;
+      }
+
+      .detail-actions .button:first-child {
+        grid-column: 1 / -1;
+        min-height: 44px;
+      }
+
+      .install-box {
+        margin-top: 14px;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        background: var(--surface-soft);
+        padding: 11px;
+      }
+
+      .install-box span {
+        display: block;
+        color: var(--muted);
+        font-size: 12px;
+        margin-bottom: 5px;
+      }
+
+      .install-url {
+        color: #354052;
+        font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+        font-size: 12px;
+        line-height: 1.45;
+        overflow-wrap: anywhere;
       }
 
       .status {
         min-height: 22px;
+        margin-top: 10px;
         color: var(--muted);
         font-size: 14px;
       }
 
       .status.ok {
-        color: var(--ok);
+        color: var(--green);
       }
 
       .status.warn {
-        color: var(--warn);
-      }
-
-      .list {
-        overflow: hidden;
-      }
-
-      table {
-        width: 100%;
-        border-collapse: collapse;
-      }
-
-      th,
-      td {
-        border-bottom: 1px solid var(--border);
-        padding: 11px 12px;
-        text-align: left;
-        vertical-align: top;
-        font-size: 14px;
-      }
-
-      th {
-        background: #f0f3f7;
-        color: #343a43;
-        font-weight: 650;
-      }
-
-      tr:last-child td {
-        border-bottom: 0;
-      }
-
-      .name {
-        font-weight: 650;
-      }
-
-      .file {
-        color: var(--muted);
-        font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
-        font-size: 12px;
-        word-break: break-all;
-      }
-
-      .row-actions {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 6px;
-      }
-
-      .row-actions button,
-      .row-actions .button {
-        min-height: 30px;
-        padding: 0 9px;
-        font-size: 13px;
+        color: var(--amber);
       }
 
       .empty {
+        min-height: 180px;
+        display: grid;
+        place-items: center;
         padding: 28px;
-        text-align: center;
         color: var(--muted);
+        text-align: center;
       }
 
-      @media (max-width: 720px) {
-        .wrap {
-          width: min(100% - 20px, 1120px);
-          padding-top: 18px;
-        }
+      .load-error {
+        border-color: rgba(180, 35, 67, 0.35);
+        background: #fff7f8;
+        color: var(--rose);
+      }
 
-        .toolbar {
+      @media (max-width: 980px) {
+        .layout {
           grid-template-columns: 1fr;
         }
 
-        table,
-        thead,
-        tbody,
-        tr,
-        th,
-        td {
-          display: block;
+        .detail-wrap {
+          position: static;
+          order: -1;
+        }
+      }
+
+      @media (max-width: 760px) {
+        .wrap {
+          width: min(100% - 20px, 1220px);
+          padding-top: 18px;
         }
 
-        thead {
-          display: none;
+        .topbar,
+        .toolbar,
+        .module-card {
+          grid-template-columns: 1fr;
         }
 
-        tr {
-          border-bottom: 1px solid var(--border);
-          padding: 10px 12px;
+        .topbar {
+          align-items: start;
         }
 
-        tr:last-child {
-          border-bottom: 0;
+        .stats {
+          grid-template-columns: 1fr;
         }
 
-        td {
-          border: 0;
-          padding: 3px 0;
+        .row-actions {
+          width: 100%;
+        }
+
+        .detail-actions {
+          grid-template-columns: 1fr;
+        }
+
+        h1 {
+          font-size: 26px;
         }
       }
     </style>
   </head>
   <body>
     <main class="wrap">
-      <header>
-        <h1>Module Surge 安装</h1>
-        <div class="meta" id="pageMeta">正在载入模块列表...</div>
+      <header class="topbar">
+        <div class="brand">
+          <h1>Module Surge 安装</h1>
+          <div class="meta" id="pageMeta">正在载入模块列表...</div>
+        </div>
+        <a class="page-link" href="https://github.com/Oranjekop/Module">GitHub / Oranjekop / Module</a>
       </header>
 
-      <section class="toolbar" aria-label="模块筛选">
-        <input id="search" type="search" placeholder="搜索插件、文件名、分类或描述" autocomplete="off">
-        <div class="count" id="count">0 个模块</div>
+      <section class="stats" aria-label="模块状态">
+        <div class="stat">
+          <span>全部模块</span>
+          <strong id="totalCount">0</strong>
+        </div>
+        <div class="stat">
+          <span>当前结果</span>
+          <strong id="visibleCount">0</strong>
+        </div>
+        <div class="stat">
+          <span>分类数量</span>
+          <strong id="categoryCount">0</strong>
+        </div>
       </section>
 
-      <section class="selected" id="selected" aria-live="polite"></section>
+      <section class="toolbar" aria-label="模块筛选">
+        <label class="field" aria-label="搜索模块">
+          <span class="search-mark"></span>
+          <input id="search" type="search" placeholder="搜索插件、文件名、分类或描述" autocomplete="off">
+        </label>
+        <label class="field" aria-label="筛选分类">
+          <select id="category">
+            <option value="">全部分类</option>
+          </select>
+        </label>
+        <button id="reset" class="ghost" type="button">重置</button>
+      </section>
 
-      <section class="list" id="list">
-        <div class="empty">正在载入...</div>
+      <section class="layout" aria-label="模块安装">
+        <div class="module-list" id="list">
+          <div class="empty">正在载入...</div>
+        </div>
+        <aside class="detail-wrap">
+          <section class="detail-panel" id="selected" aria-live="polite"></section>
+        </aside>
       </section>
     </main>
 
@@ -302,16 +590,21 @@
         items: [],
         filtered: [],
         selected: null,
+        categories: [],
       };
 
       const params = new URLSearchParams(location.search);
       const requestedModule = params.get("module") || "";
       const shouldCopy = params.get("copy") === "1";
       const searchInput = document.getElementById("search");
+      const categorySelect = document.getElementById("category");
+      const resetButton = document.getElementById("reset");
       const listEl = document.getElementById("list");
-      const countEl = document.getElementById("count");
       const metaEl = document.getElementById("pageMeta");
       const selectedEl = document.getElementById("selected");
+      const totalCountEl = document.getElementById("totalCount");
+      const visibleCountEl = document.getElementById("visibleCount");
+      const categoryCountEl = document.getElementById("categoryCount");
 
       function escapeHtml(value) {
         return String(value ?? "")
@@ -326,9 +619,25 @@
         return String(value ?? "").toLowerCase();
       }
 
+      function downloadUrl(item) {
+        return item.download_url || `${RAW_BASE}/Module/${encodeURIComponent(item.output)}`;
+      }
+
       function installUrl(item) {
-        const downloadUrl = item.download_url || `${RAW_BASE}/Module/${encodeURIComponent(item.output)}`;
-        return `surge:///install-module?url=${encodeURIComponent(downloadUrl)}`;
+        return `surge:///install-module?url=${encodeURIComponent(downloadUrl(item))}`;
+      }
+
+      function splitCategories(item) {
+        return String(item.category || "")
+          .split(",")
+          .map((tag) => tag.trim())
+          .filter(Boolean);
+      }
+
+      function categoryTags(item, limit = 4) {
+        const tags = splitCategories(item).slice(0, limit);
+        if (!tags.length) return '<span class="tag">未分类</span>';
+        return tags.map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("");
       }
 
       async function copyText(text) {
@@ -361,33 +670,51 @@
           await copyText(text);
           setStatus(`已复制 ${item.name} 的 Surge 安装链接。`, "ok");
         } catch (error) {
-          setStatus("浏览器阻止了自动复制，请点页面上的复制按钮重试。", source === "auto" ? "warn" : "");
+          setStatus("浏览器阻止了自动复制，请点复制按钮重试。", source === "auto" ? "warn" : "");
         }
       }
 
-      function renderSelected(item) {
-        state.selected = item;
+      function selectItem(item, options = {}) {
+        state.selected = item || null;
+        renderSelected();
+        renderList();
+        if (item && options.copy) copyInstall(item, "auto");
+        if (item && options.scroll) {
+          selectedEl.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }
+
+      function renderSelected() {
+        const item = state.selected;
         if (!item) {
-          selectedEl.classList.remove("active");
-          selectedEl.innerHTML = "";
+          selectedEl.innerHTML = `
+            <div class="detail-kicker">
+              <span class="status-pill">等待选择</span>
+            </div>
+            <h2 class="detail-title">未选择模块</h2>
+            <p class="detail-desc">模块载入后会在这里显示安装入口。</p>
+          `;
           return;
         }
-        const tags = String(item.category || "")
-          .split(",")
-          .map((tag) => tag.trim())
-          .filter(Boolean)
-          .map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`)
-          .join("");
-        selectedEl.classList.add("active");
+
+        const url = installUrl(item);
         selectedEl.innerHTML = `
-          <h2>${escapeHtml(item.name)}</h2>
-          <p class="desc">${escapeHtml(item.desc || "暂无描述")}</p>
-          <div class="tagline">${tags}</div>
+          <div class="detail-kicker">
+            <span class="index-pill">#${escapeHtml(item.index)}</span>
+            <span class="status-pill">Surge Module</span>
+          </div>
+          <h2 class="detail-title">${escapeHtml(item.name)}</h2>
+          <p class="detail-desc">${escapeHtml(item.desc || "暂无描述")}</p>
+          <div class="tagline">${categoryTags(item, 8)}</div>
           <div class="file">${escapeHtml(item.output)}</div>
-          <div class="actions">
-            <a class="button" href="${escapeHtml(installUrl(item))}">安装到 Surge</a>
-            <button id="copySelected" class="secondary" type="button">复制 Surge 链接</button>
-            <a class="button secondary" href="${escapeHtml(item.download_url)}">打开模块文件</a>
+          <div class="detail-actions">
+            <a class="button" href="${escapeHtml(url)}">安装到 Surge</a>
+            <button id="copySelected" class="secondary" type="button">复制链接</button>
+            <a class="button ghost" href="${escapeHtml(downloadUrl(item))}">模块文件</a>
+          </div>
+          <div class="install-box">
+            <span>Surge 安装链接</span>
+            <div class="install-url">${escapeHtml(url)}</div>
           </div>
           <div id="status" class="status"></div>
         `;
@@ -395,81 +722,98 @@
       }
 
       function renderList() {
-        countEl.textContent = `${state.filtered.length} 个模块`;
+        visibleCountEl.textContent = state.filtered.length;
         if (!state.filtered.length) {
           listEl.innerHTML = '<div class="empty">没有找到匹配的模块</div>';
           return;
         }
-        const rows = state.filtered
-          .map((item) => `
-            <tr>
-              <td>${escapeHtml(item.index)}</td>
-              <td>
-                <div class="name">${escapeHtml(item.name)}</div>
-                <div class="file">${escapeHtml(item.output)}</div>
-              </td>
-              <td>${escapeHtml(item.category || "")}</td>
-              <td>${escapeHtml(item.desc || "")}</td>
-              <td>
+
+        listEl.innerHTML = state.filtered
+          .map((item) => {
+            const active = state.selected && state.selected.output === item.output ? " is-active" : "";
+            return `
+              <article class="module-card${active}">
+                <div class="module-main">
+                  <div class="module-head">
+                    <span class="index-pill">#${escapeHtml(item.index)}</span>
+                    ${categoryTags(item, 2)}
+                  </div>
+                  <h3 class="module-name">${escapeHtml(item.name)}</h3>
+                  <p class="module-desc">${escapeHtml(item.desc || "暂无描述")}</p>
+                  <div class="file">${escapeHtml(item.output)}</div>
+                </div>
                 <div class="row-actions">
                   <a class="button" href="${escapeHtml(installUrl(item))}">安装</a>
                   <button class="secondary" type="button" data-copy="${escapeHtml(item.output)}">复制</button>
-                  <button class="secondary" type="button" data-select="${escapeHtml(item.output)}">详情</button>
+                  <button class="ghost" type="button" data-select="${escapeHtml(item.output)}">详情</button>
                 </div>
-              </td>
-            </tr>
-          `)
+              </article>
+            `;
+          })
           .join("");
-        listEl.innerHTML = `
-          <table>
-            <thead>
-              <tr>
-                <th>序号</th>
-                <th>插件</th>
-                <th>分类</th>
-                <th>描述</th>
-                <th>操作</th>
-              </tr>
-            </thead>
-            <tbody>${rows}</tbody>
-          </table>
-        `;
+
         listEl.querySelectorAll("[data-copy]").forEach((button) => {
           button.addEventListener("click", () => {
             const item = findByOutput(button.dataset.copy);
-            renderSelected(item);
+            selectItem(item);
             copyInstall(item);
           });
         });
         listEl.querySelectorAll("[data-select]").forEach((button) => {
           button.addEventListener("click", () => {
-            const item = findByOutput(button.dataset.select);
-            renderSelected(item);
-            selectedEl.scrollIntoView({ behavior: "smooth", block: "start" });
+            selectItem(findByOutput(button.dataset.select), { scroll: true });
           });
         });
+      }
+
+      function renderCategories() {
+        const counts = new Map();
+        state.items.forEach((item) => {
+          splitCategories(item).forEach((category) => {
+            counts.set(category, (counts.get(category) || 0) + 1);
+          });
+        });
+        state.categories = [...counts.entries()]
+          .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "zh-Hans-CN"))
+          .map(([name, count]) => ({ name, count }));
+
+        categoryCountEl.textContent = state.categories.length;
+        categorySelect.innerHTML = '<option value="">全部分类</option>' + state.categories
+          .map(({ name, count }) => `<option value="${escapeHtml(name)}">${escapeHtml(name)} (${count})</option>`)
+          .join("");
       }
 
       function findByOutput(output) {
         return state.items.find((item) => item.output === output);
       }
 
-      function applyFilter() {
+      function itemMatchesCategory(item, category) {
+        if (!category) return true;
+        return splitCategories(item).includes(category);
+      }
+
+      function applyFilter(options = {}) {
         const query = normalize(searchInput.value.trim());
-        if (!query) {
-          state.filtered = state.items;
-        } else {
-          state.filtered = state.items.filter((item) => {
-            const haystack = normalize([
-              item.name,
-              item.output,
-              item.category,
-              item.desc,
-            ].join(" "));
-            return haystack.includes(query);
-          });
+        const category = categorySelect.value;
+        state.filtered = state.items.filter((item) => {
+          const haystack = normalize([
+            item.name,
+            item.output,
+            item.category,
+            item.desc,
+          ].join(" "));
+          return (!query || haystack.includes(query)) && itemMatchesCategory(item, category);
+        });
+
+        if (!state.selected || !state.filtered.some((item) => item.output === state.selected.output)) {
+          state.selected = state.filtered[0] || state.items[0] || null;
         }
+        renderSelected();
         renderList();
+
+        if (options.scrollTop) {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
       }
 
       async function loadManifest() {
@@ -479,23 +823,32 @@
       }
 
       async function main() {
+        renderSelected();
         try {
           const manifest = await loadManifest();
           state.items = Array.isArray(manifest.items) ? manifest.items : [];
           state.filtered = state.items;
+          totalCountEl.textContent = state.items.length;
+          visibleCountEl.textContent = state.items.length;
           metaEl.textContent = `共 ${state.items.length} 个模块，数据来自 ${REPO} main 分支。`;
-          searchInput.addEventListener("input", applyFilter);
-          applyFilter();
-          const selected = requestedModule ? findByOutput(requestedModule) : null;
-          if (selected) {
-            renderSelected(selected);
-            if (shouldCopy) {
-              await copyInstall(selected, "auto");
-            }
-          }
+          renderCategories();
+
+          searchInput.addEventListener("input", () => applyFilter());
+          categorySelect.addEventListener("change", () => applyFilter({ scrollTop: true }));
+          resetButton.addEventListener("click", () => {
+            searchInput.value = "";
+            categorySelect.value = "";
+            applyFilter({ scrollTop: true });
+          });
+
+          const selected = requestedModule ? findByOutput(requestedModule) : state.items[0];
+          selectItem(selected || state.items[0] || null, { copy: Boolean(selected && shouldCopy) });
         } catch (error) {
           metaEl.textContent = "模块列表载入失败。";
-          listEl.innerHTML = '<div class="empty">无法载入 manifest.json，请稍后重试。</div>';
+          listEl.innerHTML = '<div class="empty load-error">无法载入 manifest.json，请稍后重试。</div>';
+          totalCountEl.textContent = "0";
+          visibleCountEl.textContent = "0";
+          categoryCountEl.textContent = "0";
         }
       }
 
