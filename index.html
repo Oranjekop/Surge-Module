@@ -283,6 +283,7 @@
         grid-template-columns: minmax(0, 1fr) auto;
         gap: 14px;
         padding: 14px;
+        cursor: pointer;
         transition:
           border-color 0.16s ease,
           box-shadow 0.16s ease,
@@ -293,6 +294,12 @@
         border-color: var(--border-strong);
         box-shadow: 0 10px 26px rgba(32, 45, 68, 0.08);
         transform: translateY(-1px);
+      }
+
+      .module-card:focus-visible {
+        outline: 3px solid rgba(36, 88, 211, 0.18);
+        outline-offset: 2px;
+        border-color: rgba(36, 88, 211, 0.7);
       }
 
       .module-card.is-active {
@@ -371,9 +378,9 @@
       .row-actions {
         align-self: start;
         display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 7px;
-        width: 210px;
+        width: 140px;
       }
 
       .row-actions button,
@@ -732,7 +739,7 @@
           .map((item) => {
             const active = state.selected && state.selected.output === item.output ? " is-active" : "";
             return `
-              <article class="module-card${active}">
+              <article class="module-card${active}" data-card="${escapeHtml(item.output)}" role="button" tabindex="0" aria-label="选择 ${escapeHtml(item.name)}">
                 <div class="module-main">
                   <div class="module-head">
                     <span class="index-pill">#${escapeHtml(item.index)}</span>
@@ -745,23 +752,34 @@
                 <div class="row-actions">
                   <a class="button" href="${escapeHtml(installUrl(item))}">安装</a>
                   <button class="secondary" type="button" data-copy="${escapeHtml(item.output)}">复制</button>
-                  <button class="ghost" type="button" data-select="${escapeHtml(item.output)}">详情</button>
                 </div>
               </article>
             `;
           })
           .join("");
 
+        listEl.querySelectorAll("[data-card]").forEach((card) => {
+          const pick = () => {
+            selectItem(findByOutput(card.dataset.card), {
+              scroll: window.matchMedia("(max-width: 980px)").matches,
+            });
+          };
+          card.addEventListener("click", pick);
+          card.addEventListener("keydown", (event) => {
+            if (event.key === "Enter" || event.key === " ") {
+              event.preventDefault();
+              pick();
+            }
+          });
+        });
+        listEl.querySelectorAll(".row-actions").forEach((actions) => {
+          actions.addEventListener("click", (event) => event.stopPropagation());
+        });
         listEl.querySelectorAll("[data-copy]").forEach((button) => {
           button.addEventListener("click", () => {
             const item = findByOutput(button.dataset.copy);
             selectItem(item);
             copyInstall(item);
-          });
-        });
-        listEl.querySelectorAll("[data-select]").forEach((button) => {
-          button.addEventListener("click", () => {
-            selectItem(findByOutput(button.dataset.select), { scroll: true });
           });
         });
       }
