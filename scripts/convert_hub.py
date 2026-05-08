@@ -232,6 +232,8 @@ def write_readme(path: Path, manifest_doc: dict[str, object], repo_url: str, bra
         "",
         "GitHub Actions 会定时重新拉取 `https://hub.kelee.one/list.json`，解析其中的 `loon://import?plugin=...`，并更新 `Module/` 目录。",
         "",
+        "特别感谢 [Kelee 项目](https://github.com/luestr/ProxyResource) 及维护者长期整理、维护和分享这些插件资源，本项目的自动转换流程基于 Kelee 插件中心提供的公开列表与原始 Loon 插件链接。",
+        "",
         "## 本地生成",
         "",
         "```powershell",
