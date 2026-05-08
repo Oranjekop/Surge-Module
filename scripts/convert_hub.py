@@ -29,7 +29,7 @@ from scripts.loon2surge import (
 
 
 DEFAULT_HUB_LIST_URL = "https://hub.kelee.one/list.json"
-DEFAULT_REPO_URL = "https://github.com/Oranjekop/Module.git"
+DEFAULT_REPO_URL = "https://github.com/Oranjekop/Surge-Module.git"
 DEFAULT_BRANCH = "main"
 SURGE_INSTALL_BASE_URL = "surge:///install-module"
 INVALID_FILENAME_RE = re.compile(r'[<>:"/\\|?*\x00-\x1f]+')
@@ -300,7 +300,7 @@ def write_readme(path: Path, manifest_doc: dict[str, object], repo_url: str, bra
     if not isinstance(items, list):
         items = []
     lines: list[str] = [
-        "# Module",
+        "# Surge-Module",
         "",
         "自动从 [Kelee 插件中心](https://hub.kelee.one/) 获取 Loon 插件地址，并转换为 Surge 可用的 `.sgmodule`。",
         "",

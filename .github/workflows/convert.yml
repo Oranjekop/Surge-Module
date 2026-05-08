@@ -24,7 +24,7 @@ jobs:
         run: python -m unittest discover -s tests -v
 
       - name: Convert hub plugins
-        run: python scripts/convert_hub.py --output-dir Module --readme README.md --repo-url https://github.com/Oranjekop/Module.git --branch main
+        run: python scripts/convert_hub.py --output-dir Module --readme README.md --repo-url https://github.com/Oranjekop/Surge-Module.git --branch main
 
       - name: Commit converted modules
         shell: bash

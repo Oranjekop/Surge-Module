@@ -59,29 +59,29 @@ class ConvertHubTests(unittest.TestCase):
 
     def test_make_download_url_uses_github_raw_path(self):
         self.assertEqual(
-            make_download_url("https://github.com/Oranjekop/Module.git", "main", "Demo File.sgmodule"),
-            "https://github.com/Oranjekop/Module/raw/refs/heads/main/Module/Demo%20File.sgmodule",
+            make_download_url("https://github.com/Oranjekop/Surge-Module.git", "main", "Demo File.sgmodule"),
+            "https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/Demo%20File.sgmodule",
         )
 
     def test_make_install_url_uses_surge_scheme(self):
         download_url = make_download_url(
-            "https://github.com/Oranjekop/Module.git",
+            "https://github.com/Oranjekop/Surge-Module.git",
             "main",
             "Demo File.sgmodule",
         )
 
         self.assertEqual(
             make_install_url(download_url),
-            "surge:///install-module?url=https%3A%2F%2Fgithub.com%2FOranjekop%2FModule%2Fraw%2Frefs%2Fheads%2Fmain%2FModule%2FDemo%2520File.sgmodule",
+            "surge:///install-module?url=https%3A%2F%2Fgithub.com%2FOranjekop%2FSurge-Module%2Fraw%2Frefs%2Fheads%2Fmain%2FModule%2FDemo%2520File.sgmodule",
         )
 
     def test_make_page_urls(self):
-        page_base_url = make_page_base_url("https://github.com/Oranjekop/Module.git")
+        page_base_url = make_page_base_url("https://github.com/Oranjekop/Surge-Module.git")
 
-        self.assertEqual(page_base_url, "https://oranjekop.github.io/Module/")
+        self.assertEqual(page_base_url, "https://oranjekop.github.io/Surge-Module/")
         self.assertEqual(
             make_page_copy_url(page_base_url, "Demo File.sgmodule"),
-            "https://oranjekop.github.io/Module/?module=Demo+File.sgmodule&copy=1",
+            "https://oranjekop.github.io/Surge-Module/?module=Demo+File.sgmodule&copy=1",
         )
 
 
