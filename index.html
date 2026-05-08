@@ -681,6 +681,11 @@
         return tags.map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("");
       }
 
+      function displayIndex(item) {
+        const number = Number(item.index);
+        return Number.isFinite(number) ? String(number + 1) : String(item.index || "");
+      }
+
       async function copyText(text) {
         if (navigator.clipboard && window.isSecureContext) {
           await navigator.clipboard.writeText(text);
@@ -741,7 +746,7 @@
         const url = installUrl(item);
         selectedEl.innerHTML = `
           <div class="detail-kicker">
-            <span class="index-pill">#${escapeHtml(item.index)}</span>
+            <span class="index-pill">#${escapeHtml(displayIndex(item))}</span>
             <span class="status-pill">Surge Module</span>
           </div>
           <h2 class="detail-title">${escapeHtml(item.name)}</h2>
@@ -776,7 +781,7 @@
               <article class="module-card${active}" data-card="${escapeHtml(item.output)}" role="button" tabindex="0" aria-label="选择 ${escapeHtml(item.name)}">
                 <div class="module-main">
                   <div class="module-head">
-                    <span class="index-pill">#${escapeHtml(item.index)}</span>
+                    <span class="index-pill">#${escapeHtml(displayIndex(item))}</span>
                     ${categoryTags(item, 2)}
                   </div>
                   <h3 class="module-name">${escapeHtml(item.name)}</h3>

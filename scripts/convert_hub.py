@@ -282,6 +282,13 @@ def make_page_copy_url(page_base_url: str, output_name: str) -> str:
     return page_base_url + "?" + urllib.parse.urlencode({"module": output_name, "copy": "1"})
 
 
+def display_index(value: object) -> str:
+    try:
+        return str(int(value) + 1)
+    except (TypeError, ValueError):
+        return str(value or "")
+
+
 def format_categories(categories: Iterable[str]) -> str:
     return ", ".join(category.strip() for category in categories if category.strip())
 
@@ -334,7 +341,7 @@ def write_readme(path: Path, manifest_doc: dict[str, object], repo_url: str, bra
         output = str(item.get("output") or "")
         download_url = str(item.get("download_url") or make_download_url(repo_url, branch, output))
         copy_url = make_page_copy_url(page_base_url, output)
-        index = item.get("index", "")
+        index = display_index(item.get("index", ""))
         lines.append(
             f"| {index} | {name} | [{escape_markdown(output)}]({download_url}) | [点击复制链接]({copy_url}) |"
         )

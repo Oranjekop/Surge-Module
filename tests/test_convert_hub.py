@@ -2,6 +2,7 @@ import unittest
 
 from scripts.convert_hub import (
     HubPlugin,
+    display_index,
     extract_plugin_url,
     iter_hub_plugins,
     make_download_url,
@@ -83,6 +84,11 @@ class ConvertHubTests(unittest.TestCase):
             make_page_copy_url(page_base_url, "Demo File.sgmodule"),
             "https://oranjekop.github.io/Surge-Module/?module=Demo+File.sgmodule&copy=1",
         )
+
+    def test_display_index_is_one_based(self):
+        self.assertEqual(display_index(0), "1")
+        self.assertEqual(display_index("9"), "10")
+        self.assertEqual(display_index(""), "")
 
 
 if __name__ == "__main__":
