@@ -278,8 +278,8 @@ def make_page_base_url(repo_url: str) -> str:
     return f"https://{owner.lower()}.github.io/{urllib.parse.quote(repo, safe='')}/"
 
 
-def make_page_copy_url(page_base_url: str, output_name: str) -> str:
-    return page_base_url + "?" + urllib.parse.urlencode({"module": output_name, "copy": "1"})
+def make_page_module_url(page_base_url: str, output_name: str) -> str:
+    return page_base_url + "?" + urllib.parse.urlencode({"module": output_name})
 
 
 def display_index(value: object) -> str:
@@ -328,9 +328,9 @@ def write_readme(path: Path, manifest_doc: dict[str, object], repo_url: str, bra
         f"- 插件数量：`{manifest_doc.get('converted', 0)}`",
         f"- 失败数量：`{manifest_doc.get('failed', 0)}`",
         f"- GitHub Pages：[{page_base_url}]({page_base_url})",
-        "- README 中的复制链接会打开 GitHub Pages 页面，可在页面内点击安装或复制 Surge 安装链接。",
+        "- README 中的源地址会打开模块 raw 文件；如需一键安装，请进入 GitHub Pages 页面操作。",
         "",
-        "| 序号 | 插件 | 文件 | Surge 链接 |",
+        "| 序号 | 插件 | 文件 | 源地址 |",
         "| ---: | --- | --- | --- |",
     ]
 
@@ -340,10 +340,9 @@ def write_readme(path: Path, manifest_doc: dict[str, object], repo_url: str, bra
         name = escape_markdown(str(item.get("name") or ""))
         output = str(item.get("output") or "")
         download_url = str(item.get("download_url") or make_download_url(repo_url, branch, output))
-        copy_url = make_page_copy_url(page_base_url, output)
         index = display_index(item.get("index", ""))
         lines.append(
-            f"| {index} | {name} | [{escape_markdown(output)}]({download_url}) | [点击复制链接]({copy_url}) |"
+            f"| {index} | {name} | {escape_markdown(output)} | [点击打开源地址]({download_url}) |"
         )
 
     failures = manifest_doc.get("failures", [])

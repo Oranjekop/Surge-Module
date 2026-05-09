@@ -8,7 +8,7 @@ from scripts.convert_hub import (
     make_download_url,
     make_install_url,
     make_page_base_url,
-    make_page_copy_url,
+    make_page_module_url,
     safe_output_name,
     sanitize_filename,
 )
@@ -81,8 +81,8 @@ class ConvertHubTests(unittest.TestCase):
 
         self.assertEqual(page_base_url, "https://oranjekop.github.io/Surge-Module/")
         self.assertEqual(
-            make_page_copy_url(page_base_url, "Demo File.sgmodule"),
-            "https://oranjekop.github.io/Surge-Module/?module=Demo+File.sgmodule&copy=1",
+            make_page_module_url(page_base_url, "Demo File.sgmodule"),
+            "https://oranjekop.github.io/Surge-Module/?module=Demo+File.sgmodule",
         )
 
     def test_display_index_is_one_based(self):
