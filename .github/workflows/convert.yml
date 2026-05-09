@@ -2,7 +2,7 @@ name: Update Module
 
 on:
   schedule:
-    - cron: "15 0 * * *"
+    - cron: "15 */12 * * *"
   workflow_dispatch:
 
 permissions:
