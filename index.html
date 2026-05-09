@@ -260,7 +260,7 @@
 
       .layout {
         display: grid;
-        grid-template-columns: minmax(0, 1fr) 360px;
+        grid-template-columns: minmax(0, 1fr);
         gap: 16px;
         align-items: start;
       }
@@ -271,7 +271,6 @@
       }
 
       .module-card,
-      .detail-panel,
       .empty {
         border: 1px solid var(--border);
         border-radius: 8px;
@@ -282,7 +281,7 @@
         display: grid;
         grid-template-columns: minmax(0, 1fr) auto;
         gap: 14px;
-        padding: 14px;
+        padding: 16px;
         cursor: pointer;
         transition:
           border-color 0.16s ease,
@@ -361,10 +360,6 @@
         color: var(--muted);
         font-size: 14px;
         overflow-wrap: anywhere;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 3;
-        overflow: hidden;
       }
 
       .file {
@@ -380,7 +375,7 @@
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 7px;
-        width: 140px;
+        width: 180px;
       }
 
       .row-actions button,
@@ -391,78 +386,11 @@
         font-size: 13px;
       }
 
-      .detail-wrap {
-        position: sticky;
-        top: 16px;
-      }
-
-      .detail-panel {
-        padding: 16px;
-        box-shadow: var(--shadow);
-      }
-
-      .detail-kicker {
-        display: flex;
-        justify-content: space-between;
-        gap: 10px;
-        align-items: center;
-        margin-bottom: 12px;
-      }
-
-      .detail-title {
-        margin: 0;
-        font-size: 22px;
-        line-height: 1.2;
-        font-weight: 760;
-        overflow-wrap: anywhere;
-      }
-
-      .detail-desc {
-        margin: 10px 0 0;
-        color: var(--muted);
-        overflow-wrap: anywhere;
-      }
-
       .tagline {
         display: flex;
         flex-wrap: wrap;
         gap: 7px;
         margin-top: 12px;
-      }
-
-      .detail-actions {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 8px;
-        margin-top: 15px;
-      }
-
-      .detail-actions .button:first-child {
-        grid-column: 1 / -1;
-        min-height: 44px;
-      }
-
-      .install-box {
-        margin-top: 14px;
-        border: 1px solid var(--border);
-        border-radius: 8px;
-        background: var(--surface-soft);
-        padding: 11px;
-      }
-
-      .install-box span {
-        display: block;
-        color: var(--muted);
-        font-size: 12px;
-        margin-bottom: 5px;
-      }
-
-      .install-url {
-        color: #354052;
-        font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
-        font-size: 12px;
-        line-height: 1.45;
-        overflow-wrap: anywhere;
       }
 
       .status {
@@ -521,17 +449,6 @@
         text-decoration: underline;
       }
 
-      @media (max-width: 980px) {
-        .layout {
-          grid-template-columns: 1fr;
-        }
-
-        .detail-wrap {
-          position: static;
-          order: -1;
-        }
-      }
-
       @media (max-width: 760px) {
         .wrap {
           width: min(100% - 20px, 1220px);
@@ -553,11 +470,13 @@
         }
 
         .row-actions {
+          grid-template-columns: 1fr;
           width: 100%;
         }
 
-        .detail-actions {
-          grid-template-columns: 1fr;
+        .row-actions button,
+        .row-actions .button {
+          min-height: 44px;
         }
 
         h1 {
@@ -603,14 +522,12 @@
         </label>
         <button id="reset" class="ghost" type="button">重置</button>
       </section>
+      <div id="status" class="status" aria-live="polite"></div>
 
       <section class="layout" aria-label="模块安装">
         <div class="module-list" id="list">
           <div class="empty">正在载入...</div>
         </div>
-        <aside class="detail-wrap">
-          <section class="detail-panel" id="selected" aria-live="polite"></section>
-        </aside>
       </section>
 
       <footer class="credits">
@@ -642,7 +559,6 @@
       const resetButton = document.getElementById("reset");
       const listEl = document.getElementById("list");
       const metaEl = document.getElementById("pageMeta");
-      const selectedEl = document.getElementById("selected");
       const totalCountEl = document.getElementById("totalCount");
       const visibleCountEl = document.getElementById("visibleCount");
       const categoryCountEl = document.getElementById("categoryCount");
@@ -722,49 +638,15 @@
 
       function selectItem(item, options = {}) {
         state.selected = item || null;
-        renderSelected();
         renderList();
         if (item && options.copy) copyInstall(item, "auto");
         if (item && options.scroll) {
-          selectedEl.scrollIntoView({ behavior: "smooth", block: "start" });
+          requestAnimationFrame(() => {
+            const card = [...listEl.querySelectorAll("[data-card]")]
+              .find((entry) => entry.dataset.card === item.output);
+            card?.scrollIntoView({ behavior: "smooth", block: "center" });
+          });
         }
-      }
-
-      function renderSelected() {
-        const item = state.selected;
-        if (!item) {
-          selectedEl.innerHTML = `
-            <div class="detail-kicker">
-              <span class="status-pill">等待选择</span>
-            </div>
-            <h2 class="detail-title">未选择模块</h2>
-            <p class="detail-desc">模块载入后会在这里显示安装入口。</p>
-          `;
-          return;
-        }
-
-        const url = installUrl(item);
-        selectedEl.innerHTML = `
-          <div class="detail-kicker">
-            <span class="index-pill">#${escapeHtml(displayIndex(item))}</span>
-            <span class="status-pill">Surge Module</span>
-          </div>
-          <h2 class="detail-title">${escapeHtml(item.name)}</h2>
-          <p class="detail-desc">${escapeHtml(item.desc || "暂无描述")}</p>
-          <div class="tagline">${categoryTags(item, 8)}</div>
-          <div class="file">${escapeHtml(item.output)}</div>
-          <div class="detail-actions">
-            <a class="button" href="${escapeHtml(url)}">安装到 Surge</a>
-            <button id="copySelected" class="secondary" type="button">复制链接</button>
-            <a class="button ghost" href="${escapeHtml(downloadUrl(item))}">模块文件</a>
-          </div>
-          <div class="install-box">
-            <span>Surge 安装链接</span>
-            <div class="install-url">${escapeHtml(url)}</div>
-          </div>
-          <div id="status" class="status"></div>
-        `;
-        document.getElementById("copySelected").addEventListener("click", () => copyInstall(item));
       }
 
       function renderList() {
@@ -789,7 +671,7 @@
                   <div class="file">${escapeHtml(item.output)}</div>
                 </div>
                 <div class="row-actions">
-                  <a class="button" href="${escapeHtml(installUrl(item))}">安装</a>
+                  <a class="button" href="${escapeHtml(installUrl(item))}">安装到 Surge</a>
                   <button class="secondary" type="button" data-copy="${escapeHtml(item.output)}">复制</button>
                 </div>
               </article>
@@ -799,9 +681,7 @@
 
         listEl.querySelectorAll("[data-card]").forEach((card) => {
           const pick = () => {
-            selectItem(findByOutput(card.dataset.card), {
-              scroll: window.matchMedia("(max-width: 980px)").matches,
-            });
+            selectItem(findByOutput(card.dataset.card));
           };
           card.addEventListener("click", pick);
           card.addEventListener("keydown", (event) => {
@@ -865,7 +745,6 @@
         if (!state.selected || !state.filtered.some((item) => item.output === state.selected.output)) {
           state.selected = state.filtered[0] || state.items[0] || null;
         }
-        renderSelected();
         renderList();
 
         if (options.scrollTop) {
@@ -880,7 +759,6 @@
       }
 
       async function main() {
-        renderSelected();
         try {
           const manifest = await loadManifest();
           state.items = Array.isArray(manifest.items) ? manifest.items : [];
@@ -899,7 +777,10 @@
           });
 
           const selected = requestedModule ? findByOutput(requestedModule) : state.items[0];
-          selectItem(selected || state.items[0] || null, { copy: Boolean(selected && shouldCopy) });
+          selectItem(selected || state.items[0] || null, {
+            copy: Boolean(selected && shouldCopy),
+            scroll: Boolean(requestedModule && selected),
+          });
         } catch (error) {
           metaEl.textContent = "模块列表载入失败。";
           listEl.innerHTML = '<div class="empty load-error">无法载入 manifest.json，请稍后重试。</div>';
