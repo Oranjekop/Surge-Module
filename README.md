@@ -16,7 +16,7 @@ python scripts/convert_hub.py --output-dir Module --readme README.md
 
 - 项目地址：[https://github.com/Oranjekop/Surge-Module](https://github.com/Oranjekop/Surge-Module)
 - 分支：`main`
-- 插件数量：`216`
+- 插件数量：`217`
 - 失败数量：`0`
 - GitHub Pages：[https://oranjekop.github.io/Surge-Module/](https://oranjekop.github.io/Surge-Module/)
 - README 中的源地址会打开模块 raw 文件；如需一键安装，请进入 GitHub Pages 页面操作。
@@ -211,31 +211,32 @@ python scripts/convert_hub.py --output-dir Module --readme README.md
 | 186 | 小桔充电去广告 | XiaojukejiCharge_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/XiaojukejiCharge_remove_ads.sgmodule) |
 | 187 | 小喵看书去广告 | MiaoRead_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/MiaoRead_remove_ads.sgmodule) |
 | 188 | 小米音箱去广告 | XiaomiSpeaker_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/XiaomiSpeaker_remove_ads.sgmodule) |
-| 189 | 小象超市去广告 | iMaiCai_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/iMaiCai_remove_ads.sgmodule) |
-| 190 | 小宇宙去广告 | CosmosPodcast_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/CosmosPodcast_remove_ads.sgmodule) |
-| 191 | 喜马拉雅去广告 | Himalaya_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/Himalaya_remove_ads.sgmodule) |
-| 192 | 雪球去广告 | Snowball_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/Snowball_remove_ads.sgmodule) |
-| 193 | 迅雷去广告 | XunLei_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/XunLei_remove_ads.sgmodule) |
-| 194 | 医考帮去广告 | YiKaoBang_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/YiKaoBang_remove_ads.sgmodule) |
-| 195 | 一刻相册去广告 | BaiduPhoto_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/BaiduPhoto_remove_ads.sgmodule) |
-| 196 | 萤石云视频去广告 | VideoGo_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/VideoGo_remove_ads.sgmodule) |
-| 197 | 一甜相机去广告 | Yitian_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/Yitian_remove_ads.sgmodule) |
-| 198 | 有道翻译官去广告 | YoudaoTrans_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/YoudaoTrans_remove_ads.sgmodule) |
-| 199 | 有道云笔记去广告 | YoudaoNote_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/YoudaoNote_remove_ads.sgmodule) |
-| 200 | 优酷视频去广告 | YouKu_Video_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/YouKu_Video_remove_ads.sgmodule) |
-| 201 | 阅友去广告 | Yueyou_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/Yueyou_remove_ads.sgmodule) |
-| 202 | 云鲸智能去广告 | NarwelRobots_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/NarwelRobots_remove_ads.sgmodule) |
-| 203 | 掌上无畏契约去广告 | ValorantBible_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/ValorantBible_remove_ads.sgmodule) |
-| 204 | 掌上英雄联盟去广告 | LOL_Bible_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/LOL_Bible_remove_ads.sgmodule) |
-| 205 | 掌阅去广告 | iReader_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/iReader_remove_ads.sgmodule) |
-| 206 | 智慧苏州去广告 | SuZhouCitizenCard_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/SuZhouCitizenCard_remove_ads.sgmodule) |
-| 207 | 知乎去广告 | Zhihu_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/Zhihu_remove_ads.sgmodule) |
-| 208 | 智联招聘去广告 | ZhiLianZhaoPin_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/ZhiLianZhaoPin_remove_ads.sgmodule) |
-| 209 | 知识星球去水印 | UnnooQuan_remove_watermark.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/UnnooQuan_remove_watermark.sgmodule) |
-| 210 | 中国人保去广告 | PICC_Insurance_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/PICC_Insurance_remove_ads.sgmodule) |
-| 211 | 中国移动云盘去广告 | mobileClouds_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/mobileClouds_remove_ads.sgmodule) |
-| 212 | 中华万年历去广告 | EtouchEcalendar_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/EtouchEcalendar_remove_ads.sgmodule) |
-| 213 | 转转去广告 | ZhuanZhuan_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/ZhuanZhuan_remove_ads.sgmodule) |
-| 214 | 自动加入TestFlight | Auto_Join_TF.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/Auto_Join_TF.sgmodule) |
-| 215 | 纵横小说去广告 | ZongHeng_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/ZongHeng_remove_ads.sgmodule) |
-| 216 | 最右去广告 | ZuiYou_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/ZuiYou_remove_ads.sgmodule) |
+| 189 | 小睡眠去广告 | HeartideBrainWave_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/HeartideBrainWave_remove_ads.sgmodule) |
+| 190 | 小象超市去广告 | iMaiCai_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/iMaiCai_remove_ads.sgmodule) |
+| 191 | 小宇宙去广告 | CosmosPodcast_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/CosmosPodcast_remove_ads.sgmodule) |
+| 192 | 喜马拉雅去广告 | Himalaya_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/Himalaya_remove_ads.sgmodule) |
+| 193 | 雪球去广告 | Snowball_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/Snowball_remove_ads.sgmodule) |
+| 194 | 迅雷去广告 | XunLei_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/XunLei_remove_ads.sgmodule) |
+| 195 | 医考帮去广告 | YiKaoBang_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/YiKaoBang_remove_ads.sgmodule) |
+| 196 | 一刻相册去广告 | BaiduPhoto_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/BaiduPhoto_remove_ads.sgmodule) |
+| 197 | 萤石云视频去广告 | VideoGo_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/VideoGo_remove_ads.sgmodule) |
+| 198 | 一甜相机去广告 | Yitian_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/Yitian_remove_ads.sgmodule) |
+| 199 | 有道翻译官去广告 | YoudaoTrans_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/YoudaoTrans_remove_ads.sgmodule) |
+| 200 | 有道云笔记去广告 | YoudaoNote_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/YoudaoNote_remove_ads.sgmodule) |
+| 201 | 优酷视频去广告 | YouKu_Video_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/YouKu_Video_remove_ads.sgmodule) |
+| 202 | 阅友去广告 | Yueyou_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/Yueyou_remove_ads.sgmodule) |
+| 203 | 云鲸智能去广告 | NarwelRobots_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/NarwelRobots_remove_ads.sgmodule) |
+| 204 | 掌上无畏契约去广告 | ValorantBible_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/ValorantBible_remove_ads.sgmodule) |
+| 205 | 掌上英雄联盟去广告 | LOL_Bible_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/LOL_Bible_remove_ads.sgmodule) |
+| 206 | 掌阅去广告 | iReader_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/iReader_remove_ads.sgmodule) |
+| 207 | 智慧苏州去广告 | SuZhouCitizenCard_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/SuZhouCitizenCard_remove_ads.sgmodule) |
+| 208 | 知乎去广告 | Zhihu_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/Zhihu_remove_ads.sgmodule) |
+| 209 | 智联招聘去广告 | ZhiLianZhaoPin_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/ZhiLianZhaoPin_remove_ads.sgmodule) |
+| 210 | 知识星球去水印 | UnnooQuan_remove_watermark.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/UnnooQuan_remove_watermark.sgmodule) |
+| 211 | 中国人保去广告 | PICC_Insurance_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/PICC_Insurance_remove_ads.sgmodule) |
+| 212 | 中国移动云盘去广告 | mobileClouds_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/mobileClouds_remove_ads.sgmodule) |
+| 213 | 中华万年历去广告 | EtouchEcalendar_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/EtouchEcalendar_remove_ads.sgmodule) |
+| 214 | 转转去广告 | ZhuanZhuan_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/ZhuanZhuan_remove_ads.sgmodule) |
+| 215 | 自动加入TestFlight | Auto_Join_TF.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/Auto_Join_TF.sgmodule) |
+| 216 | 纵横小说去广告 | ZongHeng_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/ZongHeng_remove_ads.sgmodule) |
+| 217 | 最右去广告 | ZuiYou_remove_ads.sgmodule | [点击打开源地址](https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/ZuiYou_remove_ads.sgmodule) |
