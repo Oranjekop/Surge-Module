@@ -23,17 +23,17 @@ http-response-jq ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v4\/search\/trend
 
 [Script]
 script = type=http-response,pattern=^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/note\/(?:imagefeed|live_photo\/save),script-path=https://kelee.one/Resource/JavaScript/RedPaper/RedPaper_remove_ads.js,requires-body=true
-script_2 = type=http-response,pattern=^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/system\/service\/ui\/config\?,script-path=https://kelee.one/Resource/JavaScript/RedPaper/RedPaper_remove_ads.js,requires-body=true
-script_3 = type=http-response,pattern=^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/system_service\/config\?,script-path=https://kelee.one/Resource/JavaScript/RedPaper/RedPaper_remove_ads.js,requires-body=true
-script_4 = type=http-response,pattern=^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v2\/system_service\/splash_config,script-path=https://kelee.one/Resource/JavaScript/RedPaper/RedPaper_remove_ads.js,requires-body=true
-script_5 = type=http-response,pattern=^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v2\/(?:note\/widgets|user\/followings\/followfeed),script-path=https://kelee.one/Resource/JavaScript/RedPaper/RedPaper_remove_ads.js,requires-body=true
-script_6 = type=http-response,pattern=^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v4\/followfeed\?,script-path=https://kelee.one/Resource/JavaScript/RedPaper/RedPaper_remove_ads.js,requires-body=true
-script_7 = type=http-response,pattern=^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v5\/recommend\/user\/follow_recommend\?,script-path=https://kelee.one/Resource/JavaScript/RedPaper/RedPaper_remove_ads.js,requires-body=true
-script_8 = type=http-response,pattern=^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/(?:v1\/interaction\/comment\/video\/download|v5\/note\/comment\/list),script-path=https://kelee.one/Resource/JavaScript/RedPaper/RedPaper_remove_ads.js,requires-body=true
-script_9 = type=http-response,pattern=^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/(?:v2\/note\/feed|v3\/note\/videofeed),script-path=https://kelee.one/Resource/JavaScript/RedPaper/RedPaper_remove_ads.js,requires-body=true
-script_10 = type=http-response,pattern=^https:\/\/(?:edith|rec)\.xiaohongshu\.com\/api\/sns\/v6\/homefeed\?,script-path=https://kelee.one/Resource/JavaScript/RedPaper/RedPaper_remove_ads.js,requires-body=true
-script_11 = type=http-response,pattern=^https:\/\/(?:edith|so)\.xiaohongshu\.com\/api\/sns\/v10\/search\/notes\?,script-path=https://kelee.one/Resource/JavaScript/RedPaper/RedPaper_remove_ads.js,requires-body=true
-script_12 = type=http-response,pattern=^https:\/\/(?:edith|rec|www)\.xiaohongshu\.com\/api\/sns\/(?:v4\/note\/videofeed|v10\/note\/video\/save),script-path=https://kelee.one/Resource/JavaScript/RedPaper/RedPaper_remove_ads.js,requires-body=true
+ui = type=http-response,pattern=^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/system\/service\/ui\/config\?,script-path=https://kelee.one/Resource/JavaScript/RedPaper/RedPaper_remove_ads.js,requires-body=true
+config = type=http-response,pattern=^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/system_service\/config\?,script-path=https://kelee.one/Resource/JavaScript/RedPaper/RedPaper_remove_ads.js,requires-body=true
+splash_config = type=http-response,pattern=^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v2\/system_service\/splash_config,script-path=https://kelee.one/Resource/JavaScript/RedPaper/RedPaper_remove_ads.js,requires-body=true
+script_2 = type=http-response,pattern=^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v2\/(?:note\/widgets|user\/followings\/followfeed),script-path=https://kelee.one/Resource/JavaScript/RedPaper/RedPaper_remove_ads.js,requires-body=true
+script_3 = type=http-response,pattern=^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v4\/followfeed\?,script-path=https://kelee.one/Resource/JavaScript/RedPaper/RedPaper_remove_ads.js,requires-body=true
+script_4 = type=http-response,pattern=^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v5\/recommend\/user\/follow_recommend\?,script-path=https://kelee.one/Resource/JavaScript/RedPaper/RedPaper_remove_ads.js,requires-body=true
+script_5 = type=http-response,pattern=^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/(?:v1\/interaction\/comment\/video\/download|v5\/note\/comment\/list),script-path=https://kelee.one/Resource/JavaScript/RedPaper/RedPaper_remove_ads.js,requires-body=true
+script_6 = type=http-response,pattern=^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/(?:v2\/note\/feed|v3\/note\/videofeed),script-path=https://kelee.one/Resource/JavaScript/RedPaper/RedPaper_remove_ads.js,requires-body=true
+script_7 = type=http-response,pattern=^https:\/\/(?:edith|rec)\.xiaohongshu\.com\/api\/sns\/v6\/homefeed\?,script-path=https://kelee.one/Resource/JavaScript/RedPaper/RedPaper_remove_ads.js,requires-body=true
+script_8 = type=http-response,pattern=^https:\/\/(?:edith|so)\.xiaohongshu\.com\/api\/sns\/v10\/search\/notes\?,script-path=https://kelee.one/Resource/JavaScript/RedPaper/RedPaper_remove_ads.js,requires-body=true
+script_9 = type=http-response,pattern=^https:\/\/(?:edith|rec|www)\.xiaohongshu\.com\/api\/sns\/(?:v4\/note\/videofeed|v10\/note\/video\/save),script-path=https://kelee.one/Resource/JavaScript/RedPaper/RedPaper_remove_ads.js,requires-body=true
 
 [MITM]
 hostname = %APPEND% ci.xiaohongshu.com, edith.xiaohongshu.com, rec.xiaohongshu.com, so.xiaohongshu.com, www.xiaohongshu.com

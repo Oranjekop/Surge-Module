@@ -110,7 +110,7 @@
       "output": "AppleWeatherEnhancer.sgmodule",
       "download_url": "https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/AppleWeatherEnhancer.sgmodule",
       "install_url": "surge:///install-module?url=https%3A%2F%2Fgithub.com%2FOranjekop%2FSurge-Module%2Fraw%2Frefs%2Fheads%2Fmain%2FModule%2FAppleWeatherEnhancer.sgmodule",
-      "sha256": "f15e60343586885209d89cd4009e3cf2a95c7eb9fd58db30411c0d4b7ae1a417",
+      "sha256": "9a50248e8557bd41fc3b43b094fce60ee9ef1c671642829001c3ada01305777b",
       "warnings": []
     },
     {
@@ -2125,7 +2125,7 @@
       "output": "Weibo_remove_ads.sgmodule",
       "download_url": "https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/Weibo_remove_ads.sgmodule",
       "install_url": "surge:///install-module?url=https%3A%2F%2Fgithub.com%2FOranjekop%2FSurge-Module%2Fraw%2Frefs%2Fheads%2Fmain%2FModule%2FWeibo_remove_ads.sgmodule",
-      "sha256": "3daff3cfbbe36aefc59469ec17601e4b6f0ed37e4cc46eff0c0501bc06581b52",
+      "sha256": "d27afc8b9f3bf348dd7ebc67714ceefdf60fdcbc7b65f9185e57d62aa835ed95",
       "warnings": []
     },
     {
@@ -2245,7 +2245,7 @@
       "output": "FleaMarket_remove_ads.sgmodule",
       "download_url": "https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/FleaMarket_remove_ads.sgmodule",
       "install_url": "surge:///install-module?url=https%3A%2F%2Fgithub.com%2FOranjekop%2FSurge-Module%2Fraw%2Frefs%2Fheads%2Fmain%2FModule%2FFleaMarket_remove_ads.sgmodule",
-      "sha256": "662227ecb13cdcf32a33ebb39d1a17066c6e96a48b7ebff1230f743822a00185",
+      "sha256": "3269d5633b34ac7e4abce447a9b7848581608f126f01423f5d77cc56203fc43b",
       "warnings": []
     },
     {
@@ -2293,7 +2293,7 @@
       "output": "RedPaper_remove_ads.sgmodule",
       "download_url": "https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/RedPaper_remove_ads.sgmodule",
       "install_url": "surge:///install-module?url=https%3A%2F%2Fgithub.com%2FOranjekop%2FSurge-Module%2Fraw%2Frefs%2Fheads%2Fmain%2FModule%2FRedPaper_remove_ads.sgmodule",
-      "sha256": "2b38c4e86b0d00a2e97832e4cd7b7b6afc80c073f4dc6517b51f094afca0fb48",
+      "sha256": "54d6d31a77e957cce891196a242023e9757be0ff3107335579df565f8eac61ea",
       "warnings": []
     },
     {
@@ -2569,7 +2569,7 @@
       "output": "Zhihu_remove_ads.sgmodule",
       "download_url": "https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/Zhihu_remove_ads.sgmodule",
       "install_url": "surge:///install-module?url=https%3A%2F%2Fgithub.com%2FOranjekop%2FSurge-Module%2Fraw%2Frefs%2Fheads%2Fmain%2FModule%2FZhihu_remove_ads.sgmodule",
-      "sha256": "93a8d4d467c24eac56470438dd527904cec195675b38f048bb1238576794bf4b",
+      "sha256": "49aa0bb744617ff4c650ec25028690deb1540a30ef961152c3bd6a18a7f825ff",
       "warnings": []
     },
     {
