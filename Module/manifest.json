@@ -26,7 +26,7 @@
       "output": "BlockAdvertisers.sgmodule",
       "download_url": "https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/BlockAdvertisers.sgmodule",
       "install_url": "surge:///install-module?url=https%3A%2F%2Fgithub.com%2FOranjekop%2FSurge-Module%2Fraw%2Frefs%2Fheads%2Fmain%2FModule%2FBlockAdvertisers.sgmodule",
-      "sha256": "1fe77712bf6600ea65a82118d8873e1b5a396e928310ed499915e94d4e2c1579",
+      "sha256": "472a46a4f7df82e27139ad015c155a70714c43c352ab4a5cd47519599aa7461a",
       "warnings": []
     },
     {
@@ -2107,13 +2107,13 @@
     {
       "index": 172,
       "name": "网易有道词典去广告",
-      "desc": "移除开屏广告、弹窗广告、横幅广告、信息流广告、旧版翻译页面广告及搜索填充词。",
+      "desc": "移除开屏广告、弹窗广告、右上角推广。",
       "category": "去广告",
       "url": "https://kelee.one/Tool/Loon/Lpx/YoudaoDict_remove_ads.lpx",
       "output": "YoudaoDict_remove_ads.sgmodule",
       "download_url": "https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/YoudaoDict_remove_ads.sgmodule",
       "install_url": "surge:///install-module?url=https%3A%2F%2Fgithub.com%2FOranjekop%2FSurge-Module%2Fraw%2Frefs%2Fheads%2Fmain%2FModule%2FYoudaoDict_remove_ads.sgmodule",
-      "sha256": "38bfe08f0a5b6bb541c3991f4a761d36bb98609b707d52a39de8dd3b811089f9",
+      "sha256": "a02424103ffe097512161fd5d30f5d1e8627450ff7236161ca10018d9b15113f",
       "warnings": []
     },
     {
@@ -2509,7 +2509,7 @@
       "output": "YoudaoTrans_remove_ads.sgmodule",
       "download_url": "https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/YoudaoTrans_remove_ads.sgmodule",
       "install_url": "surge:///install-module?url=https%3A%2F%2Fgithub.com%2FOranjekop%2FSurge-Module%2Fraw%2Frefs%2Fheads%2Fmain%2FModule%2FYoudaoTrans_remove_ads.sgmodule",
-      "sha256": "7e720f95321d2ee966bf2b24af226d47c2d003d689d3cb23801f1f3dfd3bcf14",
+      "sha256": "d027d35b9c7b591e4345e92fbceab15a7be065638cf1060e9e8f92ff73336b5c",
       "warnings": []
     },
     {
