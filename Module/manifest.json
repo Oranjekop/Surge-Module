@@ -1,7 +1,7 @@
 {
   "hub_list_url": "https://hub.kelee.one/list.json",
-  "total": 224,
-  "converted": 224,
+  "total": 227,
+  "converted": 227,
   "failed": 0,
   "failures": [],
   "items": [
@@ -14,19 +14,19 @@
       "output": "Block_HTTPDNS.sgmodule",
       "download_url": "https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/Block_HTTPDNS.sgmodule",
       "install_url": "surge:///install-module?url=https%3A%2F%2Fgithub.com%2FOranjekop%2FSurge-Module%2Fraw%2Frefs%2Fheads%2Fmain%2FModule%2FBlock_HTTPDNS.sgmodule",
-      "sha256": "00927ca97e2b92ff0047a268384805425c55ff424d1aefa66b378bbc978c39a7",
+      "sha256": "bed8a3fe6e0f2df7660a4bbf7abf1213569b93cdc6c51e3b0f277e129c784e64",
       "warnings": []
     },
     {
       "index": 1,
       "name": "广告平台拦截器",
-      "desc": "此插件是所有去广告插件的基础，只针对广告平台处理。你依然需要安装其他去广告插件来搭配使用，并确保此插件始终排序在顶部。\\n\\n支持拦截腾讯、字节跳动、快手、百度、邑盟、倍孜、艾狄墨搏、袤博、极光、个推、友盟、阿里巴巴、阿里妈妈、阿里百川、超级汇川、优比客思、秒针、网易、美团、小米、京东、天目、讯飞、泛连、锐讯灵通、聚次方、美数、嗨量、维快网络、变现猫、章鱼、分秒、泰之菩、翼信、快易、数萤技术、方麟、益起、上量优选、新义互联、腾云天下、布里奇、塔酷、丽声、推啊、旺脉、新度博望、新多广告、快易科技、封狐信息、互裕科技、旺脉信息、佳量动力、享点科技、游昆信息、小川科技、旺脉科技、萃弈、泛为、米漫、易量跃动、秒针、贵士移动、星讯、倍业科技、创聚科技、硬核聚视、数因科技、芒拓网络、上海领页、神蓍科技、Google、SupersonicAds、APPSAD、Adjust、Sigmob、TradPlus、Fancy、MedPro、AppLovin、Unity3D、Tapjoy、Liftoff、Vungle、Moloco、Smadex、Tapad、Appier、InMobi、AppsFlyer、AppLovin、Moloco、RayJump、RixEngine、Amazon、Skarb、Amplitude等广告平台的广告请求，更适合iOS平台的应用。",
+      "desc": "此插件是所有去广告插件的基础，只针对广告平台处理。你依然需要安装其他去广告插件来搭配使用，并确保此插件始终排序在顶部。\\n\\n支持拦截腾讯、字节跳动、快手、百度、邑盟、倍孜、艾狄墨搏、袤博、极光、个推、友盟、阿里巴巴、阿里妈妈、阿里百川、超级汇川、优比客思、秒针、网易、美团、小米、京东、天目、讯飞、泛连、锐讯灵通、聚次方、美数、嗨量、维快网络、变现猫、章鱼、分秒、泰之菩、翼信、快易、数萤技术、方麟、益起、上量优选、新义互联、腾云天下、布里奇、塔酷、丽声、推啊、旺脉、新度博望、新多广告、快易科技、封狐信息、互裕科技、旺脉信息、佳量动力、享点科技、游昆信息、小川科技、旺脉科技、萃弈、泛为、米漫、易量跃动、秒针、贵士移动、星讯、倍业科技、创聚科技、硬核聚视、数因科技、芒拓网络、上海领页、神蓍科技、酷盈、Google、SupersonicAds、APPSAD、Adjust、Sigmob、TradPlus、Fancy、MedPro、AppLovin、Unity3D、Tapjoy、Liftoff、Vungle、Moloco、Smadex、Tapad、Appier、InMobi、AppsFlyer、AppLovin、Moloco、RayJump、RixEngine、Amazon、Skarb、Amplitude等广告平台的广告请求，更适合iOS平台的应用。",
       "category": "去广告, 依赖",
       "url": "https://kelee.one/Tool/Loon/Lpx/BlockAdvertisers.lpx",
       "output": "BlockAdvertisers.sgmodule",
       "download_url": "https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/BlockAdvertisers.sgmodule",
       "install_url": "surge:///install-module?url=https%3A%2F%2Fgithub.com%2FOranjekop%2FSurge-Module%2Fraw%2Frefs%2Fheads%2Fmain%2FModule%2FBlockAdvertisers.sgmodule",
-      "sha256": "472a46a4f7df82e27139ad015c155a70714c43c352ab4a5cd47519599aa7461a",
+      "sha256": "5fae14f2d72bbe1ec69a9007a128e6a733fac838014d47cb27b979ad52e91389",
       "warnings": []
     },
     {
@@ -1566,6 +1566,18 @@
     },
     {
       "index": 127,
+      "name": "两步路户外助手去广告",
+      "desc": "移除开屏广告、弹窗广告，精简我的页面。",
+      "category": "去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/2bulu_remove_ads.lpx",
+      "output": "2bulu_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/2bulu_remove_ads.sgmodule",
+      "install_url": "surge:///install-module?url=https%3A%2F%2Fgithub.com%2FOranjekop%2FSurge-Module%2Fraw%2Frefs%2Fheads%2Fmain%2FModule%2F2bulu_remove_ads.sgmodule",
+      "sha256": "f5f9c4d7b60ea115489d7541e74830f33b58352f25a302d8fdf4204c12e8b868",
+      "warnings": []
+    },
+    {
+      "index": 128,
       "name": "萝卜快跑去广告",
       "desc": "移除开屏广告、弹窗广告、横幅广告、新用户活动皮肤，保留优惠活动。",
       "category": "去广告",
@@ -1577,7 +1589,7 @@
       "warnings": []
     },
     {
-      "index": 128,
+      "index": 129,
       "name": "马蜂窝去广告",
       "desc": "移除首页信息流广告、商城横幅推广、我的页面弹窗。",
       "category": "去广告",
@@ -1589,7 +1601,7 @@
       "warnings": []
     },
     {
-      "index": 129,
+      "index": 130,
       "name": "芒果TV去广告",
       "desc": "移除开屏广告、信息流广告、播放页广告，精简我的页面。",
       "category": "去广告",
@@ -1601,7 +1613,7 @@
       "warnings": []
     },
     {
-      "index": 130,
+      "index": 131,
       "name": "漫客栈去广告",
       "desc": "移除开屏广告、漫画广告、小说章末广告，精简我的页面。",
       "category": "去广告",
@@ -1613,7 +1625,7 @@
       "warnings": []
     },
     {
-      "index": 131,
+      "index": 132,
       "name": "猫耳FM去广告",
       "desc": "移除开屏广告、青少年模式弹窗、首页顶部入口，替换底栏的直播入口为发现入口。",
       "category": "去广告",
@@ -1625,7 +1637,7 @@
       "warnings": []
     },
     {
-      "index": 132,
+      "index": 133,
       "name": "美丽修行去广告",
       "desc": "移除开屏广告、首页广告、发现页广告、美修盒页面广告、下拉广告、弹窗广告、搜索推广、版本更新弹窗及我的页面广告。",
       "category": "去广告",
@@ -1637,7 +1649,7 @@
       "warnings": []
     },
     {
-      "index": 133,
+      "index": 134,
       "name": "美食杰去广告",
       "desc": "移除开屏广告和信息流广告。",
       "category": "去广告",
@@ -1649,7 +1661,7 @@
       "warnings": []
     },
     {
-      "index": 134,
+      "index": 135,
       "name": "美图秀秀去广告",
       "desc": "移除开屏广告、横幅推广，精简我的页面。",
       "category": "去广告",
@@ -1661,7 +1673,7 @@
       "warnings": []
     },
     {
-      "index": 135,
+      "index": 136,
       "name": "美颜相机去广告",
       "desc": "移除开屏广告、应用内弹窗，精简首页和我的页面。",
       "category": "去广告",
@@ -1673,7 +1685,7 @@
       "warnings": []
     },
     {
-      "index": 136,
+      "index": 137,
       "name": "美柚去广告",
       "desc": "移除开屏广告、弹窗推广和信息流推广，移除青少年模式弹窗和我的页面推广。",
       "category": "去广告",
@@ -1685,7 +1697,7 @@
       "warnings": []
     },
     {
-      "index": 137,
+      "index": 138,
       "name": "萌娘百科去广告",
       "desc": "移除开屏广告、弹窗、首页横幅。",
       "category": "去广告",
@@ -1697,7 +1709,7 @@
       "warnings": []
     },
     {
-      "index": 138,
+      "index": 139,
       "name": "米游社去广告",
       "desc": "移除开屏广告、搜索栏热搜及资讯、青少年模式弹窗。",
       "category": "去广告",
@@ -1709,7 +1721,7 @@
       "warnings": []
     },
     {
-      "index": 139,
+      "index": 140,
       "name": "墨迹天气去广告",
       "desc": "移除天气页面横幅、工具栏，移除时景关注页面推荐，精简我的页面。",
       "category": "去广告",
@@ -1721,7 +1733,7 @@
       "warnings": []
     },
     {
-      "index": 140,
+      "index": 141,
       "name": "脉脉去广告",
       "desc": "移除开屏广告、信息流广告、横幅推广、相关帖子推荐。",
       "category": "去广告",
@@ -1733,7 +1745,7 @@
       "warnings": []
     },
     {
-      "index": 141,
+      "index": 142,
       "name": "胖乖生活去广告",
       "desc": "移除开屏广告、横幅轮播图、网格广告、信息流广告、浮窗广告，精简我的页面。",
       "category": "去广告",
@@ -1745,7 +1757,7 @@
       "warnings": []
     },
     {
-      "index": 142,
+      "index": 143,
       "name": "配音秀去广告",
       "desc": "移除开屏广告、弹窗、横幅、各类关注推荐。",
       "category": "去广告",
@@ -1757,7 +1769,7 @@
       "warnings": []
     },
     {
-      "index": 143,
+      "index": 144,
       "name": "拼多多去广告",
       "desc": "移除开屏广告、底栏多多视频、会场入口、聊天页面精选推荐及推广，精简首页和个人中心。",
       "category": "去广告",
@@ -1769,7 +1781,7 @@
       "warnings": []
     },
     {
-      "index": 144,
+      "index": 145,
       "name": "皮皮虾去广告",
       "desc": "移除开屏广告、评论区广告、视频流广告，精简我的页面。",
       "category": "去广告",
@@ -1781,7 +1793,7 @@
       "warnings": []
     },
     {
-      "index": 145,
+      "index": 146,
       "name": "朴朴超市去广告",
       "desc": "移除超市去开屏广告，移除首页顶部轮播图和图标广告、启动小弹图广告、首页右下角悬浮动画、搜索热搜榜、搜索建议词、搜索发现热词、订单页面商，精简我的页面。",
       "category": "去广告",
@@ -1793,7 +1805,7 @@
       "warnings": []
     },
     {
-      "index": 146,
+      "index": 147,
       "name": "前程无忧去广告",
       "desc": "移除开屏广告、弹窗、信息流推广、职位页面推广和各类横幅推广。",
       "category": "去广告",
@@ -1805,7 +1817,7 @@
       "warnings": []
     },
     {
-      "index": 147,
+      "index": 148,
       "name": "汽车之家去广告",
       "desc": "移除开屏广告、各类广告横幅、各类信息流广告、各类弹窗推广、各类浮窗、我的页面广告。",
       "category": "去广告",
@@ -1817,7 +1829,7 @@
       "warnings": []
     },
     {
-      "index": 148,
+      "index": 149,
       "name": "起点读书去广告",
       "desc": "移除起点读书开屏广告、每日导读、各类弹窗、文末广告、搜索填充词，精简我的页面。",
       "category": "去广告",
@@ -1829,7 +1841,7 @@
       "warnings": []
     },
     {
-      "index": 149,
+      "index": 150,
       "name": "七猫小说去广告",
       "desc": "移除大部分七猫小说广告，但受限于七猫小说自身对MitM和VPN状态的检测，部分页面广告无法移除。",
       "category": "去广告",
@@ -1841,7 +1853,7 @@
       "warnings": []
     },
     {
-      "index": 150,
+      "index": 151,
       "name": "蜻蜓FM去广告",
       "desc": "移除开屏广告、信息流广告、各类相关内容推荐，精简我的页面。",
       "category": "去广告",
@@ -1853,7 +1865,7 @@
       "warnings": []
     },
     {
-      "index": 151,
+      "index": 152,
       "name": "汽水音乐去广告",
       "desc": "移除开屏广告、弹窗广告、播放器推广、歌曲详情界面视频推广、播放页面的歌曲视频，精简首页和我的页面。",
       "category": "去广告",
@@ -1865,7 +1877,7 @@
       "warnings": []
     },
     {
-      "index": 152,
+      "index": 153,
       "name": "启信宝去广告",
       "desc": "移除开屏广告、应用内弹窗、首页轮播图、悬浮部件和个性化推荐信息流。",
       "category": "去广告",
@@ -1877,7 +1889,7 @@
       "warnings": []
     },
     {
-      "index": 153,
+      "index": 154,
       "name": "全民K歌去广告",
       "desc": "移除开屏广告、歌房页面弹窗广告、消息页广告和我的页面广告。",
       "category": "去广告",
@@ -1889,7 +1901,7 @@
       "warnings": []
     },
     {
-      "index": 154,
+      "index": 155,
       "name": "瑞幸咖啡去广告",
       "desc": "移除开屏广告、弹窗和各类横幅推广。",
       "category": "去广告",
@@ -1901,7 +1913,7 @@
       "warnings": []
     },
     {
-      "index": 155,
+      "index": 156,
       "name": "省钱快报去广告",
       "desc": "移除开屏广告、横幅广告、商品推荐，精简我的页面。",
       "category": "去广告",
@@ -1913,7 +1925,7 @@
       "warnings": []
     },
     {
-      "index": 156,
+      "index": 157,
       "name": "什么值得买去广告",
       "desc": "移除开屏广告、信息流广告、各类横幅广告、搜索页广告、文章内广告，移除活动皮肤、精简我的页面。",
       "category": "去广告",
@@ -1925,7 +1937,7 @@
       "warnings": []
     },
     {
-      "index": 157,
+      "index": 158,
       "name": "收银通商户端去广告",
       "desc": "移除开屏广告和首页推广",
       "category": "去广告",
@@ -1937,7 +1949,7 @@
       "warnings": []
     },
     {
-      "index": 158,
+      "index": 159,
       "name": "顺丰速运去广告",
       "desc": "移除开屏广告、首页下拉抽屉、首页推广、应用内悬浮窗、横幅广告，移除主题，精简我的页面。",
       "category": "去广告",
@@ -1949,7 +1961,7 @@
       "warnings": []
     },
     {
-      "index": 159,
+      "index": 160,
       "name": "书旗小说去广告",
       "desc": "移除书城横幅广告、听书广告、阅读广告、章末推荐、福利入口、悬浮窗、推荐搜索词，精简我的页面。",
       "category": "去广告",
@@ -1961,7 +1973,7 @@
       "warnings": []
     },
     {
-      "index": 160,
+      "index": 161,
       "name": "数字心动去广告",
       "desc": "移除开屏广告、首页顶部标签、轮播图、悬浮挂件、热门搜索、信息流广告。",
       "category": "去广告",
@@ -1973,7 +1985,7 @@
       "warnings": []
     },
     {
-      "index": 161,
+      "index": 162,
       "name": "随手记去广告",
       "desc": "移除开屏广告、神象云账本内部广告、我的页面广告，移除社区入口。",
       "category": "去广告",
@@ -1985,7 +1997,7 @@
       "warnings": []
     },
     {
-      "index": 162,
+      "index": 163,
       "name": "淘宝去广告",
       "desc": "过滤淘宝开屏广告",
       "category": "去广告",
@@ -1997,7 +2009,7 @@
       "warnings": []
     },
     {
-      "index": 163,
+      "index": 164,
       "name": "淘票票去广告",
       "desc": "移除开屏广告、悬浮广告、轮播图广告和弹窗广告，移除搜索填充词和为你推荐。",
       "category": "去广告",
@@ -2009,7 +2021,7 @@
       "warnings": []
     },
     {
-      "index": 164,
+      "index": 165,
       "name": "他趣去广告",
       "desc": "移除各类弹窗、横幅，精简我的页面。",
       "category": "去广告",
@@ -2021,7 +2033,7 @@
       "warnings": []
     },
     {
-      "index": 165,
+      "index": 166,
       "name": "腾讯视频去广告",
       "desc": "过滤腾讯视频客户端广告，如遇失效，则需要重新安装腾讯视频客户端。由于此插件不再维护，客户端版本高于8.9.40可能会导致此插件失效，请勿升级客户端。",
       "category": "去广告",
@@ -2033,7 +2045,7 @@
       "warnings": []
     },
     {
-      "index": 166,
+      "index": 167,
       "name": "腾讯文档去广告",
       "desc": "移除开屏广告、首页横幅推广。",
       "category": "去广告",
@@ -2045,7 +2057,7 @@
       "warnings": []
     },
     {
-      "index": 167,
+      "index": 168,
       "name": "图怪兽去广告",
       "desc": "移除开屏广告、弹窗广告、各页面横幅推广。",
       "category": "去广告",
@@ -2057,7 +2069,7 @@
       "warnings": []
     },
     {
-      "index": 168,
+      "index": 169,
       "name": "推栏去广告",
       "desc": "过滤推栏广告",
       "category": "去广告",
@@ -2069,7 +2081,7 @@
       "warnings": []
     },
     {
-      "index": 169,
+      "index": 170,
       "name": "挖财记账去广告",
       "desc": "移除弹窗广告、推广语横幅和右下角悬浮广告。",
       "category": "去广告",
@@ -2081,7 +2093,7 @@
       "warnings": []
     },
     {
-      "index": 170,
+      "index": 171,
       "name": "网易大神去广告",
       "desc": "移除开屏广告，精简大量冗余的配置文件，精简我的页面。",
       "category": "去广告",
@@ -2093,7 +2105,7 @@
       "warnings": []
     },
     {
-      "index": 171,
+      "index": 172,
       "name": "网易新闻去广告",
       "desc": "移除开屏广告、置顶新闻、热搜列表和搜索栏填充词。",
       "category": "去广告",
@@ -2105,7 +2117,7 @@
       "warnings": []
     },
     {
-      "index": 172,
+      "index": 173,
       "name": "网易有道词典去广告",
       "desc": "移除开屏广告、弹窗广告、右上角推广。",
       "category": "去广告",
@@ -2117,7 +2129,7 @@
       "warnings": []
     },
     {
-      "index": 173,
+      "index": 174,
       "name": "网易邮箱大师去广告",
       "desc": "移除网易邮箱大师开屏广告、签到任务提醒，精简侧拉抽屉和我的页面。",
       "category": "去广告",
@@ -2129,7 +2141,7 @@
       "warnings": []
     },
     {
-      "index": 174,
+      "index": 175,
       "name": "网易云音乐去广告",
       "desc": "过滤网易云音乐广告，并允许自定义界面。",
       "category": "去广告",
@@ -2141,7 +2153,7 @@
       "warnings": []
     },
     {
-      "index": 175,
+      "index": 176,
       "name": "完美世界电竞去广告",
       "desc": "移除开屏广告，精简搜索页。",
       "category": "去广告",
@@ -2153,7 +2165,7 @@
       "warnings": []
     },
     {
-      "index": 176,
+      "index": 177,
       "name": "微博轻享版去广告",
       "desc": "移除开屏广告、时间线广告及评论区广告，移除发现页面横幅推广、最常访问、主页访客及热门视频，移除搜索填充词。",
       "category": "去广告",
@@ -2165,7 +2177,7 @@
       "warnings": []
     },
     {
-      "index": 177,
+      "index": 178,
       "name": "微博去广告",
       "desc": "过滤微博广告及去除各部分推广模块",
       "category": "去广告",
@@ -2177,7 +2189,7 @@
       "warnings": []
     },
     {
-      "index": 178,
+      "index": 179,
       "name": "威锋去广告",
       "desc": "移除开屏广告、信息流广告、文末广告、首页轮播图推广。",
       "category": "去广告",
@@ -2189,7 +2201,7 @@
       "warnings": []
     },
     {
-      "index": 179,
+      "index": 180,
       "name": "微脉圈去广告",
       "desc": "移除开屏广告、聊天页横幅提示及发现页面的横幅广告。",
       "category": "去广告",
@@ -2201,7 +2213,7 @@
       "warnings": []
     },
     {
-      "index": 180,
+      "index": 181,
       "name": "微信公众号去广告",
       "desc": "过滤微信公众号广告",
       "category": "去广告",
@@ -2213,7 +2225,7 @@
       "warnings": []
     },
     {
-      "index": 181,
+      "index": 182,
       "name": "微信外部链接解锁",
       "desc": "解锁微信外部链接访问限制，跳过中间界面。支付宝链接、被封禁链接进行通知弹窗跳转，在微信中用快照显示被封禁的链接（可选），在微信中进行强制重定向（可选），群聊及扫码均可使用，可选项可在脚本的2~3行更改，也可在BoxJs中更改。",
       "category": "功能增强",
@@ -2225,7 +2237,7 @@
       "warnings": []
     },
     {
-      "index": 182,
+      "index": 183,
       "name": "微信小程序去广告",
       "desc": "收录常用小程序的去广告，作者署名在插件内。",
       "category": "去广告",
@@ -2237,7 +2249,19 @@
       "warnings": []
     },
     {
-      "index": 183,
+      "index": 184,
+      "name": "蜗牛睡眠去广告",
+      "desc": "移除音乐页面横幅、日报告解决方案商品推广，移除我的页面服务推广。",
+      "category": "去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/SnailSleep_remove_ads.lpx",
+      "output": "SnailSleep_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/SnailSleep_remove_ads.sgmodule",
+      "install_url": "surge:///install-module?url=https%3A%2F%2Fgithub.com%2FOranjekop%2FSurge-Module%2Fraw%2Frefs%2Fheads%2Fmain%2FModule%2FSnailSleep_remove_ads.sgmodule",
+      "sha256": "f00a00f79b4f9a9256e292e214e4240607a9f08d73bd4872d2b0e3565f295176",
+      "warnings": []
+    },
+    {
+      "index": 185,
       "name": "无他相机去广告",
       "desc": "移除开屏广告、拍摄页面广告、右小角广告，精简底栏。",
       "category": "去广告",
@@ -2249,7 +2273,7 @@
       "warnings": []
     },
     {
-      "index": 184,
+      "index": 186,
       "name": "下厨房去广告",
       "desc": "移除开屏广告、页面推广及横幅，精简首页标签。",
       "category": "去广告",
@@ -2261,7 +2285,7 @@
       "warnings": []
     },
     {
-      "index": 185,
+      "index": 187,
       "name": "香港抖音去广告",
       "desc": "精简左右侧边栏、移除底栏切换，其余内容后续再完善。",
       "category": "去广告",
@@ -2273,7 +2297,7 @@
       "warnings": []
     },
     {
-      "index": 186,
+      "index": 188,
       "name": "向日葵去广告",
       "desc": "移除开屏广告、广告横幅。",
       "category": "去广告",
@@ -2285,7 +2309,7 @@
       "warnings": []
     },
     {
-      "index": 187,
+      "index": 189,
       "name": "闲鱼去广告",
       "desc": "移除开屏广告、商品信息流广告、关注推荐、搜索栏填充词、首页签到入口及悬浮广告，精简我的页面。",
       "category": "去广告",
@@ -2297,7 +2321,7 @@
       "warnings": []
     },
     {
-      "index": 188,
+      "index": 190,
       "name": "小蚕霸王餐去广告",
       "desc": "移除开屏广告、首页横幅推广、红包推广、更新弹窗。",
       "category": "去广告",
@@ -2309,7 +2333,7 @@
       "warnings": []
     },
     {
-      "index": 189,
+      "index": 191,
       "name": "小店掌柜去广告",
       "desc": "移除开屏广告、活动推广和页面跳转。",
       "category": "去广告",
@@ -2321,7 +2345,7 @@
       "warnings": []
     },
     {
-      "index": 190,
+      "index": 192,
       "name": "小黑盒去广告",
       "desc": "移除开屏广告和热点板块信息流广告",
       "category": "去广告",
@@ -2333,7 +2357,7 @@
       "warnings": []
     },
     {
-      "index": 191,
+      "index": 193,
       "name": "小红书去广告",
       "desc": "过滤信息流推广，移除图片及视频水印，如有异常，请先清除缓存再尝试。",
       "category": "去广告",
@@ -2345,7 +2369,7 @@
       "warnings": []
     },
     {
-      "index": 192,
+      "index": 194,
       "name": "小桔充电去广告",
       "desc": "移除横幅广告、弹窗广告，精简我的页面。",
       "category": "去广告",
@@ -2357,7 +2381,7 @@
       "warnings": []
     },
     {
-      "index": 193,
+      "index": 195,
       "name": "小喵看书去广告",
       "desc": "移除小喵看书章末广告",
       "category": "去广告",
@@ -2369,7 +2393,7 @@
       "warnings": []
     },
     {
-      "index": 194,
+      "index": 196,
       "name": "小米音箱去广告",
       "desc": "移除开屏广告、应用内横幅广告及弹窗广告。",
       "category": "去广告",
@@ -2381,7 +2405,7 @@
       "warnings": []
     },
     {
-      "index": 195,
+      "index": 197,
       "name": "小睡眠去广告",
       "desc": "移除开屏广告、信息流广告、弹窗广告、轮播图广告、侧边栏横幅广告，精简搜索页面。",
       "category": "去广告",
@@ -2393,7 +2417,7 @@
       "warnings": []
     },
     {
-      "index": 196,
+      "index": 198,
       "name": "小象超市去广告",
       "desc": "移除开屏广告、应用内弹窗、猜你想买、横幅推广和悬浮窗。",
       "category": "去广告",
@@ -2405,7 +2429,7 @@
       "warnings": []
     },
     {
-      "index": 197,
+      "index": 199,
       "name": "小宇宙去广告",
       "desc": "移除开屏广告、搜索框推荐词和AI总结。",
       "category": "去广告",
@@ -2417,7 +2441,7 @@
       "warnings": []
     },
     {
-      "index": 198,
+      "index": 200,
       "name": "喜马拉雅去广告",
       "desc": "移除开屏广告、播放器广告、各类推荐内容，精简频道和我的页面。",
       "category": "去广告",
@@ -2429,7 +2453,19 @@
       "warnings": []
     },
     {
-      "index": 199,
+      "index": 201,
+      "name": "行者户外去广告",
+      "desc": "移除弹窗广告、发现页面横幅推广的推广金刚位，移除我的页面横幅推广。",
+      "category": "去广告",
+      "url": "https://kelee.one/Tool/Loon/Lpx/OnTheWay_remove_ads.lpx",
+      "output": "OnTheWay_remove_ads.sgmodule",
+      "download_url": "https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/OnTheWay_remove_ads.sgmodule",
+      "install_url": "surge:///install-module?url=https%3A%2F%2Fgithub.com%2FOranjekop%2FSurge-Module%2Fraw%2Frefs%2Fheads%2Fmain%2FModule%2FOnTheWay_remove_ads.sgmodule",
+      "sha256": "087b624642dab34018b824fd2ce975e62f938eeb9c70b51d69ae4aee59e0e845",
+      "warnings": []
+    },
+    {
+      "index": 202,
       "name": "雪球去广告",
       "desc": "移除开屏广告、各类横幅广告、信息流广告、帖内广告、新用户定向广告、各类弹窗、股票精选推荐、基金精选推荐、聪明的投资者推荐、私募推荐、直播推荐。",
       "category": "去广告",
@@ -2441,7 +2477,7 @@
       "warnings": []
     },
     {
-      "index": 200,
+      "index": 203,
       "name": "迅雷去广告",
       "desc": "移除开屏广告、首页横幅广告、左上角广告入口，精简我的页面。",
       "category": "去广告",
@@ -2453,7 +2489,7 @@
       "warnings": []
     },
     {
-      "index": 201,
+      "index": 204,
       "name": "医考帮去广告",
       "desc": "移除横幅推广、弹窗、首页悬浮挂件。",
       "category": "去广告",
@@ -2465,7 +2501,7 @@
       "warnings": []
     },
     {
-      "index": 202,
+      "index": 205,
       "name": "一刻相册去广告",
       "desc": "移除开屏广告、横幅广告和弹窗推广。",
       "category": "去广告",
@@ -2477,7 +2513,7 @@
       "warnings": []
     },
     {
-      "index": 203,
+      "index": 206,
       "name": "萤石云视频去广告",
       "desc": "移除开屏广告、首页推广、我的页面推广。",
       "category": "去广告",
@@ -2489,7 +2525,7 @@
       "warnings": []
     },
     {
-      "index": 204,
+      "index": 207,
       "name": "一甜相机去广告",
       "desc": "移除开屏广告、悬浮广告及图片选择器横幅广告。",
       "category": "去广告",
@@ -2501,7 +2537,7 @@
       "warnings": []
     },
     {
-      "index": 205,
+      "index": 208,
       "name": "有道翻译官去广告",
       "desc": "移除开屏广告、横幅推广，精简首页。",
       "category": "去广告",
@@ -2513,7 +2549,7 @@
       "warnings": []
     },
     {
-      "index": 206,
+      "index": 209,
       "name": "有道云笔记去广告",
       "desc": "移除开屏广告、弹窗广告及横幅广告。",
       "category": "去广告",
@@ -2525,7 +2561,7 @@
       "warnings": []
     },
     {
-      "index": 207,
+      "index": 210,
       "name": "优酷视频去广告",
       "desc": "移除开屏广告、视频广告、信息流广告。其余广告由于请求已加密，故无法移除。",
       "category": "去广告",
@@ -2537,7 +2573,7 @@
       "warnings": []
     },
     {
-      "index": 208,
+      "index": 211,
       "name": "阅友去广告",
       "desc": "移除开屏广告、弹窗广告和阅读页面广告，移除底栏福利按钮。",
       "category": "去广告",
@@ -2549,7 +2585,7 @@
       "warnings": []
     },
     {
-      "index": 209,
+      "index": 212,
       "name": "云鲸智能去广告",
       "desc": "移除开屏广告、横幅推广，禁用商城。",
       "category": "去广告",
@@ -2561,7 +2597,7 @@
       "warnings": []
     },
     {
-      "index": 210,
+      "index": 213,
       "name": "掌上无畏契约去广告",
       "desc": "移除开屏广告、弹窗推广、搜索热搜、搜索热榜。",
       "category": "去广告",
@@ -2573,7 +2609,7 @@
       "warnings": []
     },
     {
-      "index": 211,
+      "index": 214,
       "name": "掌上英雄联盟去广告",
       "desc": "移除开屏广告、弹窗推广、搜索热搜、搜索热榜、底栏推广图标。",
       "category": "去广告",
@@ -2585,7 +2621,7 @@
       "warnings": []
     },
     {
-      "index": 212,
+      "index": 215,
       "name": "掌阅去广告",
       "desc": "移除开屏广告、悬浮广告、弹窗广告、朗读音色广告及我的页面广告，移除各页面的横幅轮播图。",
       "category": "去广告",
@@ -2597,7 +2633,7 @@
       "warnings": []
     },
     {
-      "index": 213,
+      "index": 216,
       "name": "智慧苏州去广告",
       "desc": "移除开屏广告、横幅，移除信息流推广。",
       "category": "去广告",
@@ -2609,7 +2645,7 @@
       "warnings": []
     },
     {
-      "index": 214,
+      "index": 217,
       "name": "知乎去广告",
       "desc": "移除各部分广告，移除知乎安全中心跳转，建议卸载知乎重新安装。如遇安全中心页面移除失败的，请积极反馈。",
       "category": "去广告",
@@ -2621,7 +2657,7 @@
       "warnings": []
     },
     {
-      "index": 215,
+      "index": 218,
       "name": "智联招聘去广告",
       "desc": "移除开屏广告、弹窗、职位页面推广和各类横幅推广。此插件需要IPA签名方可使用，App Store用户请勿使用此插件，务必点击下方主页链接查看详细教程。",
       "category": "去广告",
@@ -2633,7 +2669,7 @@
       "warnings": []
     },
     {
-      "index": 216,
+      "index": 219,
       "name": "知识星球去水印",
       "desc": "移除内容的水印编号",
       "category": "",
@@ -2645,7 +2681,7 @@
       "warnings": []
     },
     {
-      "index": 217,
+      "index": 220,
       "name": "中国人保去广告",
       "desc": "移除中国人保开屏广告和应用内广告",
       "category": "去广告",
@@ -2657,7 +2693,7 @@
       "warnings": []
     },
     {
-      "index": 218,
+      "index": 221,
       "name": "中国移动云盘去广告",
       "desc": "移除中国移动云盘开屏广告及应用内广告，首页的多余卡片可滑到最底部自定义隐藏掉，插件对此不做处理。",
       "category": "去广告",
@@ -2669,7 +2705,7 @@
       "warnings": []
     },
     {
-      "index": 219,
+      "index": 222,
       "name": "中华万年历去广告",
       "desc": "移除开屏广告、弹窗、信息流推广，精简我的页面。",
       "category": "去广告",
@@ -2681,7 +2717,7 @@
       "warnings": []
     },
     {
-      "index": 220,
+      "index": 223,
       "name": "转转去广告",
       "desc": "移除开屏广告、应用内悬浮窗、信息流推广、商品推荐、首页弹窗，精简我的页面。",
       "category": "去广告",
@@ -2693,7 +2729,7 @@
       "warnings": []
     },
     {
-      "index": 221,
+      "index": 224,
       "name": "自动加入TestFlight",
       "desc": "自动监控TestFlight名额，一旦有新的名额即刻加入。",
       "category": "定时任务",
@@ -2707,7 +2743,7 @@
       ]
     },
     {
-      "index": 222,
+      "index": 225,
       "name": "纵横小说去广告",
       "desc": "移除纵横小说开屏广告和弹窗",
       "category": "去广告",
@@ -2719,7 +2755,7 @@
       "warnings": []
     },
     {
-      "index": 223,
+      "index": 226,
       "name": "最右去广告",
       "desc": "移除开屏广告、信息流广告和广告轮播图。",
       "category": "去广告",
