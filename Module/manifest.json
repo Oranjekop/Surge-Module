@@ -14,7 +14,7 @@
       "output": "Block_HTTPDNS.sgmodule",
       "download_url": "https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/Block_HTTPDNS.sgmodule",
       "install_url": "surge:///install-module?url=https%3A%2F%2Fgithub.com%2FOranjekop%2FSurge-Module%2Fraw%2Frefs%2Fheads%2Fmain%2FModule%2FBlock_HTTPDNS.sgmodule",
-      "sha256": "bed8a3fe6e0f2df7660a4bbf7abf1213569b93cdc6c51e3b0f277e129c784e64",
+      "sha256": "43c3e8e462cbc06bda83b531de00de86c85bf93299ba4dbfa218a13cddb2cd3f",
       "warnings": []
     },
     {
