@@ -2317,7 +2317,7 @@
       "output": "FleaMarket_remove_ads.sgmodule",
       "download_url": "https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/FleaMarket_remove_ads.sgmodule",
       "install_url": "surge:///install-module?url=https%3A%2F%2Fgithub.com%2FOranjekop%2FSurge-Module%2Fraw%2Frefs%2Fheads%2Fmain%2FModule%2FFleaMarket_remove_ads.sgmodule",
-      "sha256": "3269d5633b34ac7e4abce447a9b7848581608f126f01423f5d77cc56203fc43b",
+      "sha256": "bdc950b91832700039ac290ca9a9819feb1cb10c451d2dce8e9a8796acca98cb",
       "warnings": []
     },
     {
@@ -2653,7 +2653,7 @@
       "output": "Zhihu_remove_ads.sgmodule",
       "download_url": "https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/Zhihu_remove_ads.sgmodule",
       "install_url": "surge:///install-module?url=https%3A%2F%2Fgithub.com%2FOranjekop%2FSurge-Module%2Fraw%2Frefs%2Fheads%2Fmain%2FModule%2FZhihu_remove_ads.sgmodule",
-      "sha256": "be5c8fe8a597c94c27d94c609e8110831f6edd7954f9f49215d6e075d6c18046",
+      "sha256": "3144b95ca803aca87ea021bbd63377da0e13baf07cd0b83274d2233c69716b5c",
       "warnings": []
     },
     {
