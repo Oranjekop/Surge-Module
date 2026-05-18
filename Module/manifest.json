@@ -2647,13 +2647,13 @@
     {
       "index": 217,
       "name": "知乎去广告",
-      "desc": "移除各部分广告，移除知乎安全中心跳转，建议卸载知乎重新安装。如遇安全中心页面移除失败的，请积极反馈。",
+      "desc": "移除HTTPDNS和QUIC传输配置，移除开屏广告、信息流广告、回答页广告，移除回答页下的相关回答、专栏卡片及圈子卡片，移除直答页面推荐知识库和提问推荐，移除评论区评论氛围满意度调查，精简首页顶部标签及我的页面。",
       "category": "去广告",
       "url": "https://kelee.one/Tool/Loon/Lpx/Zhihu_remove_ads.lpx",
       "output": "Zhihu_remove_ads.sgmodule",
       "download_url": "https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/Zhihu_remove_ads.sgmodule",
       "install_url": "surge:///install-module?url=https%3A%2F%2Fgithub.com%2FOranjekop%2FSurge-Module%2Fraw%2Frefs%2Fheads%2Fmain%2FModule%2FZhihu_remove_ads.sgmodule",
-      "sha256": "49aa0bb744617ff4c650ec25028690deb1540a30ef961152c3bd6a18a7f825ff",
+      "sha256": "be5c8fe8a597c94c27d94c609e8110831f6edd7954f9f49215d6e075d6c18046",
       "warnings": []
     },
     {
